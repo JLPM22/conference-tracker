@@ -1,0 +1,589 @@
+[
+  {
+    "id": "siggraph-2027",
+    "series": "siggraph",
+    "name": "SIGGRAPH",
+    "year": 2027,
+    "category": "graphics",
+    "fullName": "ACM SIGGRAPH Conference on Computer Graphics and Interactive Techniques",
+    "topics": [
+      "animation",
+      "human motion",
+      "rendering",
+      "simulation"
+    ],
+    "cycleYears": 1,
+    "website": "https://s2027.siggraph.org/",
+    "editionSource": "https://s2027.siggraph.org/program/technical-papers/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-08-08",
+      "end": "2027-08-12",
+      "location": "Anaheim, California, USA"
+    },
+    "milestones": [
+      {
+        "kind": "registration",
+        "label": "Submission form & conflicts",
+        "date": "2027-01-21T22:00:00+00:00",
+        "timezone": "UTC",
+        "source": "https://s2027.siggraph.org/program/technical-papers/"
+      },
+      {
+        "kind": "paper",
+        "label": "Technical paper submission",
+        "date": "2027-01-28T22:00:00+00:00",
+        "timezone": "UTC",
+        "source": "https://s2027.siggraph.org/program/technical-papers/"
+      },
+      {
+        "kind": "supplementary",
+        "label": "Upload deadline",
+        "date": "2027-01-29T22:00:00+00:00",
+        "timezone": "UTC",
+        "source": "https://s2027.siggraph.org/program/technical-papers/"
+      }
+    ],
+    "notes": "The submission form and conflicts are due one week before the paper. The Technical Papers page publishes these dates; detailed 2027 submission instructions and the review timeline are still pending.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=SIGGRAPH&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "journal-track",
+      "journals": [
+        "ACM Transactions on Graphics (TOG)"
+      ],
+      "note": "Journal and conference paper tracks are distinct. 2027 publication details are pending; journal route verified from 2026.",
+      "source": "https://s2026.siggraph.org/program/technical-papers/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Graphics & interactive methods",
+      "emphasis": "Visual results + technical novelty",
+      "source": "https://s2026.siggraph.org/technical-papers-reviewer-instructions-ethics/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Make a substantive contribution to graphics or interactive techniques: a method, system, study, dataset, or new problem. Explain what becomes possible and why it matters beyond the showcased examples.",
+        "evidence": "For visual claims, show representative results and meaningful comparisons, including difficult cases. Support technical claims with suitable measurements or analysis. The 2026 guidance allows less comprehensive validation in the conference track; striking images alone do not establish a contribution.",
+        "comparisons": [
+          {
+            "series": "siggraph-asia",
+            "difference": "The closest match in scope and journal/conference structure. Submission timing and readiness of the work are usually the practical differences."
+          },
+          {
+            "series": "sca",
+            "difference": "A more focused audience when the central contribution concerns motion, animation, or simulation over time."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "siggraph-asia-2026",
+    "series": "siggraph-asia",
+    "name": "SIGGRAPH Asia",
+    "year": 2026,
+    "category": "graphics",
+    "fullName": "ACM SIGGRAPH Conference on Computer Graphics and Interactive Techniques in Asia",
+    "topics": [
+      "animation",
+      "human motion",
+      "rendering",
+      "simulation"
+    ],
+    "cycleYears": 1,
+    "website": "https://asia.siggraph.org/2026/",
+    "editionSource": "https://asia.siggraph.org/2026/submissions/technical-papers/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2026-12-01",
+      "end": "2026-12-04",
+      "location": "Kuala Lumpur, Malaysia"
+    },
+    "announcedEvents": {
+      "2027": {
+        "start": "2027-11-30",
+        "end": "2027-12-03",
+        "location": "Tokyo, Japan",
+        "source": "https://asia.siggraph.org/2026/about-the-event/siggraph-asia-2027/"
+      }
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Abstract, author list & submission form",
+        "date": "2026-05-05T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://asia.siggraph.org/2026/submissions/technical-papers/"
+      },
+      {
+        "kind": "paper",
+        "label": "Technical paper & material checksums",
+        "date": "2026-05-12T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://asia.siggraph.org/2026/submissions/technical-papers/"
+      },
+      {
+        "kind": "supplementary",
+        "label": "Checksum-matching uploads & conflicts",
+        "date": "2026-05-13T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://asia.siggraph.org/2026/submissions/technical-papers/"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Rebuttal deadline",
+        "date": "2026-07-03T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://asia.siggraph.org/2026/submissions/technical-papers/"
+      },
+      {
+        "kind": "notification",
+        "label": "Decisions announced",
+        "date": "2026-07-19",
+        "timezone": "Not specified",
+        "source": "https://asia.siggraph.org/2026/submissions/technical-papers/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Final version",
+        "date": "2026-09-03T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://asia.siggraph.org/2026/submissions/technical-papers/"
+      }
+    ],
+    "notes": "Journal and conference papers share deadlines. New submissions and author-list changes close at the abstract deadline. The extra upload day only permits files matching previously submitted MD5 checksums. The 2027 event is announced; its paper deadlines are not. Decision release has no exact time.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=SiggraphA&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "journal-track",
+      "journals": [
+        "ACM Transactions on Graphics (TOG)"
+      ],
+      "note": "Journal and conference paper tracks are distinct. ",
+      "source": "https://asia.siggraph.org/2026/submissions/technical-papers/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Visual computing & graphics",
+      "emphasis": "Original methods + thorough validation",
+      "source": "https://asia.siggraph.org/2026/submissions/technical-papers/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Present original research that advances graphics or interactive techniques. Methods, systems, perception, and learning for visual computing all fit when the graphics contribution is clear.",
+        "evidence": "Connect the claimed advance to visual, quantitative, or study-based evidence as appropriate. The journal track expects comprehensive validation; the conference track can accommodate a less complete investigation of a valuable new idea.",
+        "comparisons": [
+          {
+            "series": "siggraph",
+            "difference": "A closely overlapping research audience and publication model. Compare the current calls, deadlines, and readiness of the work."
+          },
+          {
+            "series": "eurographics",
+            "difference": "Also broad graphics research. Its full-paper call explicitly welcomes datasets, benchmarks, and perceptual studies with a clear connection to graphics literature."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "eurographics-2027",
+    "series": "eurographics",
+    "name": "Eurographics",
+    "year": 2027,
+    "category": "graphics",
+    "fullName": "Annual Conference of the European Association for Computer Graphics",
+    "topics": [
+      "animation",
+      "rendering",
+      "geometry",
+      "perception"
+    ],
+    "cycleYears": 1,
+    "website": "https://eg2027.isti.cnr.it/",
+    "editionSource": "https://eg2027.isti.cnr.it/call-for-papers/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-05-10",
+      "end": "2027-05-14",
+      "location": "Lucca, Italy"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Abstract & submission form (extended)",
+        "date": "2026-09-25T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://eg2027.isti.cnr.it/call-for-papers/"
+      },
+      {
+        "kind": "paper",
+        "label": "Full paper submission (extended)",
+        "date": "2026-10-02T00:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://eg2027.isti.cnr.it/call-for-papers/"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Rebuttal deadline",
+        "date": "2026-11-30T23:59:00+00:00",
+        "timezone": "UTC",
+        "source": "https://eg2027.isti.cnr.it/call-for-papers/"
+      },
+      {
+        "kind": "notification",
+        "label": "Conditional acceptance decisions",
+        "date": "2026-12-18",
+        "timezone": "Not specified",
+        "source": "https://eg2027.isti.cnr.it/call-for-papers/"
+      },
+      {
+        "kind": "notification",
+        "label": "Final notification",
+        "date": "2027-02-09",
+        "timezone": "Not specified",
+        "source": "https://eg2027.isti.cnr.it/call-for-papers/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Camera-ready version",
+        "date": "2027-02-23T23:59:00+00:00",
+        "timezone": "UTC",
+        "source": "https://eg2027.isti.cnr.it/call-for-papers/"
+      }
+    ],
+    "notes": "Full papers track. Submission dates include the published extensions; later deadlines use UTC. The author list locks at abstract submission. The CFP also notes submission-system delays, so projected dates should not rely on extensions recurring. Decision releases have no exact times.",
+    "core": {
+      "rank": "A",
+      "edition": "CORE2018",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=EUROGRAPH&by=all&source=CORE2018&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": "Older CORE edition; no ICORE2026 entry found."
+    },
+    "publication": {
+      "kind": "journal-track",
+      "journals": [
+        "Computer Graphics Forum (CGF)"
+      ],
+      "note": "Accepted full papers publish in CGF; other contribution types may use proceedings.",
+      "source": "https://eg2027.isti.cnr.it/call-for-papers/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Graphics methods & studies",
+      "emphasis": "Graphics relevance + original insight",
+      "source": "https://eg2027.isti.cnr.it/call-for-papers/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Position the work within computer graphics and explain its original contribution. Algorithms, datasets, benchmarks, and perceptual or experimental studies are all welcome; the call explicitly asks for meaningful engagement with graphics literature.",
+        "evidence": "Match the evaluation to the claim: comparisons and limitations for methods, coverage and usefulness for datasets, or a sound design and analysis for studies. A graphics application should make its research advance clear.",
+        "comparisons": [
+          {
+            "series": "siggraph",
+            "difference": "Substantial scope overlap. Frame the contribution for a broad graphics audience and compare the track-specific expectations in the current calls."
+          },
+          {
+            "series": "sca",
+            "difference": "More specialized when the main scientific question is about time-varying phenomena, motion, or animation."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "sca-2026",
+    "series": "sca",
+    "name": "SCA",
+    "year": 2026,
+    "category": "graphics",
+    "fullName": "ACM SIGGRAPH / Eurographics Symposium on Computer Animation",
+    "topics": [
+      "animation",
+      "character control",
+      "human motion",
+      "simulation"
+    ],
+    "cycleYears": 1,
+    "website": "https://computeranimation.org/",
+    "editionSource": "https://computeranimation.org/instructions.html",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2026-07-08",
+      "end": "2026-07-10",
+      "location": "Barcelona, Spain"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Paper abstract",
+        "date": "2026-04-10T23:59:00+00:00",
+        "timezone": "UTC",
+        "source": "https://computeranimation.org/"
+      },
+      {
+        "kind": "paper",
+        "label": "Technical paper submission",
+        "date": "2026-04-17T23:59:00+00:00",
+        "timezone": "UTC",
+        "source": "https://computeranimation.org/"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Rebuttal period ends",
+        "date": "2026-05-19",
+        "timezone": "Not specified",
+        "source": "https://computeranimation.org/"
+      },
+      {
+        "kind": "notification",
+        "label": "Provisional acceptance",
+        "date": "2026-05-29",
+        "timezone": "Not specified",
+        "source": "https://computeranimation.org/"
+      },
+      {
+        "kind": "notification",
+        "label": "Journal notification",
+        "date": "2026-06-12",
+        "timezone": "Not specified",
+        "source": "https://computeranimation.org/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Camera-ready version",
+        "date": "2026-06-17",
+        "timezone": "Not specified",
+        "source": "https://computeranimation.org/"
+      }
+    ],
+    "notes": "Full papers appear in Computer Graphics Forum. The Important Dates table is used for the review schedule; CFP prose has an inconsistent June 16 first-round notification. Only abstract and paper dates specify a time; other milestones remain date-only.",
+    "core": {
+      "rank": "B",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=SCA&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "journal-track",
+      "journals": [
+        "Computer Graphics Forum (CGF)"
+      ],
+      "note": "Accepted full papers publish in CGF; other contribution types may use proceedings.",
+      "source": "https://computeranimation.org/instructions.html",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Animation & simulation",
+      "emphasis": "Animation advances + sound evaluation",
+      "source": "https://computeranimation.org/instructions.html",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Advance animation or simulation, broadly including time-varying phenomena. Motion synthesis, character control, physics, authoring tools, and perceptual questions can all fit.",
+        "evidence": "Show temporal behavior, relevant comparisons, and the limits of the method. Choose measures suited to the claim, such as control, realism, stability, or efficiency. The 2026 call also welcomes benchmark studies judged on experimental design and insight, without requiring a new algorithm.",
+        "comparisons": [
+          {
+            "series": "mig",
+            "difference": "Shares motion and character research; MIG also explicitly spans interactive systems, game applications, and interaction techniques."
+          },
+          {
+            "series": "eurographics",
+            "difference": "A broader graphics audience when the contribution extends beyond animation or time-dependent behavior."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "mig-2026",
+    "series": "mig",
+    "name": "MIG",
+    "year": 2026,
+    "category": "graphics",
+    "fullName": "ACM SIGGRAPH Conference on Motion, Interaction and Games",
+    "topics": [
+      "human motion",
+      "character control",
+      "interaction",
+      "games"
+    ],
+    "cycleYears": 1,
+    "website": "https://mig.siggraph.org/2026/",
+    "editionSource": "https://mig.siggraph.org/2026/papers.htm",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2026-12-11",
+      "end": "2026-12-13",
+      "location": "Charleston, South Carolina, USA"
+    },
+    "milestones": [
+      {
+        "kind": "paper",
+        "label": "Long / short paper submission (extended)",
+        "date": "2026-08-14T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://mig.siggraph.org/2026/papers.htm"
+      },
+      {
+        "kind": "notification",
+        "label": "Acceptance notification",
+        "date": "2026-09-30",
+        "timezone": "Not specified",
+        "source": "https://mig.siggraph.org/2026/papers.htm"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Camera-ready version",
+        "date": "2026-10-15T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://mig.siggraph.org/2026/papers.htm"
+      }
+    ],
+    "notes": "Long and short papers share a deadline, extended from August 7. There is no rebuttal process. Accepted work requires an in-person presenter. Notification release has no exact time.",
+    "core": {
+      "rank": "C",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=MIG&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "journal-extension",
+      "journals": [
+        "Computers & Graphics"
+      ],
+      "note": "Selected best papers may be referred (subject to validation) to submit substantially extended versions to a special issue. Journal publication requires further review.",
+      "source": "https://mig.siggraph.org/2026/papers.htm",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Motion, characters & games",
+      "emphasis": "Interactive relevance + technical quality",
+      "source": "https://sgmig.hosting.acm.org/2026/papers.htm",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Connect the contribution to motion, interaction, or games: character behavior, animation, interactive systems, datasets, or applications. Make the research result clear even when the work is demonstrated inside a game.",
+        "evidence": "Demonstrate technical quality and significance with comparisons or studies suited to the claim. For interactive methods, useful evidence can include responsiveness, control, and user outcomes. The call supports mature long papers and focused or emerging short contributions.",
+        "comparisons": [
+          {
+            "series": "sca",
+            "difference": "A natural alternative when animation or simulation itself is the main advance, with less dependence on an interactive or game setting."
+          },
+          {
+            "series": "ceig",
+            "difference": "Broader graphics scope and a Spanish-community forum, including educational, industrial, and practical contributions."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ceig-2026",
+    "series": "ceig",
+    "name": "CEIG",
+    "year": 2026,
+    "category": "graphics",
+    "fullName": "Congreso Español de Informática Gráfica",
+    "topics": [
+      "Congreso Español de Informática Gráfica",
+      "CEIG"
+    ],
+    "cycleYears": 1,
+    "website": "https://eurographics.es/CEIG26/",
+    "editionSource": "https://eurographics.es/CEIG26/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2026-06-01",
+      "end": "2026-06-03",
+      "location": "Valencia, Spain"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Full-paper abstract",
+        "date": "2026-02-01",
+        "timezone": "Not specified",
+        "source": "https://eurographics.es/CEIG26/"
+      },
+      {
+        "kind": "paper",
+        "label": "Full paper (extended)",
+        "date": "2026-02-15",
+        "timezone": "Not specified",
+        "source": "https://eurographics.es/CEIG26/"
+      },
+      {
+        "kind": "notification",
+        "label": "Author notification and journal selection",
+        "date": "2026-03-19",
+        "timezone": "Not specified",
+        "source": "https://eurographics.es/CEIG26/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Final CEIG paper",
+        "date": "2026-04-27",
+        "timezone": "Not specified",
+        "source": "https://eurographics.es/CEIG26/"
+      }
+    ],
+    "notes": "Full papers track. The live official page extends the paper date to February 15. Short papers, posters and presentations of published work have separate deadlines. Journal-selected papers undergo additional review. No exact cutoff time is published.",
+    "core": {
+      "rank": null,
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=CEIG&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": "No matching entry found by acronym and full title; this is not an Unranked classification."
+    },
+    "publication": {
+      "kind": "selected-journal",
+      "journals": [
+        "Computers & Graphics",
+        "Graphical Models"
+      ],
+      "note": "Selected C&G papers receive an additional major review. Graphical Models requires a 30% extension and further review; selection does not guarantee journal acceptance.",
+      "source": "https://eurographics.es/CEIG26/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Graphics research & applications",
+      "emphasis": "Original ideas + practical value",
+      "source": "https://eurographics.es/CEIG26/#full-papers",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22",
+      "guide": {
+        "contribution": "Present graphics research, a practical contribution, an innovative application, or an experience report. The Spanish graphics community is the main audience, but international submissions are welcome.",
+        "evidence": "Explain what is new or useful and document it with appropriate results, examples, or an evaluation. Make the lessons transferable to other researchers or practitioners. The call also accommodates educational and industrial work; choose the matching submission category.",
+        "comparisons": [
+          {
+            "series": "eurographics",
+            "difference": "Shares broad graphics topics, with a full-paper program centered on original research connected to the international graphics literature."
+          },
+          {
+            "series": "mig",
+            "difference": "More focused on motion, interactive systems, and games when those are the core contribution."
+          }
+        ]
+      }
+    }
+  }
+]

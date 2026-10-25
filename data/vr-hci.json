@@ -1,0 +1,809 @@
+[
+  {
+    "id": "chi-2027",
+    "series": "chi",
+    "name": "CHI",
+    "year": 2027,
+    "category": "hci",
+    "fullName": "ACM Conference on Human Factors in Computing Systems",
+    "topics": [
+      "human-computer interaction",
+      "virtual reality",
+      "interaction",
+      "user studies"
+    ],
+    "cycleYears": 1,
+    "website": "https://chi2027.acm.org/",
+    "editionSource": "https://chi2027.acm.org/Authors/Papers/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-05-10",
+      "end": "2027-05-14",
+      "location": "Pittsburgh, USA",
+      "source": "https://chi2027.acm.org/attendees/visa-faq/"
+    },
+    "milestones": [
+      {
+        "kind": "paper",
+        "label": "Paper and supplementary materials",
+        "date": "2026-09-10T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://chi2027.acm.org/Authors/Papers/"
+      },
+      {
+        "kind": "notification",
+        "label": "Reviews released",
+        "date": "2026-11-05",
+        "timezone": "AoE",
+        "source": "https://chi2027.acm.org/Authors/Papers/"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Revised paper resubmission",
+        "date": "2026-12-03T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://chi2027.acm.org/Authors/Papers/"
+      },
+      {
+        "kind": "notification",
+        "label": "Final notification",
+        "date": "2026-12-17",
+        "timezone": "AoE",
+        "source": "https://chi2027.acm.org/Authors/Papers/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Final paper source to TAPS",
+        "date": "2027-01-14T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://chi2027.acm.org/Authors/Papers/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Publication-ready version",
+        "date": "2027-02-18T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://chi2027.acm.org/Authors/Papers/"
+      },
+      {
+        "kind": "registration",
+        "label": "Author conference registration",
+        "date": "2027-03-04T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://chi2027.acm.org/Authors/Papers/"
+      }
+    ],
+    "notes": "Main papers track. No separate abstract deadline. Submission includes videos and supplementary materials. The official 24-hour contingency grace period is not included in the deadline shown. Notification times are not specified.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=CHI&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "No journal track announced in the linked call. Conference proceedings are distinct from a journal.",
+      "source": "https://chi2027.acm.org/Authors/Papers/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "HCI systems, studies & design",
+      "emphasis": "Human insight + rigorous methods",
+      "source": "https://chi2027.acm.org/guide-to-a-successful-submission/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Make a significant contribution to understanding or improving human interaction with technology. Systems, studies, design, theory, and other contribution types can fit when the HCI knowledge gained is clear.",
+        "evidence": "Use a method that supports the contribution and describe it transparently. For studies, explain sampling and analysis; for systems, establish the interaction benefit; for design or conceptual work, substantiate the argument. A user study is not a universal requirement for every contribution type.",
+        "comparisons": [
+          {
+            "series": "ieee-vr",
+            "difference": "A more focused XR audience when immersive interaction, 3D interfaces, or VR/AR systems are central."
+          },
+          {
+            "series": "sap",
+            "difference": "More specialized when the key finding concerns human perception and its application to computing."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ieee-vr-2027",
+    "series": "ieee-vr",
+    "name": "IEEE VR",
+    "year": 2027,
+    "category": "hci",
+    "fullName": "IEEE Conference on Virtual Reality and 3D User Interfaces",
+    "topics": [
+      "virtual reality",
+      "avatars",
+      "embodiment",
+      "3D interaction",
+      "motion capture"
+    ],
+    "cycleYears": 1,
+    "website": "https://ieeevr.org/2027/",
+    "editionSource": "https://ieeevr.org/2027/contribute/papers/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-02-27",
+      "end": "2027-03-03",
+      "location": "Melbourne, Australia",
+      "source": "https://ieeevr.org/2027/"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Required paper abstract",
+        "date": "2026-08-24T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://ieeevr.org/2027/contribute/papers/"
+      },
+      {
+        "kind": "paper",
+        "label": "Unified journal / conference paper",
+        "date": "2026-08-31T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://ieeevr.org/2027/contribute/papers/"
+      },
+      {
+        "kind": "notification",
+        "label": "Initial notification",
+        "date": "2026-11-30",
+        "timezone": "AoE",
+        "source": "https://ieeevr.org/2027/contribute/papers/"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Revised submission",
+        "date": "2026-12-31T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://ieeevr.org/2027/contribute/papers/"
+      },
+      {
+        "kind": "notification",
+        "label": "Final notification",
+        "date": "2027-01-07",
+        "timezone": "AoE",
+        "source": "https://ieeevr.org/2027/contribute/papers/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Camera-ready materials",
+        "date": "2027-01-12T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://ieeevr.org/2027/contribute/papers/"
+      }
+    ],
+    "notes": "One unified submission and review process for IEEE TVCG and conference-only papers. A paper abstract is required seven days before the paper. Notification times are not specified.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=VR&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "journal-track",
+      "journals": [
+        "IEEE Transactions on Visualization and Computer Graphics (TVCG)"
+      ],
+      "note": "Unified review assigns accepted papers to the journal or conference proceedings.",
+      "source": "https://ieeevr.org/2027/contribute/papers/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "VR/AR interaction & systems",
+      "emphasis": "User or system evaluation",
+      "source": "https://ieeevr.org/2027/contribute/papers/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Advance VR, AR, MR, or 3D interaction through a method, technique, application, or system. Explain the contribution to immersive technology or experience, beyond placing an existing task in a headset.",
+        "evidence": "The call asks for evaluation suited to the contribution: user studies, benchmarks, or comparisons with existing methods or systems. Measure the claimed benefit and describe experimental conditions, limitations, and participant procedures where applicable.",
+        "comparisons": [
+          {
+            "series": "ismar",
+            "difference": "Strong scope overlap across AR, MR, and VR; ISMAR also explicitly requires a significant connection to XR concepts, systems, or experiences."
+          },
+          {
+            "series": "chi",
+            "difference": "A broader interaction audience; emphasize the transferable HCI insight when the contribution extends beyond immersive technology."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ismar-2026",
+    "series": "ismar",
+    "name": "ISMAR",
+    "year": 2026,
+    "category": "hci",
+    "fullName": "IEEE International Symposium on Mixed and Augmented Reality",
+    "topics": [
+      "augmented reality",
+      "mixed reality",
+      "virtual reality",
+      "tracking",
+      "perception"
+    ],
+    "cycleYears": 1,
+    "website": "https://www.ieeeismar.net/2026/",
+    "editionSource": "https://www.ieeeismar.net/2026/call-for-papers/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2026-10-05",
+      "end": "2026-10-09",
+      "location": "Bari, Italy",
+      "source": "https://www.ieeeismar.net/2026/"
+    },
+    "announcedEvents": {
+      "2027": {
+        "start": null,
+        "end": null,
+        "location": "Kobe, Japan",
+        "source": "https://www.ieeeismar.net/2027/"
+      }
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Paper abstract",
+        "date": "2026-03-09T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://www.ieeeismar.net/2026/call-for-papers/"
+      },
+      {
+        "kind": "paper",
+        "label": "Unified journal / conference paper",
+        "date": "2026-03-16T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://www.ieeeismar.net/2026/call-for-papers/"
+      },
+      {
+        "kind": "notification",
+        "label": "Reviews released",
+        "date": "2026-05-24T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://www.ieeeismar.net/2026/call-for-papers/"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Rebuttal deadline",
+        "date": "2026-05-31T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://www.ieeeismar.net/2026/call-for-papers/"
+      },
+      {
+        "kind": "notification",
+        "label": "Final notification",
+        "date": "2026-06-22T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://www.ieeeismar.net/2026/call-for-papers/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Camera-ready version",
+        "date": "2026-07-21T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://www.ieeeismar.net/2026/call-for-papers/"
+      }
+    ],
+    "notes": "Unified IEEE TVCG journal and conference paper track. The 2027 site confirms Kobe, Japan, but the conference dates and paper deadlines are still TBA; estimates use the verified 2026 schedule.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=ISMAR&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "journal-track",
+      "journals": [
+        "IEEE Transactions on Visualization and Computer Graphics (TVCG)"
+      ],
+      "note": "Unified review assigns accepted papers to the journal or conference proceedings.",
+      "source": "https://www.ieeeismar.net/2026/call-for-papers/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "AR/MR/VR methods & experiences",
+      "emphasis": "Clear contribution to XR",
+      "source": "https://www.ieeeismar.net/2026/call-for-papers/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Make an explicit, significant connection to AR, MR, or VR. Contributions may concern underlying technologies, interaction, perception, systems, or applied experiences; the scope includes fully virtual environments.",
+        "evidence": "A useful framing is to show how the work improves an XR capability or experience. Use technical measurements for system claims and suitable studies for human-experience claims, making the XR-specific insight and limitations clear.",
+        "comparisons": [
+          {
+            "series": "ieee-vr",
+            "difference": "Both cover AR, MR, and VR. Their scopes overlap strongly, so compare the current call and the best audience for the contribution."
+          },
+          {
+            "series": "vrst",
+            "difference": "A closely related venue for XR software, systems, interaction techniques, and their evaluation."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "vrst-2026",
+    "series": "vrst",
+    "name": "VRST",
+    "year": 2026,
+    "category": "hci",
+    "fullName": "ACM Symposium on Virtual Reality Software and Technology",
+    "topics": [
+      "virtual reality",
+      "avatars",
+      "embodiment",
+      "interaction",
+      "telepresence"
+    ],
+    "cycleYears": 1,
+    "website": "https://vrst.acm.org/vrst2026/",
+    "editionSource": "https://vrst.acm.org/vrst2026/cfp/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2026-11-16",
+      "end": "2026-11-18",
+      "location": "Sendai, Japan",
+      "source": "https://vrst.acm.org/vrst2026/"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Required paper abstract",
+        "date": "2026-06-17T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://vrst.acm.org/vrst2026/cfp/"
+      },
+      {
+        "kind": "paper",
+        "label": "Paper and all materials",
+        "date": "2026-06-24T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://vrst.acm.org/vrst2026/cfp/"
+      },
+      {
+        "kind": "notification",
+        "label": "Initial notification",
+        "date": "2026-08-28",
+        "timezone": "AoE",
+        "source": "https://vrst.acm.org/vrst2026/cfp/"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Revised papers (extended)",
+        "date": "2026-09-06T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://vrst.acm.org/vrst2026/cfp/"
+      },
+      {
+        "kind": "notification",
+        "label": "Final notification (extended)",
+        "date": "2026-09-13",
+        "timezone": "AoE",
+        "source": "https://vrst.acm.org/vrst2026/cfp/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Camera-ready papers",
+        "date": "2026-09-25T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://vrst.acm.org/vrst2026/cfp/"
+      }
+    ],
+    "notes": "Main papers track. The abstract is required one week before the full paper. Includes the officially extended revision and final-notification dates. No official 2027 schedule was found. Notification times are not specified.",
+    "core": {
+      "rank": "B",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=VRST&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "No journal track announced in the linked call. Conference proceedings are distinct from a journal.",
+      "source": "https://vrst.acm.org/vrst2026/cfp/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "XR systems & interaction",
+      "emphasis": "Technical utility + user experience",
+      "source": "https://vrst.acm.org/vrst2026/cfp/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Present an XR software, system, interaction, or related research contribution. Make clear what the technique or system adds and how that advances the use or understanding of immersive environments.",
+        "evidence": "For technical claims, useful evidence includes performance tests and comparisons; for interaction claims, consider user experience or empirical studies. Explain the contribution rather than relying on a prototype description. The call asks that paper length match the contribution.",
+        "comparisons": [
+          {
+            "series": "ieee-vr",
+            "difference": "Substantial overlap in XR systems and interaction; examine the specific paper categories and evaluation expectations."
+          },
+          {
+            "series": "aixvr",
+            "difference": "A more targeted fit when the key advance is the integration of AI with XR, rather than an XR technique on its own."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "sap-2026",
+    "series": "sap",
+    "name": "ACM SAP",
+    "year": 2026,
+    "category": "hci",
+    "fullName": "ACM Symposium on Applied Perception",
+    "topics": [
+      "perception",
+      "avatars",
+      "virtual reality",
+      "animation"
+    ],
+    "cycleYears": 1,
+    "website": "https://sap.acm.org/2026/",
+    "editionSource": "https://sap.acm.org/2026/call-for-papers/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2026-08-26",
+      "end": "2026-08-27",
+      "location": "Rennes, France"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Required abstract submission",
+        "date": "2026-04-21T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://sap.acm.org/2026/call-for-papers/"
+      },
+      {
+        "kind": "paper",
+        "label": "Paper submission (extended)",
+        "date": "2026-05-02T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://sap.acm.org/2026/call-for-papers/"
+      },
+      {
+        "kind": "notification",
+        "label": "Paper decisions",
+        "date": "2026-06-03",
+        "timezone": "Not specified",
+        "source": "https://sap.acm.org/2026/call-for-papers/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "SAP camera-ready & TAPS sources",
+        "date": "2026-07-07T23:59:59-12:00",
+        "timezone": "AoE",
+        "source": "https://sap.acm.org/2026/call-for-papers/"
+      }
+    ],
+    "notes": "Abstract submission is required. The paper deadline was extended from April 28. This schedule covers SAP proceedings papers; invited TAP journal papers have a separate second review and final deadline. Notification release has no exact time.",
+    "core": {
+      "rank": "B",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=SAP&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "selected-journal",
+      "journals": [
+        "ACM Transactions on Applied Perception (TAP)"
+      ],
+      "note": "Selected papers undergo a second review cycle and publish in TAP instead of the proceedings.",
+      "source": "https://sap.acm.org/2026/call-for-papers/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Perception for visual computing",
+      "emphasis": "Perceptual insight + careful studies",
+      "source": "https://sap.acm.org/2026/call-for-papers/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Connect a question about perception with a computing problem, such as animation, visualization, vision, or immersive interfaces. Make the perceptual insight and its computational relevance explicit.",
+        "evidence": "For empirical work, justify the stimuli, tasks, measures, and analysis so the perceptual conclusion is supported. Explain how the result informs a computing technique or application. Perceptually informed algorithms can also fit; the contribution need not be only a user study.",
+        "comparisons": [
+          {
+            "series": "chi",
+            "difference": "Broader interaction and human-centered research; SAP is more focused on perception as the scientific link to computing."
+          },
+          {
+            "series": "iva",
+            "difference": "More focused on socially interactive agents when agent behavior or human-agent interaction is the main question."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "aixvr-2027",
+    "series": "aixvr",
+    "name": "IEEE AIxVR",
+    "year": 2027,
+    "category": "hci",
+    "fullName": "IEEE International Conference on Artificial Intelligence and eXtended and Virtual Reality",
+    "topics": [
+      "IEEE AIVR",
+      "artificial intelligence",
+      "virtual reality",
+      "augmented reality",
+      "avatars",
+      "crowds",
+      "embodiment"
+    ],
+    "cycleYears": 1,
+    "website": "https://aivr.science.uu.nl/2027/",
+    "editionSource": "https://aivr.science.uu.nl/2027/aixvr2027_cfp.html",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-01-25",
+      "end": "2027-01-27",
+      "location": "Vancouver, Canada",
+      "source": "https://aivr.science.uu.nl/2027/"
+    },
+    "milestones": [
+      {
+        "kind": "paper",
+        "label": "Full / short paper submission (extended)",
+        "date": "2026-09-21",
+        "timezone": "AoE",
+        "source": "https://aivr.science.uu.nl/2027/aixvr2027_dates.html"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Camera-ready paper",
+        "date": "2026-12-15",
+        "timezone": "AoE",
+        "source": "https://aivr.science.uu.nl/2027/aixvr2027_dates.html"
+      }
+    ],
+    "notes": "Formerly IEEE AIVR; renamed AIxVR in 2024. This schedule covers full/short papers, extended from September 17 to September 21, 2026. Notifications are only specified as early-to-mid-November 2026, so no exact notification date is shown. Separate 2027 work-in-progress and demo/video tracks close October 29, 2026; workshops set their own deadlines. The source states AoE but gives no exact clock time.",
+    "core": {
+      "rank": null,
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=AIxVR&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": "No matching entry found by acronym and full title; this is not an Unranked classification."
+    },
+    "publication": {
+      "kind": "journal-extension",
+      "journals": [
+        "Journal to be announced"
+      ],
+      "note": "Selected papers are invited to submit extended versions; the 2027 call does not name the journal.",
+      "source": "https://aivr.science.uu.nl/2027/aixvr2027_cfp.html",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "AI for XR · XR for AI",
+      "emphasis": "Meaningful AI–XR integration",
+      "source": "https://aivr.science.uu.nl/2027/aixvr2027_cfp.html",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Make the relationship between AI and XR central: AI that enables an immersive capability, or XR that advances the use or understanding of AI. State what the integration contributes.",
+        "evidence": "A useful evaluation isolates the benefit of that integration, using technical or user measures suited to the claim. Compare against a relevant alternative and explain limitations. Merely including an off-the-shelf AI component needs a clear research argument.",
+        "comparisons": [
+          {
+            "series": "vrst",
+            "difference": "A broader home for XR software and interaction work whose contribution does not depend on AI."
+          },
+          {
+            "series": "iva",
+            "difference": "More specialized for socially interactive agents and human-agent behavior, including applications outside XR."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "iva-2026",
+    "series": "iva",
+    "name": "ACM IVA",
+    "year": 2026,
+    "category": "hci",
+    "fullName": "ACM International Conference on Intelligent Virtual Agents",
+    "topics": [
+      "virtual humans",
+      "social agents",
+      "human-agent interaction",
+      "crowds",
+      "virtual reality",
+      "embodied AI"
+    ],
+    "cycleYears": 1,
+    "website": "https://iva.acm.org/2026/",
+    "editionSource": "https://iva.acm.org/2026/call-for-papers/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2026-09-07",
+      "end": "2026-09-11",
+      "location": "Puebla, Mexico",
+      "source": "https://iva.acm.org/2026/"
+    },
+    "announcedEvents": {
+      "2027": {
+        "start": null,
+        "end": null,
+        "location": "Reykjavik, Iceland",
+        "source": "https://iva.acm.org/index/"
+      }
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Full-paper abstract (extended)",
+        "date": "2026-04-03T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://iva.acm.org/2026/call-for-papers/"
+      },
+      {
+        "kind": "paper",
+        "label": "Full paper submission (extended)",
+        "date": "2026-04-10T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://iva.acm.org/2026/call-for-papers/"
+      },
+      {
+        "kind": "notification",
+        "label": "Review notification",
+        "date": "2026-05-23",
+        "timezone": "AoE",
+        "source": "https://iva.acm.org/2026/"
+      },
+      {
+        "kind": "notification",
+        "label": "Final acceptance notification",
+        "date": "2026-06-15",
+        "timezone": "AoE",
+        "source": "https://iva.acm.org/2026/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Camera-ready paper",
+        "date": "2026-07-07T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://iva.acm.org/2026/call-for-papers-espanol/"
+      }
+    ],
+    "notes": "Full papers track with a separate abstract deadline. Submission dates include the published extensions; these extensions may not recur. The IVA series announces Reykjavik in September 2027, but exact event dates and paper deadlines are not published; estimates use the 2026 schedule. Notification times are not specified.",
+    "core": {
+      "rank": "B",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=IVA&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "No journal track announced in the linked call. Conference proceedings are distinct from a journal.",
+      "source": "https://iva.acm.org/2026/call-for-papers/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Virtual agents & social behavior",
+      "emphasis": "Agent interaction + grounded evaluation",
+      "source": "https://iva.acm.org/2026/call-for-papers/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Advance socially interactive agents or human-agent interaction: behavior generation, dialogue, social perception, agent design, or an underlying theory. Explain how the work changes agent capability or understanding of interaction.",
+        "evidence": "Ground the claims in appropriate technical evaluation, human studies, theory, or application evidence. For social-behavior claims, explain the behavioral model and measures; realistic appearance alone does not establish an interaction contribution.",
+        "comparisons": [
+          {
+            "series": "hri",
+            "difference": "Centers human-robot interaction, including physical embodiment and its consequences; HRI also accepts studies without a physical robot when the HRI contribution is clear."
+          },
+          {
+            "series": "sap",
+            "difference": "A better-focused audience when the primary result is a perceptual mechanism or effect rather than socially interactive agent behavior."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "hri-2027",
+    "series": "hri",
+    "name": "HRI",
+    "year": 2027,
+    "category": "hci",
+    "fullName": "ACM/IEEE International Conference on Human-Robot Interaction",
+    "topics": [
+      "ACM/IEEE International Conference on Human-Robot Interaction",
+      "HRI"
+    ],
+    "cycleYears": 1,
+    "website": "https://humanrobotinteraction.org/2027/",
+    "editionSource": "https://humanrobotinteraction.org/2027/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-03-08",
+      "end": "2027-03-12",
+      "location": "Santa Clara, California, USA"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Full-paper abstract",
+        "date": "2026-09-11T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://humanrobotinteraction.org/2027/"
+      },
+      {
+        "kind": "paper",
+        "label": "Full paper submission",
+        "date": "2026-09-18T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://humanrobotinteraction.org/2027/"
+      },
+      {
+        "kind": "notification",
+        "label": "Full-paper decision",
+        "date": "2026-11-30T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://humanrobotinteraction.org/2027/"
+      }
+    ],
+    "notes": "Full papers track. Short contributions and alt.HRI have separate deadlines. Late-breaking reports close December 8, 2026; videos and demos close November 20. These are distinct from the main full-paper track shown here.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=HRI&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "journal-transfer",
+      "journals": [
+        "ACM Transactions on Human-Robot Interaction (THRI)"
+      ],
+      "note": "Nominated papers needing further work may transfer for continued journal review. This is not automatic journal publication.",
+      "source": "https://humanrobotinteraction.org/2027/thri-revision-option-process/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Human–robot interaction",
+      "emphasis": "Interaction insight + suitable evaluation",
+      "source": "https://humanrobotinteraction.org/2027/full-papers/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Contribute knowledge about human-robot interaction and choose the track that matches it: design, technical work, systems, studies, or theory and methods. Make the human-robot interaction question central.",
+        "evidence": "Use evaluation appropriate to the track. A technical paper needs robust methods and suitable validation, while a studies paper centers knowledge gained from people. The technical track does not require a user study unless it is appropriate to the contribution.",
+        "comparisons": [
+          {
+            "series": "iva",
+            "difference": "More centered on socially interactive agents, including virtual agents; useful when the contribution concerns agent behavior beyond a robotics setting."
+          },
+          {
+            "series": "chi",
+            "difference": "A broader HCI audience when the interaction or design insight extends substantially beyond human-robot interaction."
+          }
+        ]
+      }
+    }
+  }
+]

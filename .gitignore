@@ -1,0 +1,26 @@
+# Dependencies and generated builds
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Local environment settings
+.env*
+!.env.example
+
+# Preview images, design comparisons, and scratch research
+/design-review/
+/qa/
+
+# Generated test reports and browser artifacts
+/coverage/
+/playwright-report/
+/test-results/
+/blob-report/
+/playwright/.cache/
+
+# Logs and operating-system metadata
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini

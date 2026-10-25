@@ -1,0 +1,411 @@
+[
+  {
+    "id": "iclr-2027",
+    "series": "iclr",
+    "name": "ICLR",
+    "year": 2027,
+    "category": "ai",
+    "fullName": "International Conference on Learning Representations",
+    "topics": [
+      "deep learning",
+      "generative models",
+      "representation learning",
+      "reinforcement learning",
+      "robot learning"
+    ],
+    "cycleYears": 1,
+    "website": "https://iclr.cc/Conferences/2027",
+    "editionSource": "https://iclr.cc/Conferences/2027/CallForPapers",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-04-26",
+      "end": "2027-04-30",
+      "location": null,
+      "source": "https://iclr.cc/Conferences/2027/Dates"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Abstract submission",
+        "date": "2026-09-18",
+        "timezone": "AoE",
+        "source": "https://iclr.cc/Conferences/2027/CallForPapers"
+      },
+      {
+        "kind": "paper",
+        "label": "Paper submission",
+        "date": "2026-09-25",
+        "timezone": "AoE",
+        "source": "https://iclr.cc/Conferences/2027/CallForPapers"
+      },
+      {
+        "kind": "notification",
+        "label": "Reviews released",
+        "date": "2026-11-05",
+        "timezone": "AoE",
+        "source": "https://iclr.cc/Conferences/2027/CallForPapers"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Author-reviewer discussion ends",
+        "date": "2026-11-18",
+        "timezone": "AoE",
+        "source": "https://iclr.cc/Conferences/2027/CallForPapers"
+      },
+      {
+        "kind": "notification",
+        "label": "Final decisions",
+        "date": "2026-12-16",
+        "timezone": "AoE",
+        "source": "https://iclr.cc/Conferences/2027/CallForPapers"
+      }
+    ],
+    "notes": "Main conference paper track. A genuine abstract and the complete author list are required by the earlier abstract deadline; all authors need OpenReview profiles. The call specifies AoE dates without a clock time. The Dates page lists April 26-30, but the venue is unannounced. The closed 2027 submission schedule supplies the next-cycle estimate basis.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=ICLR&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "No journal track announced in the linked call. Conference proceedings are distinct from a journal.",
+      "source": "https://iclr.cc/Conferences/2027/CallForPapers",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Deep learning & representations",
+      "emphasis": "New understanding + rigorous evidence",
+      "source": "https://iclr.cc/Conferences/2027/ReviewerGuidelines",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Offer new knowledge about learning, representations, or related ML questions. Motivate the problem and explain why the method, analysis, or finding matters to the research community.",
+        "evidence": "Support the claims with rigorous theory or experiments, reproducible detail, and a clear account of limitations. The reviewer guide explicitly values relevant new understanding without requiring state-of-the-art benchmark results.",
+        "comparisons": [
+          {
+            "series": "icml",
+            "difference": "Large overlap in ML methods and theory. Use the specific call, research audience, and maturity of the result to choose."
+          },
+          {
+            "series": "neurips",
+            "difference": "Also broad ML research; its 2026 guidance explicitly distinguishes contribution types, including theory, negative results, and concept/feasibility work."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "neurips-2026",
+    "series": "neurips",
+    "name": "NeurIPS",
+    "year": 2026,
+    "category": "ai",
+    "fullName": "Conference on Neural Information Processing Systems",
+    "topics": [
+      "machine learning",
+      "generative models",
+      "embodied AI",
+      "reinforcement learning",
+      "human interaction in AI"
+    ],
+    "cycleYears": 1,
+    "website": "https://neurips.cc/",
+    "editionSource": "https://neurips.cc/Conferences/2026/CallForPapers",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2026-12-06",
+      "end": "2026-12-12",
+      "location": "Sydney, Australia",
+      "source": "https://neurips.cc/Conferences/2026/Dates"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Abstract submission",
+        "date": "2026-05-04",
+        "timezone": "AoE",
+        "source": "https://neurips.cc/Conferences/2026/CallForPapers"
+      },
+      {
+        "kind": "paper",
+        "label": "Paper and supplementary submission",
+        "date": "2026-05-06",
+        "timezone": "AoE",
+        "source": "https://neurips.cc/Conferences/2026/CallForPapers"
+      },
+      {
+        "kind": "notification",
+        "label": "Reviews released",
+        "date": "2026-07-22",
+        "timezone": "AoE",
+        "source": "https://neurips.cc/Conferences/2026/Dates"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Author-reviewer discussion ends",
+        "date": "2026-08-03",
+        "timezone": "AoE",
+        "source": "https://neurips.cc/Conferences/2026/Dates"
+      },
+      {
+        "kind": "notification",
+        "label": "Paper decisions",
+        "date": "2026-09-24",
+        "timezone": "AoE",
+        "source": "https://neurips.cc/Conferences/2026/CallForPapers"
+      }
+    ],
+    "notes": "Main paper track only; other tracks have separate calls. Abstracts precede papers, and all authors need an OpenReview profile. Supplementary material is due with the paper. The sources specify AoE dates without a clock time. The event shown is Sydney; Atlanta and Paris programs run December 9-13. The 2026 schedule supplies the next-cycle estimate basis.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=NeurIPS&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "No journal track announced in the linked call. Conference proceedings are distinct from a journal.",
+      "source": "https://neurips.cc/Conferences/2026/CallForPapers",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "ML methods, theory & analysis",
+      "emphasis": "Significant insight + sound evidence",
+      "source": "https://neurips.cc/Conferences/2026/ReviewerGuidelines",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Make an original, significant contribution to ML or an adjacent field. The 2026 main-track guidance accommodates general work, theory, use-inspired research, concept/feasibility ideas, and informative negative results.",
+        "evidence": "Match the evidence to the declared contribution type. State supported claims, limitations, and what others can build on. Correctness, clarity, significance, and originality matter; novelty can come from understanding existing methods, not only inventing another model.",
+        "comparisons": [
+          {
+            "series": "iclr",
+            "difference": "Substantial overlap in learning research and a shared emphasis on new knowledge, with both theoretical and empirical contributions."
+          },
+          {
+            "series": "aaai",
+            "difference": "Spans the wider AI field, including reasoning, planning, and integrative work whose main contribution may not be a learning method."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "aaai-2027",
+    "series": "aaai",
+    "name": "AAAI",
+    "year": 2027,
+    "category": "ai",
+    "fullName": "AAAI Conference on Artificial Intelligence",
+    "topics": [
+      "artificial intelligence",
+      "multiagent systems",
+      "planning",
+      "machine learning",
+      "intelligent robotics"
+    ],
+    "cycleYears": 1,
+    "website": "https://aaai.org/conference/aaai/aaai-27/",
+    "editionSource": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-02-16",
+      "end": "2027-02-23",
+      "location": "Montréal, Canada"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Abstract submission",
+        "date": "2026-07-21T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"
+      },
+      {
+        "kind": "paper",
+        "label": "Paper submission",
+        "date": "2026-07-28T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"
+      },
+      {
+        "kind": "supplementary",
+        "label": "Supplementary material and code",
+        "date": "2026-07-31T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"
+      },
+      {
+        "kind": "notification",
+        "label": "Phase 1 rejection notification",
+        "date": "2026-09-24",
+        "timezone": "AoE",
+        "source": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Author feedback window ends",
+        "date": "2026-10-31",
+        "timezone": "AoE",
+        "source": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"
+      },
+      {
+        "kind": "notification",
+        "label": "Final decisions",
+        "date": "2026-11-30",
+        "timezone": "AoE",
+        "source": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/"
+      }
+    ],
+    "notes": "Main technical track only, with mandatory abstract submission and two-phase review. The official call updates the author feedback window to October 24-31. Its camera-ready entry is struck through, so no camera-ready deadline is assumed. The closed 2027 submission schedule supplies the next-cycle estimate basis.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=AAAI&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "No journal track announced in the linked call. Conference proceedings are distinct from a journal.",
+      "source": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "AI methods, reasoning & systems",
+      "emphasis": "Broad AI relevance + sound claims",
+      "source": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Make a substantive AI contribution: theoretical, algorithmic, empirical, integrative, or critical. Explain the significance of the research question and its relevance to the broader AI community.",
+        "evidence": "Support claims with sound theory or empirical evidence, appropriate related work, and reproducible detail. The main-track rubric values novelty, significance, soundness, and clarity; special tracks may apply different priorities.",
+        "comparisons": [
+          {
+            "series": "icml",
+            "difference": "A more directly ML-centered audience when the main contribution advances learning algorithms or understanding of learning."
+          },
+          {
+            "series": "neurips",
+            "difference": "Broad overlap for ML and interdisciplinary AI; inspect its contribution types when framing theory, use-inspired work, or negative results."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "icml-2026",
+    "series": "icml",
+    "name": "ICML",
+    "year": 2026,
+    "category": "ai",
+    "fullName": "International Conference on Machine Learning",
+    "topics": [
+      "machine learning",
+      "deep learning",
+      "generative models",
+      "reinforcement learning",
+      "robot learning"
+    ],
+    "cycleYears": 1,
+    "website": "https://icml.cc/",
+    "editionSource": "https://icml.cc/Conferences/2026/CallForPapers",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2026-07-06",
+      "end": "2026-07-11",
+      "location": "Seoul, South Korea"
+    },
+    "announcedEvents": {
+      "2027": {
+        "start": null,
+        "end": null,
+        "location": "South America (city to be announced)",
+        "source": "https://icml.cc/Conferences/FutureMeetings"
+      }
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Abstract submission",
+        "date": "2026-01-24T12:00:00Z",
+        "timezone": "UTC",
+        "source": "https://icml.cc/Conferences/2026/CallForPapers"
+      },
+      {
+        "kind": "paper",
+        "label": "Paper and supplementary submission",
+        "date": "2026-01-29T12:00:00Z",
+        "timezone": "UTC",
+        "source": "https://icml.cc/Conferences/2026/CallForPapers"
+      },
+      {
+        "kind": "notification",
+        "label": "Reviews released",
+        "date": "2026-03-24",
+        "timezone": "AoE",
+        "source": "https://icml.cc/Conferences/2026/Dates"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Author response deadline",
+        "date": "2026-03-30",
+        "timezone": "AoE",
+        "source": "https://icml.cc/Conferences/2026/Dates"
+      },
+      {
+        "kind": "notification",
+        "label": "Paper decisions",
+        "date": "2026-04-30",
+        "timezone": "AoE",
+        "source": "https://icml.cc/Conferences/2026/Dates"
+      }
+    ],
+    "notes": "Main paper track; abstracts are mandatory and supplementary material is due with the paper. The CFP labels January 23/28 AoE and explicitly equates them to January 24/29 at 12:00 UTC; the exact UTC cutoffs are preserved here. The 2026 schedule supplies the next-cycle estimate basis. Only the South America region is announced for 2027; its submission schedule and event dates were unavailable when checked.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=ICML&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "Papers publish in Proceedings of Machine Learning Research (PMLR), a proceedings series, not a journal track.",
+      "source": "https://icml.cc/Conferences/2026/CallForPapers",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "ML algorithms & theory",
+      "emphasis": "Learning advances + rigorous validation",
+      "source": "https://icml.cc/Conferences/2026/ReviewerInstructions",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Advance machine learning through a method, theory, analysis, or well-motivated application with a meaningful learning contribution. Place the work against relevant prior approaches and explain its significance.",
+        "evidence": "Ensure proofs follow from stated assumptions and experiments test the hypotheses. Explain weaknesses and limitations as well as gains. The reviewer instructions distinguish technical soundness from impact and assess originality broadly, including new uses or combinations of existing ideas.",
+        "comparisons": [
+          {
+            "series": "iclr",
+            "difference": "Very similar ML territory; a representations or deep-learning contribution can fit either, depending on the specific call and framing."
+          },
+          {
+            "series": "aaai",
+            "difference": "A broader AI forum for contributions such as reasoning, planning, and integration across AI areas, alongside machine learning."
+          }
+        ]
+      }
+    }
+  }
+]

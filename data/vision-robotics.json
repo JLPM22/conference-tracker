@@ -1,0 +1,878 @@
+[
+  {
+    "id": "cvpr-2027",
+    "series": "cvpr",
+    "name": "CVPR",
+    "year": 2027,
+    "category": "vision",
+    "fullName": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "topics": [
+      "human motion",
+      "3D vision",
+      "embodied vision",
+      "vision and graphics"
+    ],
+    "cycleYears": 1,
+    "website": "https://cvpr.thecvf.com/Conferences/2027",
+    "editionSource": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-06-20",
+      "end": "2027-06-25",
+      "location": "Seattle, WA, USA"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Paper enrollment",
+        "date": "2026-11-10T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"
+      },
+      {
+        "kind": "paper",
+        "label": "Paper submission",
+        "date": "2026-11-16T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"
+      },
+      {
+        "kind": "supplementary",
+        "label": "Supplementary material",
+        "date": "2026-11-23",
+        "timezone": "AoE",
+        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Rebuttal deadline",
+        "date": "2027-02-01",
+        "timezone": "AoE",
+        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"
+      },
+      {
+        "kind": "notification",
+        "label": "Final decisions",
+        "date": "2027-02-25",
+        "timezone": "AoE",
+        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"
+      }
+    ],
+    "notes": "Paper enrollment is mandatory. All authors need an OpenReview profile; profiles without an institutional email may take up to two weeks to activate. Main sessions June 22–25.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=CVPR&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "No journal track announced in the linked call. Conference proceedings are distinct from a journal.",
+      "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Vision methods, data & systems",
+      "emphasis": "Novel insights + convincing experiments",
+      "source": "https://cvpr.thecvf.com/Conferences/2025/ReviewerGuidelines",
+      "basisYear": 2025,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Contribute new knowledge to computer vision: a method, analysis, dataset, or system addressing a meaningful visual problem. Clearly separate the scientific idea from implementation choices.",
+        "evidence": "Use experiments that test the actual claims, relevant baselines, and analysis of failure cases. Ablations help isolate what causes an improvement. The linked reviewer guidance values originality and potential impact; a leaderboard gain alone is not the only form of contribution.",
+        "comparisons": [
+          {
+            "series": "iccv",
+            "difference": "Very broad overlap in scope and review principles. Topic fit, the specific call, and submission timing are usually more useful distinctions."
+          },
+          {
+            "series": "wacv",
+            "difference": "Its explicit application, algorithm, and evaluation/dataset tracks let you frame practical value or evaluation methodology as the primary contribution."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "iccv-2025",
+    "series": "iccv",
+    "name": "ICCV",
+    "year": 2025,
+    "category": "vision",
+    "fullName": "IEEE/CVF International Conference on Computer Vision",
+    "topics": [
+      "human motion",
+      "3D vision",
+      "scene understanding",
+      "vision and graphics"
+    ],
+    "cycleYears": 2,
+    "website": "https://iccv.thecvf.com/Conferences/2027",
+    "editionSource": "https://iccv.thecvf.com/Conferences/2025/Dates",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2025-10-19",
+      "end": "2025-10-23",
+      "location": "Honolulu, Hawaii, USA"
+    },
+    "announcedEvents": {
+      "2027": {
+        "start": "2027-10-03",
+        "end": "2027-10-07",
+        "location": "Hong Kong",
+        "source": "https://iccv.thecvf.com/Conferences/2027"
+      }
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Paper registration",
+        "date": "2025-03-03T23:59:00-10:00",
+        "timezone": "HST",
+        "source": "https://iccv.thecvf.com/Conferences/2025/Dates"
+      },
+      {
+        "kind": "paper",
+        "label": "Paper and supplementary submission",
+        "date": "2025-03-07T23:59:00-10:00",
+        "timezone": "HST",
+        "source": "https://iccv.thecvf.com/Conferences/2025/Dates"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Author rebuttal",
+        "date": "2025-05-16T23:59:00-10:00",
+        "timezone": "HST",
+        "source": "https://iccv.thecvf.com/Conferences/2025/Dates"
+      },
+      {
+        "kind": "notification",
+        "label": "Paper decisions",
+        "date": "2025-06-25T23:59:00-10:00",
+        "timezone": "HST",
+        "source": "https://iccv.thecvf.com/Conferences/2025/Dates"
+      }
+    ],
+    "notes": "ICCV 2027 event dates are announced, but its submission schedule was not published when checked. The 2025 schedule supplies the biennial estimate basis. Paper registration is mandatory.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=ICCV&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "No journal track announced in the linked call. Conference proceedings are distinct from a journal.",
+      "source": "https://iccv.thecvf.com/Conferences/2025/Dates",
+      "basisYear": 2025,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Vision methods & understanding",
+      "emphasis": "Novelty + impact beyond benchmarks",
+      "source": "https://iccv.thecvf.com/Conferences/2025/ReviewerGuidelines",
+      "basisYear": 2025,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Address an important computer-vision problem with a sound new method, insight, resource, or system. Explain the knowledge advance and its likely impact on vision research.",
+        "evidence": "Provide convincing support for the central claim, with appropriate comparisons and reproducible detail. The reviewer guidance explicitly allows promising new concepts without exhaustive datasets or state-of-the-art accuracy; explain why the idea matters.",
+        "comparisons": [
+          {
+            "series": "cvpr",
+            "difference": "A closely overlapping audience and standard of evidence. Both welcome technically sound vision advances with demonstrated novelty or impact."
+          },
+          {
+            "series": "3dv",
+            "difference": "A more concentrated audience for reconstruction, geometry, 3D representations, and related sensing problems."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "eccv-2026",
+    "series": "eccv",
+    "name": "ECCV",
+    "year": 2026,
+    "category": "vision",
+    "fullName": "European Conference on Computer Vision",
+    "topics": [
+      "human pose",
+      "3D reconstruction",
+      "motion understanding",
+      "embodied vision"
+    ],
+    "cycleYears": 2,
+    "website": "https://eccv.ecva.net/Conferences/2026",
+    "editionSource": "https://eccv.ecva.net/Conferences/2026/CallForPapers",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2026-09-08",
+      "end": "2026-09-12",
+      "location": "Malmö, Sweden"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Paper registration",
+        "date": "2026-02-26T23:00:00+01:00",
+        "timezone": "CET",
+        "source": "https://eccv.ecva.net/Conferences/2026/CallForPapers"
+      },
+      {
+        "kind": "paper",
+        "label": "Paper submission",
+        "date": "2026-03-05T23:00:00+01:00",
+        "timezone": "CET",
+        "source": "https://eccv.ecva.net/Conferences/2026/CallForPapers"
+      },
+      {
+        "kind": "supplementary",
+        "label": "Supplementary material",
+        "date": "2026-03-12T23:00:00+01:00",
+        "timezone": "CET",
+        "source": "https://eccv.ecva.net/Conferences/2026/CallForPapers"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Rebuttal deadline",
+        "date": "2026-05-11T23:00:00+02:00",
+        "timezone": "CEST",
+        "source": "https://eccv.ecva.net/Conferences/2026/CallForPapers"
+      },
+      {
+        "kind": "notification",
+        "label": "Final decisions",
+        "date": "2026-06-17",
+        "timezone": "Not specified",
+        "source": "https://eccv.ecva.net/Conferences/2026/CallForPapers"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Camera-ready deadline",
+        "date": "2026-06-30",
+        "timezone": "AoE",
+        "source": "https://eccv.ecva.net/Conferences/2026/CallForPapers"
+      }
+    ],
+    "notes": "Paper registration is mandatory. The submission uses Central European Time. Event dates include workshops September 8–9 and main conference September 10–12, as listed on the official Dates page.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=ECCV&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "No journal track announced in the linked call. Conference proceedings are distinct from a journal.",
+      "source": "https://eccv.ecva.net/Conferences/2026/CallForPapers",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Vision methods, theory & data",
+      "emphasis": "Evidence matched to contribution",
+      "source": "https://eccv.ecva.net/Conferences/2026/ReviewerContributionTypes",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Frame a clear contribution to vision and select the contribution type that describes it honestly. Methods, theory, systems, datasets, and other forms of work need different arguments for their value.",
+        "evidence": "The 2026 guidance asks reviewers to judge evidence through the chosen contribution type. Explain the assumptions, comparisons, or evaluation design that support your particular claim, rather than adding experiments unrelated to it.",
+        "comparisons": [
+          {
+            "series": "cvpr",
+            "difference": "Broadly similar vision scope. ECCV 2026 makes the contribution-type framing especially explicit in its reviewer instructions."
+          },
+          {
+            "series": "wacv",
+            "difference": "Offers separate application, algorithm, and evaluation/dataset tracks, useful when practical deployment or evaluation itself is central."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "3dv-2027",
+    "series": "3dv",
+    "name": "3DV",
+    "year": 2027,
+    "category": "vision",
+    "fullName": "International Conference on 3D Vision",
+    "topics": [
+      "3D reconstruction",
+      "geometric modeling",
+      "human motion",
+      "3D graphics"
+    ],
+    "cycleYears": 1,
+    "website": "https://3dvconf.github.io/2027/",
+    "editionSource": "https://3dvconf.github.io/2027/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-04-06",
+      "end": "2027-04-09",
+      "location": "Thessaloniki, Greece"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Abstract registration",
+        "date": "2026-08-28T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://3dvconf.github.io/2027/"
+      },
+      {
+        "kind": "paper",
+        "label": "Paper submission",
+        "date": "2026-08-28T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://3dvconf.github.io/2027/"
+      },
+      {
+        "kind": "supplementary",
+        "label": "Supplementary material",
+        "date": "2026-09-02T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://3dvconf.github.io/2027/"
+      },
+      {
+        "kind": "notification",
+        "label": "Preliminary notification",
+        "date": "2026-10-27T11:00:00-07:00",
+        "timezone": "PDT",
+        "source": "https://3dvconf.github.io/2027/"
+      },
+      {
+        "kind": "notification",
+        "label": "Final notification",
+        "date": "2026-12-02T11:00:00-07:00",
+        "timezone": "PDT",
+        "source": "https://3dvconf.github.io/2027/"
+      }
+    ],
+    "notes": "Submission and abstract share a deadline. The official page explicitly labels all other deadlines 11:00 am PDT, including December; this preserves the published offset. Verify notification timing with the organizers.",
+    "core": {
+      "rank": null,
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=3DV&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": "No matching entry found by acronym and full title; this is not an Unranked classification."
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "No journal track announced in the linked call. Conference proceedings are distinct from a journal.",
+      "source": "https://3dvconf.github.io/2027/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "3D reconstruction & geometry",
+      "emphasis": "3D insight + convincing evidence",
+      "source": "https://3dvconf.github.io/2027/reviewer-guidelines/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Make the 3D question central: reconstruction, geometry, representations, sensing, analysis, or related graphics methods. Explain the geometric or visual insight and what it enables.",
+        "evidence": "Support claims with suitable comparisons, metrics, visualizations, and difficult cases. Describe assumptions and reproducible details. Its reviewer guidance weighs novelty and impact alongside performance, so a new idea need not win every benchmark.",
+        "comparisons": [
+          {
+            "series": "iccv",
+            "difference": "A broader vision audience when the main insight extends beyond a specifically 3D problem."
+          },
+          {
+            "series": "eccv",
+            "difference": "Also covers 3D vision, alongside many other vision areas; consider how broadly the contribution should be positioned."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "icra-2027",
+    "series": "icra",
+    "name": "ICRA",
+    "year": 2027,
+    "category": "robotics",
+    "fullName": "IEEE International Conference on Robotics and Automation",
+    "topics": [
+      "motion planning",
+      "robot learning",
+      "humanoid robotics",
+      "human-robot interaction"
+    ],
+    "cycleYears": 1,
+    "website": "https://2027.ieee-icra.org/",
+    "editionSource": "https://2027.ieee-icra.org/contribute/call-for-icra-2027-papers-now-accepting-submissions/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-05-24",
+      "end": "2027-05-28",
+      "location": "Seoul, South Korea"
+    },
+    "milestones": [
+      {
+        "kind": "paper",
+        "label": "Paper submission (extended)",
+        "date": "2026-09-16T23:59:00-08:00",
+        "timezone": "PST",
+        "source": "https://2027.ieee-icra.org/contribute/call-for-icra-2027-papers-now-accepting-submissions/"
+      },
+      {
+        "kind": "supplementary",
+        "label": "Accompanying video",
+        "date": "2026-09-22T23:59:00-08:00",
+        "timezone": "PST",
+        "source": "https://2027.ieee-icra.org/contribute/call-for-icra-2027-papers-now-accepting-submissions/"
+      },
+      {
+        "kind": "notification",
+        "label": "Acceptance notification",
+        "date": "2027-01-31",
+        "timezone": "Not specified",
+        "source": "https://2027.ieee-icra.org/contribute/call-for-icra-2027-papers-now-accepting-submissions/"
+      },
+      {
+        "kind": "registration",
+        "label": "Author registration",
+        "date": "2027-03-05",
+        "timezone": "Not specified",
+        "source": "https://2027.ieee-icra.org/contribute/call-for-icra-2027-papers-now-accepting-submissions/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Final paper submission",
+        "date": "2027-03-06",
+        "timezone": "Not specified",
+        "source": "https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra/information-for-icra-reviewers/"
+      }
+    ],
+    "notes": "The conference CFP extended the paper deadline to September 16 and explicitly states PST even in September; the published fixed offset is retained. The final-paper date is listed by IEEE RAS. Main contributed-paper track only.",
+    "core": {
+      "rank": "A*",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=ICRA&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "journal-presentation",
+      "journals": [
+        "IEEE Robotics and Automation Letters (RA-L)",
+        "IEEE Transactions on Robotics (T-RO)",
+        "IEEE Transactions on Automation Science and Engineering (T-ASE)",
+        "IEEE Transactions on Haptics (ToH)",
+        "IEEE Transactions on Robot Learning (T-RL)",
+        "IEEE Transactions on Field Robotics (T-FR)",
+        "IEEE Robotics and Automation Practice (RA-P)",
+        "IEEE Robotics & Automation Magazine (RAM)"
+      ],
+      "note": "Already accepted RAS journal articles may be presented. Conference submission does not itself publish in these journals.",
+      "source": "https://2027.ieee-icra.org/contribute/call-for-icra-2027-papers-now-accepting-submissions/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Robotics & automation",
+      "emphasis": "Technical advances + validation",
+      "source": "https://2027.ieee-icra.org/contribute/call-for-icra-2027-papers-now-accepting-submissions/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Make a clear robotics or automation contribution, whether in perception, planning, control, mechanisms, learning, or a complete system. Explain the capability or scientific understanding that the work adds.",
+        "evidence": "A useful submission strategy is to evaluate the claimed capability under relevant conditions, with baselines, assumptions, and limitations made explicit. Hardware demonstrations, simulation, or analysis should support the kind of claim being made; a compelling demo benefits from a measurable argument.",
+        "comparisons": [
+          {
+            "series": "iros",
+            "difference": "Similarly broad robotics scope. The current call, likely audience, and submission schedule are useful practical distinctions."
+          },
+          {
+            "series": "corl",
+            "difference": "More specialized: learning must be central and its relevance to physical robots must be demonstrated."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "iros-2027",
+    "series": "iros",
+    "name": "IROS",
+    "year": 2027,
+    "category": "robotics",
+    "fullName": "IEEE/RSJ International Conference on Intelligent Robots and Systems",
+    "topics": [
+      "human-centric robotics",
+      "motion planning",
+      "robot perception",
+      "intelligent systems"
+    ],
+    "cycleYears": 1,
+    "website": "https://2027.ieee-iros.org/",
+    "editionSource": "https://www.ieee-ras.org/event/2027-ieee-rsj-international-conference-on-intelligent-robots-and-systems-iros-70525/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-09-27",
+      "end": "2027-10-01",
+      "location": "Florence, Italy"
+    },
+    "milestones": [
+      {
+        "kind": "paper",
+        "label": "Paper submission",
+        "date": "2027-03-01",
+        "timezone": "Not specified",
+        "source": "https://www.ieee-ras.org/event/2027-ieee-rsj-international-conference-on-intelligent-robots-and-systems-iros-70525/"
+      }
+    ],
+    "notes": "The paper date and event are published in the official IEEE Robotics and Automation Society calendar. A submission time, timezone, and remaining review milestones were not specified in that source.",
+    "core": {
+      "rank": "A",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=IROS&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "journal-presentation",
+      "journals": [
+        "IEEE Robotics and Automation Letters (RA-L)"
+      ],
+      "note": "Accepted RA-L papers may transfer for presentation at IROS 2027 during August 1, 2026?April 30, 2027, subject to journal eligibility. This is journal-first publication, not a journal track within the conference paper submission.",
+      "source": "https://www.ieee-ras.org/publications/ra-l/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Intelligent robots & systems",
+      "emphasis": "Originality + technical soundness",
+      "source": "https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros/information-for-iros-associate-editors/",
+      "basisYear": null,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Offer an original contribution to intelligent robots or systems: methods, components, architectures, or integrated capabilities. Explain how the advance changes what a robot can do or what is understood about it.",
+        "evidence": "Support the contribution with technically sound analysis or experiments suited to its claims. Real-world evidence can strengthen an application claim, but the standing review guidance says lack of real-world experiments alone is not grounds for summary rejection.",
+        "comparisons": [
+          {
+            "series": "icra",
+            "difference": "Strong overlap across robotics and automation. Topic, contribution, audience, and submission timing are useful selection criteria."
+          },
+          {
+            "series": "rss",
+            "difference": "The 2027 call specifically foregrounds hypotheses, methodology, and a staged development process for scientific or systems insights."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "rss-2027",
+    "series": "rss",
+    "name": "RSS",
+    "year": 2027,
+    "category": "robotics",
+    "fullName": "Robotics: Science and Systems",
+    "topics": [
+      "robot learning",
+      "motion planning",
+      "robot systems",
+      "human-robot interaction"
+    ],
+    "cycleYears": 1,
+    "website": "https://roboticsconference.org/",
+    "editionSource": "https://roboticsconference.org/information/cfp/",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-07-06",
+      "end": "2027-07-11",
+      "location": "Athens, Greece"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Required extended abstract (stage 1)",
+        "date": "2026-12-04T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://roboticsconference.org/information/cfp/"
+      },
+      {
+        "kind": "notification",
+        "label": "Stage 1 decision",
+        "date": "2027-02-05T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://roboticsconference.org/information/cfp/"
+      },
+      {
+        "kind": "rebuttal",
+        "label": "Rebuttal deadline",
+        "date": "2027-02-12T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://roboticsconference.org/information/cfp/"
+      },
+      {
+        "kind": "notification",
+        "label": "Invitation to stage 2",
+        "date": "2027-02-26T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://roboticsconference.org/information/cfp/"
+      },
+      {
+        "kind": "paper",
+        "label": "Invited final paper (stage 2)",
+        "date": "2027-04-16T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://roboticsconference.org/information/cfp/"
+      },
+      {
+        "kind": "supplementary",
+        "label": "Supplementary material",
+        "date": "2027-04-19T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://roboticsconference.org/information/cfp/"
+      },
+      {
+        "kind": "notification",
+        "label": "Paper acceptance",
+        "date": "2027-04-30T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://roboticsconference.org/information/cfp/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Camera-ready paper",
+        "date": "2027-05-14T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://roboticsconference.org/information/cfp/"
+      }
+    ],
+    "notes": "New two-stage process for 2027: the December 4 extended abstract is compulsory and includes up to five pages of content plus one reference page. The April final-paper deadline is invitation-only after stage 1.",
+    "core": {
+      "rank": "TBR",
+      "edition": "CORE2023",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=RSS&by=all&source=CORE2023&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": "Older CORE edition; no ICORE2026 entry found."
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "No journal track announced in the linked call. Conference proceedings are distinct from a journal.",
+      "source": "https://roboticsconference.org/information/cfp/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Robot science & systems",
+      "emphasis": "Clear hypotheses + reproducible insight",
+      "source": "https://roboticsconference.org/information/cfp/",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Develop a significant scientific or systems insight in robotics. Under the 2027 process, the initial extended abstract needs a well-developed problem, hypotheses, and methodology, even if experimental results are preliminary.",
+        "evidence": "Explain what will be learned and design a reproducible evaluation around that question. Invited final papers complete the agreed evaluation plan. The call explicitly values informative negative results and rigorous falsification of a hypothesis.",
+        "comparisons": [
+          {
+            "series": "corl",
+            "difference": "Requires a robot-learning connection; RSS also accommodates robotics science and systems without a learning component."
+          },
+          {
+            "series": "icra",
+            "difference": "A broad robotics venue whose standard paper submission differs from RSS 2027’s explicitly staged research-development process."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "corl-2026",
+    "series": "corl",
+    "name": "CoRL",
+    "year": 2026,
+    "category": "robotics",
+    "fullName": "Conference on Robot Learning",
+    "topics": [
+      "robot learning",
+      "imitation learning",
+      "locomotion",
+      "motion planning"
+    ],
+    "cycleYears": 1,
+    "website": "https://www.corl.org/",
+    "editionSource": "https://www.corl.org/contributions/instruction-for-authors",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2026-11-09",
+      "end": "2026-11-12",
+      "location": "Austin, Texas, USA"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Abstract submission",
+        "date": "2026-05-25",
+        "timezone": "Not specified",
+        "source": "https://www.linkedin.com/posts/corl-organization-board-499a28310_corl2026-robotlearning-robotics-activity-7431935361615859712-7djx"
+      },
+      {
+        "kind": "paper",
+        "label": "Paper submission",
+        "date": "2026-05-28",
+        "timezone": "AoE",
+        "source": "https://www.corl.org/contributions"
+      },
+      {
+        "kind": "notification",
+        "label": "Paper acceptance notification",
+        "date": "2026-09-04",
+        "timezone": "Not specified",
+        "source": "https://www.corl.org/contributions/old_instruction-for-reviewers"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Camera-ready paper",
+        "date": "2026-10-12T23:59:00-12:00",
+        "timezone": "AoE",
+        "source": "https://www.corl.org/contributions/instruction-for-authors"
+      }
+    ],
+    "notes": "The author guide explicitly confirms May 28 as the paper deadline. May 25 abstract date comes from the official CoRL Organization Board announcement; no time is asserted. Notification date comes from the archived official reviewer guide. Main conference November 9–11; workshops November 12.",
+    "core": {
+      "rank": "Unranked",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=CoRL&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "Papers publish in Proceedings of Machine Learning Research (PMLR), a proceedings series, not a journal track.",
+      "source": "https://www.corl.org/contributions/instruction-for-authors",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Learning for physical robots",
+      "emphasis": "Robot relevance + transferable results",
+      "source": "https://www.corl.org/contributions/call-for-papers",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Address a core robot-learning problem. The method, theory, dataset, or benchmark should make clear why the result matters for physical robots, beyond being a generic machine-learning advance.",
+        "evidence": "Report real-robot experiments or convincing evidence that simulation results transfer to robots. Explain assumptions, failure modes, and limitations. Choose comparisons that test the learning contribution as well as the resulting robotic capability.",
+        "comparisons": [
+          {
+            "series": "rss",
+            "difference": "Broader robotics science and systems; learning can be part of the story but is not the organizing requirement."
+          },
+          {
+            "series": "iros",
+            "difference": "Also accepts robotics contributions in control, planning, mechanisms, and systems where learning is not central."
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "wacv-2027",
+    "series": "wacv",
+    "name": "WACV",
+    "year": 2027,
+    "category": "vision",
+    "fullName": "IEEE/CVF Winter Conference on Applications of Computer Vision",
+    "topics": [
+      "IEEE/CVF Winter Conference on Applications of Computer Vision",
+      "WACV"
+    ],
+    "cycleYears": 1,
+    "website": "https://wacv.thecvf.com/Conferences/2027/Dates",
+    "editionSource": "https://wacv.thecvf.com/Conferences/2027/Dates",
+    "checkedAt": "2026-10-22",
+    "event": {
+      "start": "2027-01-04",
+      "end": "2027-01-08",
+      "location": "Disney Springs, Florida, USA"
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Round 2 paper enrollment",
+        "date": "2026-08-21",
+        "timezone": "AoE",
+        "source": "https://wacv.thecvf.com/Conferences/2027/Dates"
+      },
+      {
+        "kind": "paper",
+        "label": "Round 2 paper submission",
+        "date": "2026-08-28",
+        "timezone": "AoE",
+        "source": "https://wacv.thecvf.com/Conferences/2027/Dates"
+      },
+      {
+        "kind": "supplementary",
+        "label": "Round 2 supplementary material",
+        "date": "2026-08-30",
+        "timezone": "AoE",
+        "source": "https://wacv.thecvf.com/Conferences/2027/Dates"
+      },
+      {
+        "kind": "notification",
+        "label": "Final decisions (updated dates page)",
+        "date": "2026-10-14",
+        "timezone": "AoE",
+        "source": "https://wacv.thecvf.com/Conferences/2027/Dates"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Camera-ready papers",
+        "date": "2026-11-02",
+        "timezone": "AoE",
+        "source": "https://wacv.thecvf.com/Conferences/2027/Dates"
+      }
+    ],
+    "notes": "Tracks the final submission round; new papers can enter either round. Round 1 enrollment/paper dates were June 19/26, 2026. Enrollment is mandatory. The official Dates page updates decisions to October 14; author guidelines retain October 9. Next-cycle estimates use round 2, not the earlier round. Exact clock time is not published on the dates page.",
+    "core": {
+      "rank": "A",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/?search=WACV&by=all&source=ICORE2026&sort=atitle&page=1",
+      "checkedAt": "2026-10-22",
+      "note": ""
+    },
+    "publication": {
+      "kind": "proceedings",
+      "journals": [],
+      "note": "No journal track announced in the linked call. Conference proceedings are distinct from a journal.",
+      "source": "https://wacv.thecvf.com/Conferences/2027/Dates",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-22"
+    },
+    "paperFit": {
+      "scope": "Applied vision, algorithms & data",
+      "emphasis": "Practical value + fair comparisons",
+      "source": "https://wacv.thecvf.com/Conferences/2027/CallForPapers",
+      "basisYear": 2027,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Choose the appropriate track: a valuable vision application, an algorithmic advance, or a contribution to evaluation and datasets. State which part is original and why the intended community needs it.",
+        "evidence": "Applications emphasize system innovation, domain novelty, and comparative assessment. Algorithms need technical novelty and quantitative comparison. Evaluation/dataset work should justify its design, assumptions, limitations, and the conclusions it enables.",
+        "comparisons": [
+          {
+            "series": "cvpr",
+            "difference": "Broad vision research with substantial overlap; WACV explicitly differentiates the review criteria for these three contribution types."
+          },
+          {
+            "series": "3dv",
+            "difference": "More specialized for a 3D research question. WACV can suit a broader application whose 3D component serves a practical task."
+          }
+        ]
+      }
+    }
+  }
+]
