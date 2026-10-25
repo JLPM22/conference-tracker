@@ -2,7 +2,7 @@ name: Deploy conference tracker
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
 
 permissions:
