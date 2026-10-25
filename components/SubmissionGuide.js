@@ -13,7 +13,7 @@ export default function SubmissionGuide({ entry, venues }) {
       <div className="guide-heading">
         <h3 id={`guide-${entry.id}`}>Submission guide</h3>
         <a className="text-link" href={fit.source} target="_blank" rel="noreferrer" title={`Source checked ${fit.checkedAt}`}>
-          Recent papers ({fit.basisYear})<Icon name="arrow" size={13} />
+          Proceedings ({fit.basisYear})<Icon name="arrow" size={13} />
         </a>
       </div>
       <div className="guide-grid">
@@ -28,7 +28,7 @@ export default function SubmissionGuide({ entry, venues }) {
           <ul>
             {comparisons.map(({ series, difference, venue }) => (
               <li key={series}>
-                <a href={venue.paperFit.source} target="_blank" rel="noreferrer" title={`${venue.name} published papers`}>
+                <a href={venue.paperFit.source} target="_blank" rel="noreferrer" title={`${venue.name} proceedings`}>
                   {venue.name}<span>{venue.paperFit.basisYear}</span><Icon name="arrow" size={13} />
                 </a>
                 <p>{difference}</p>

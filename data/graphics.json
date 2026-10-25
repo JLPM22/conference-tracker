@@ -68,7 +68,7 @@
       "scope": "Graphics algorithms, rendering and visual content",
       "emphasis": "Visual quality, control and measured performance",
       "guide": {
-        "contribution": "Methods that change how visual content is represented, generated or rendered. Recent work combines geometric or physical models with efficient computation and learned components, demonstrating capabilities such as more precise control, richer appearance or scalable processing across varied inputs.",
+        "contribution": "Methods for representing, generating or rendering visual content. Contributions improve visual quality, artistic control or computational performance, using geometry, physical models or learning to produce convincing results across varied inputs.",
         "evidence": "Visual comparisons are paired with task-specific measurements: reconstruction or rendering error, control accuracy, runtime and scaling. Experiments vary scenes, inputs and operating conditions; generative work also measures human preference, while display work validates results on physical prototypes.",
         "comparisons": [
           {
@@ -184,8 +184,8 @@
       "scope": "Rendering, simulation and learned geometry",
       "emphasis": "Quality, robustness and computational efficiency",
       "guide": {
-        "contribution": "New algorithms and representations for rendering, simulation and shape processing. Recent papers connect mathematical formulations to practical implementations, improving noise, stability, geometric detail or scalability, and show how the method enables useful visual results under challenging computational conditions.",
-        "evidence": "Compare visual output and numerical quality against relevant methods while accounting for runtime. Recent evaluations examine dynamic-scene response, simulation compression and stability, mesh discretization and learned deformation quality, with experiments that expose the effects of individual algorithmic choices.",
+        "contribution": "Algorithms and representations for rendering, simulation and shape processing. Connect the mathematical formulation to a working implementation that improves image quality, simulation stability, geometric detail or scalability.",
+        "evidence": "Compare visual output and numerical quality against relevant methods while accounting for runtime. Evaluations examine dynamic-scene response, simulation compression and stability, mesh discretization and learned deformation quality, with experiments that expose the effects of individual algorithmic choices.",
         "comparisons": [
           {
             "series": "siggraph",
@@ -193,7 +193,7 @@
           },
           {
             "series": "eurographics",
-            "difference": "SIGGRAPH Asia and Eurographics publish rendering and geometry methods. Recent SIGGRAPH Asia work measures rendering noise, simulation stability and deformation quality; recent Eurographics work also tests memory use, sparse motion inputs and capture conditions."
+            "difference": "SIGGRAPH Asia and Eurographics publish rendering and geometry methods. SIGGRAPH Asia work measures rendering noise, simulation stability and deformation quality; Eurographics work also tests memory use, sparse motion inputs and capture conditions."
           }
         ]
       },
@@ -292,12 +292,12 @@
       "scope": "Geometry, rendering and motion methods",
       "emphasis": "Accuracy, robustness and practical performance",
       "guide": {
-        "contribution": "Graphics methods with a concrete improvement in representation, computation or capture. Recent examples combine efficient geometry and rendering algorithms with learned motion reconstruction, addressing practical constraints such as limited memory, sparse controls, mobile hardware or unobtrusive sensing.",
-        "evidence": "Measure accuracy and visual quality alongside the resource or input constraints being addressed. Recent papers compare memory and runtime, examine difficult geometries and levels of detail, and test reconstruction across motion styles, datasets and real-world capture conditions.",
+        "contribution": "Graphics methods that improve representation, computation or capture. Address a clear technical constraint, such as memory use, sparse motion controls or limited sensing, and demonstrate the improvement across relevant inputs.",
+        "evidence": "Measure accuracy and visual quality alongside the resource or input constraints being addressed. Experiments compare memory and runtime, examine difficult geometries and levels of detail, and test reconstruction across motion styles, datasets and real-world capture conditions.",
         "comparisons": [
           {
             "series": "siggraph",
-            "difference": "Eurographics and SIGGRAPH publish geometry, rendering and motion methods. Recent Eurographics work tests resource limits and sparse input data; recent SIGGRAPH work also evaluates camera control and physical display prototypes."
+            "difference": "Eurographics and SIGGRAPH publish geometry, rendering and motion methods. Eurographics work tests resource limits and sparse input data; SIGGRAPH work also evaluates camera control and physical display prototypes."
           },
           {
             "series": "sca",
@@ -400,8 +400,8 @@
       "scope": "Animation, motion control and simulation",
       "emphasis": "Temporal behavior, controllability and physical plausibility",
       "guide": {
-        "contribution": "Methods for generating, controlling or simulating animated content. Recent work introduces editable motion representations, collision-aware human interactions and coupled cloth models, with a concrete advance in control, temporal coherence, contact handling or the cost of producing detailed animation.",
-        "evidence": "Show animated sequences that reveal timing, contacts and changes in control. Recent learned methods use held-out sequences, comparisons and ablations, including collision and reconstruction measurements; other experiments demonstrate style, timing and trajectory edits or detailed dynamics at interactive rates.",
+        "contribution": "Methods for generating, controlling or simulating animated content. Contributions improve motion editing, temporal coherence, contact handling or physical dynamics, with clear control over the resulting animation.",
+        "evidence": "Show animated sequences that reveal timing, contacts and changes in control. Learned methods use held-out sequences, comparisons and ablations, including collision and reconstruction measurements; other experiments demonstrate style, timing and trajectory edits or detailed dynamics at interactive rates.",
         "comparisons": [
           {
             "series": "siggraph",
@@ -409,7 +409,7 @@
           },
           {
             "series": "mig",
-            "difference": "Recent SCA work tests motion representations, collisions and cloth dynamics. MIG also studies how people use animation and interaction systems, measuring task performance, control and user feedback."
+            "difference": "SCA work tests motion representations, collisions and cloth dynamics. MIG also studies how people use animation and interaction systems, measuring task performance, control and user feedback."
           }
         ]
       },
@@ -487,12 +487,12 @@
       "scope": "Interactive animation, simulation and games",
       "emphasis": "Control, integration and user experience",
       "guide": {
-        "contribution": "Animation, simulation and interaction methods tied to how content is authored or experienced. Recent papers develop flexible motion controls, practical deformable simulation and haptic assistance, explaining the technical mechanism and its effect on an animation workflow or interactive task.",
+        "contribution": "Animation, simulation and interaction methods for authoring tools, games and immersive experiences. Connect motion control, material behavior or interaction design to a working system and the task it supports.",
         "evidence": "Evaluate the behavior that the system changes: constraint accuracy and motion examples for authoring, material response and comparisons for simulation, or task performance and participant feedback for interaction. Working application examples connect technical improvements to actual use.",
         "comparisons": [
           {
             "series": "sca",
-            "difference": "MIG and SCA publish motion synthesis and simulation. MIG also evaluates interactive uses, such as authoring controls or haptic assistance; recent SCA work concentrates on motion coherence, collision handling and physical dynamics."
+            "difference": "MIG and SCA publish motion synthesis and simulation. MIG also evaluates interactive uses, such as authoring controls or haptic assistance; SCA work concentrates on motion coherence, collision handling and physical dynamics."
           },
           {
             "series": "eurographics",
@@ -580,16 +580,16 @@
       "scope": "Graphics methods and applied visual computing",
       "emphasis": "Working systems, measured accuracy and efficiency",
       "guide": {
-        "contribution": "Focused graphics methods and applied visual-computing pipelines. Recent full papers improve high-resolution reconstruction, compact appearance modeling and geometry processing for real data, making the technical change clear and connecting it to an identifiable application or computational bottleneck.",
-        "evidence": "Demonstrate the complete pipeline on representative data and quantify the relevant trade-offs. Recent evaluations measure reconstruction or alignment error, success rate, runtime, memory and image similarity, with visual results that show whether the method preserves useful geometric or appearance detail.",
+        "contribution": "Focused graphics methods and applied visual-computing systems. Improve reconstruction, appearance modeling or geometry processing, with a clear technical contribution to an application or computational bottleneck.",
+        "evidence": "Demonstrate the complete pipeline on representative data and quantify the relevant trade-offs. Evaluations measure reconstruction or alignment error, success rate, runtime, memory and image similarity, with visual results that show whether the method preserves useful geometric or appearance detail.",
         "comparisons": [
           {
             "series": "eurographics",
-            "difference": "Recent CEIG work evaluates complete reconstruction and appearance pipelines using alignment error, success rate and processing cost. Eurographics also develops reusable rendering, geometry and motion methods, tested across input data and resource constraints."
+            "difference": "CEIG work evaluates complete reconstruction and appearance pipelines using alignment error, success rate and processing cost. Eurographics also develops reusable rendering, geometry and motion methods, tested across input data and resource constraints."
           },
           {
             "series": "mig",
-            "difference": "Recent CEIG work includes static reconstruction, appearance modeling and geometry processing. MIG focuses on animation tools and interactive experiences, where motion behavior, task performance and user control are part of the evaluation."
+            "difference": "CEIG work includes static reconstruction, appearance modeling and geometry processing. MIG focuses on animation tools and interactive experiences, where motion behavior, task performance and user control are part of the evaluation."
           }
         ]
       },

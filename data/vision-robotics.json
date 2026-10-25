@@ -80,16 +80,16 @@
       "scope": "Visual learning and generation",
       "emphasis": "Control, realism, generalization",
       "guide": {
-        "contribution": "Recent papers develop reusable visual models and inference methods, including controllable video generation and motion synthesis. Contributions isolate a concrete capability, such as separating camera and subject motion, then demonstrate how the method supports several visual tasks or input conditions.",
+        "contribution": "Visual models and methods for recognition, reconstruction and generation. Define the capability being improved, such as controlling camera and subject motion independently, and demonstrate that it works across varied inputs and tasks.",
         "evidence": "Evaluation combines quantitative comparisons with visual results and, for perceptual claims, human judgments. Motion work measures control and realism together, tests different inputs and applications, and compares against existing generation methods. Diverse outputs matter when a method claims to model multiple plausible futures.",
         "comparisons": [
           {
             "series": "iccv",
-            "difference": "CVPR and ICCV publish visual learning, video and 3D reconstruction. Recent CVPR generation papers measure motion control, realism and diversity; recent ICCV reconstruction papers measure image quality, view consistency and robustness to capture errors."
+            "difference": "CVPR and ICCV publish visual learning, video and 3D reconstruction. CVPR generation papers measure motion control, realism and diversity; ICCV reconstruction papers measure image quality, view consistency and robustness to capture errors."
           },
           {
             "series": "wacv",
-            "difference": "Recent CVPR work develops visual generation methods and tests control, realism and variation across inputs. Recent WACV work addresses operating constraints such as low light or unseen objects, testing pose accuracy and performance in the final application."
+            "difference": "CVPR work develops visual generation methods and tests control, realism and variation across inputs. WACV work addresses operating constraints such as low light or unseen objects, testing pose accuracy and performance in the final application."
           }
         ]
       },
@@ -180,16 +180,16 @@
       "scope": "Visual understanding and reconstruction",
       "emphasis": "Robustness and visual accuracy",
       "guide": {
-        "contribution": "Recent reconstruction papers combine learned visual priors with explicit scene or sensor structure. They address concrete failures such as inconsistent views, fast motion or changing objects, and introduce methods that improve image recovery, camera estimation or persistent 3D scene representations.",
-        "evidence": "Experiments connect image quality or reconstruction accuracy to difficult capture conditions. Recent papers use synthetic and real scenes, compare competing reconstruction or interpolation methods, and test corruptions, motion and object changes. Visual sequences show whether the resulting representations remain coherent over time.",
+        "contribution": "Methods for visual understanding, image recovery and 3D reconstruction. Combine learned models with scene or sensor structure to handle problems such as inconsistent views, fast motion and changing objects.",
+        "evidence": "Experiments connect image quality or reconstruction accuracy to difficult capture conditions. Experiments use synthetic and real scenes, compare competing reconstruction or interpolation methods, and test corruptions, motion and object changes. Visual sequences show whether the resulting representations remain coherent over time.",
         "comparisons": [
           {
             "series": "cvpr",
-            "difference": "ICCV and CVPR publish visual learning, video and 3D reconstruction. Recent ICCV reconstruction work tests changing scenes and difficult capture conditions; recent CVPR generation work tests controllable motion, realistic appearance and output diversity."
+            "difference": "ICCV and CVPR publish visual learning, video and 3D reconstruction. ICCV reconstruction work tests changing scenes and difficult capture conditions; CVPR generation work tests controllable motion, realistic appearance and output diversity."
           },
           {
             "series": "3dv",
-            "difference": "Recent ICCV work evaluates recovered images and reconstructed scenes, including restoration under capture errors. 3DV puts the 3D output at the center: camera poses, point-cloud labels, preserved geometry and scene consistency."
+            "difference": "ICCV work evaluates recovered images and reconstructed scenes, including restoration under capture errors. 3DV puts the 3D output at the center: camera poses, point-cloud labels, preserved geometry and scene consistency."
           }
         ]
       },
@@ -286,12 +286,12 @@
       "scope": "Visual models and scene reasoning",
       "emphasis": "Consistency, accuracy, efficiency",
       "guide": {
-        "contribution": "Recent papers improve visual models by introducing explicit structure into reconstruction or reasoning. Examples include consistent scenes from generated views, contact-aware human reconstruction and region-grounded image assessment. Each method identifies a failure of existing models and adds a mechanism that addresses it.",
+        "contribution": "Methods for visual understanding, reconstruction and reasoning. Improve capabilities such as scene consistency, human contact reconstruction or image assessment through a clear change to the representation or algorithm.",
         "evidence": "Evaluation follows the claimed capability: geometric and contact metrics for reconstruction, robustness and generalization for assessment, and runtime for efficient inference. Comparisons include existing methods and varied scenes or inputs. Human judgments supplement metrics when visible plausibility is part of the contribution.",
         "comparisons": [
           {
             "series": "iccv",
-            "difference": "ECCV and ICCV publish learned reconstruction methods. Recent ECCV work tests human contact geometry and consistency of generated views; recent ICCV work tests fast motion, corrupted inputs and scene changes."
+            "difference": "ECCV and ICCV publish learned reconstruction methods. ECCV work tests human contact geometry and consistency of generated views; ICCV work tests fast motion, corrupted inputs and scene changes."
           },
           {
             "series": "3dv",
@@ -385,7 +385,7 @@
       "scope": "Geometry and 3D representations",
       "emphasis": "Geometric accuracy and consistency",
       "guide": {
-        "contribution": "Recent papers introduce 3D representations and algorithms for reconstruction, editing and scene understanding. Contributions directly address geometry: scaling scene recovery, preserving untouched shape during editing, or transferring image semantics into consistent point-cloud predictions. New benchmarks accompany tasks that lack suitable measurements.",
+        "contribution": "3D representations and algorithms for reconstruction, editing and scene understanding. Contributions improve geometric accuracy, preserve shape during editing, scale scene recovery or transfer image information into consistent 3D predictions.",
         "evidence": "Evaluation measures the specific 3D output, including camera poses, novel views, preservation of geometry or point-cloud segmentation. Experiments span established datasets, compare relevant baselines and test efficiency or scale. Editing studies assess both the modified region and the consistency of the preserved structure.",
         "comparisons": [
           {
@@ -394,7 +394,7 @@
           },
           {
             "series": "wacv",
-            "difference": "3DV tests the quality and consistency of a 3D representation. Recent WACV reconstruction and pose papers also ask whether that representation improves an application under constraints such as low light or unfamiliar objects."
+            "difference": "3DV tests the quality and consistency of a 3D representation. WACV reconstruction and pose papers also ask whether that representation improves an application under constraints such as low light or unfamiliar objects."
           }
         ]
       },
@@ -493,12 +493,12 @@
       "scope": "Robot perception and control",
       "emphasis": "Task performance and robustness",
       "guide": {
-        "contribution": "Recent papers connect perception, learning or control methods to specific robot capabilities. They address partial observations, difficult sensing conditions and deployment errors through algorithmic changes or integrated systems. Contributions explain how those changes improve a robot's estimation, manipulation or motion.",
-        "evidence": "Experiments combine relevant benchmarks with robot or sensor data and measure outcomes such as success, tracking error, accuracy and runtime. Recent work varies obstacles, sensing conditions or trajectories, compares baselines, and tests whether the proposed mechanism remains effective under those changes.",
+        "contribution": "Perception, learning and control methods that improve robot capabilities. Address partial observations, difficult sensing conditions or deployment errors, and connect the technical change to better estimation, manipulation or motion.",
+        "evidence": "Experiments combine relevant benchmarks with robot or sensor data and measure outcomes such as success, tracking error, accuracy and runtime. Vary obstacles, sensing conditions or trajectories, compare baselines, and test whether the proposed mechanism remains effective under those changes.",
         "comparisons": [
           {
             "series": "iros",
-            "difference": "ICRA and IROS publish perception, control and robot systems tested in simulation and physical experiments. Recent ICRA work measures tracking and sensor-fusion accuracy; recent IROS work also tests actuator limits, navigation transfer and gripper behavior."
+            "difference": "ICRA and IROS publish perception, control and robot systems tested in simulation and physical experiments. ICRA work measures tracking and sensor-fusion accuracy; IROS work also tests actuator limits, navigation transfer and gripper behavior."
           },
           {
             "series": "corl",
@@ -566,12 +566,12 @@
       "scope": "Robot systems and applications",
       "emphasis": "Operational performance and reliability",
       "guide": {
-        "contribution": "Recent papers improve robot operation through planning algorithms, adaptive navigation and mechanism design. They formulate practical constraints explicitly, such as actuator limits, unfamiliar environments or variable object surfaces, and develop methods or hardware that address the resulting performance bottleneck.",
+        "contribution": "Planning algorithms, navigation methods and hardware that improve robot operation. Handle concrete constraints such as actuator limits, unfamiliar environments or variable object surfaces through a clear algorithmic or mechanical contribution.",
         "evidence": "Evaluation uses simulation and physical experiments matched to the contribution. Planning studies test feasibility and task efficiency, navigation studies compare robustness and training cost, and hardware studies verify analytical models and handling performance. Baselines and varied operating conditions make the benefit measurable.",
         "comparisons": [
           {
             "series": "icra",
-            "difference": "IROS and ICRA publish integrated robot systems. Recent IROS work tests navigation in new environments, actuator constraints and gripping surfaces; recent ICRA work tests partial observations, tracking trajectories and sensor-fusion accuracy."
+            "difference": "IROS and ICRA publish integrated robot systems. IROS work tests navigation in new environments, actuator constraints and gripping surfaces; ICRA work tests partial observations, tracking trajectories and sensor-fusion accuracy."
           },
           {
             "series": "corl",
@@ -686,7 +686,7 @@
       "scope": "Robotics algorithms and systems",
       "emphasis": "Mechanism, robustness, generalization",
       "guide": {
-        "contribution": "Recent papers develop focused robotics methods with a clear connection between the underlying mechanism and observed performance. Contributions range from demonstration synthesis and geometric optimization to odometry. They address specific limitations such as data collection cost, delayed communication or poorly constrained geometry.",
+        "contribution": "Robotics methods with a clear connection between the algorithm and its effect on robot behavior. Contributions include learning from demonstrations, geometric optimization and state estimation, addressing limitations such as data cost, communication delays or weak sensor constraints.",
         "evidence": "Evidence depends on the claim: robot trials test generalization across tasks, objects or platforms; optimization work combines analysis with benchmark comparisons; estimation work tests varied sensors and degenerate environments. Experiments connect improvements to the proposed mechanism and measure robustness or computational cost.",
         "comparisons": [
           {
@@ -695,7 +695,7 @@
           },
           {
             "series": "icra",
-            "difference": "Recent RSS work tests specific mechanisms such as demonstration synthesis or distributed optimization across tasks and operating conditions. ICRA also publishes integrated perception and control systems, evaluated through tracking accuracy, runtime and robot task success."
+            "difference": "RSS work tests specific mechanisms such as demonstration synthesis or distributed optimization across tasks and operating conditions. ICRA also publishes integrated perception and control systems, evaluated through tracking accuracy, runtime and robot task success."
           }
         ]
       },
@@ -778,7 +778,7 @@
       "scope": "Learning for robot behavior",
       "emphasis": "Generalization and physical evaluation",
       "guide": {
-        "contribution": "Recent papers improve how robot policies learn from data, use sensory representations or are evaluated. Contributions include data-selection methods, multimodal tactile pretraining and distributed benchmarking. The central result connects a learning or evaluation design to improved behavior on robotic tasks.",
+        "contribution": "Methods that improve how robot policies learn, use sensory information or are evaluated. Connect data selection, representation learning or policy design to better robot behavior, data efficiency or transfer across tasks.",
         "evidence": "Experiments measure policy success, data efficiency and generalization in simulation or on real robots. Representation studies test downstream manipulation and state inference; evaluation studies compare policies across tasks and sites. Multiple conditions and direct policy comparisons establish whether improvements extend beyond a single setup.",
         "comparisons": [
           {
@@ -875,16 +875,16 @@
       "scope": "Vision methods and applications",
       "emphasis": "Realistic constraints and utility",
       "guide": {
-        "contribution": "Recent papers address concrete limitations of vision systems, including unseen-object pose estimation, extremely low illumination and reconstruction quality for downstream use. Contributions include new methods, targeted datasets and comparative studies that explain how a design choice affects an application.",
-        "evidence": "Experiments reproduce the stated operating constraint and measure task-level performance. Recent papers use synthetic and real data, compare established pipelines, and examine robustness to viewpoint or illumination. Comparative studies also measure runtime and test whether intermediate quality metrics predict the final task result.",
+        "contribution": "Vision methods, datasets and evaluations that address practical operating constraints. Show how the contribution improves a task under conditions such as low illumination, unfamiliar objects or limited capture data.",
+        "evidence": "Experiments reproduce the stated operating constraint and measure task-level performance. Experiments use synthetic and real data, compare established pipelines, and examine robustness to viewpoint or illumination. Comparative studies also measure runtime and test whether intermediate quality metrics predict the final task result.",
         "comparisons": [
           {
             "series": "3dv",
-            "difference": "Recent WACV pose and reconstruction papers test performance under practical sensing constraints and in the final application. 3DV more directly evaluates the representation itself: geometric accuracy, camera poses and consistency of 3D structure."
+            "difference": "WACV pose and reconstruction papers test performance under practical sensing constraints and in the final application. 3DV more directly evaluates the representation itself: geometric accuracy, camera poses and consistency of 3D structure."
           },
           {
             "series": "cvpr",
-            "difference": "Recent WACV work measures vision performance under low light, unseen objects or limited capture data. Recent CVPR generation work measures how accurately users can control motion and how realistic and varied the generated videos are."
+            "difference": "WACV work measures vision performance under low light, unseen objects or limited capture data. CVPR generation work measures how accurately users can control motion and how realistic and varied the generated videos are."
           }
         ]
       },

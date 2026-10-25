@@ -84,11 +84,10 @@ function Details({ entry, venues, now, zone, onExport, missedPrerequisites }) {
         </aside>
       </div>
       <div className="source-footer">
-        <p>{entry.estimated && <strong>{entry.basisYear} source notes: </strong>}{entry.notes}</p>
         <div>
           <div className="source-links">
             <a className="source-link" href={entry.editionSource} target="_blank" rel="noreferrer">{entry.estimated ? `${entry.basisYear} call for papers` : 'Official call for papers'} <Icon name="arrow" size={14} /></a>
-            {entry.paperFit && !entry.paperFit.guide && <a className="source-link" href={entry.paperFit.source} target="_blank" rel="noreferrer" title={`Published papers; checked ${formatDate(entry.paperFit.checkedAt)}`}>Recent papers ({entry.paperFit.basisYear}) <Icon name="arrow" size={14} /></a>}
+            {entry.paperFit && !entry.paperFit.guide && <a className="source-link" href={entry.paperFit.source} target="_blank" rel="noreferrer" title={`Proceedings; checked ${formatDate(entry.paperFit.checkedAt)}`}>Proceedings ({entry.paperFit.basisYear}) <Icon name="arrow" size={14} /></a>}
           </div>
           <span>Checked {formatDate(entry.checkedAt)}</span>
         </div>

@@ -82,16 +82,16 @@
       "scope": "Learning methods & model behavior",
       "emphasis": "Mechanism analysis + controlled experiments",
       "guide": {
-        "contribution": "Learning objectives, generative methods, and explanations of neural representations. The research often connects a specific model behavior to an underlying mechanism, then uses that understanding to improve training, inference, or control of generated outputs.",
+        "contribution": "Learning objectives, generative methods, and explanations of neural representations. Connect a specific model behavior to an underlying mechanism, then use that understanding to improve training, inference, or control of generated outputs.",
         "evidence": "Comparisons across tasks and model sizes, targeted ablations, and measurements of internal representations. Generative work evaluates output quality and controllability; analysis work tests theoretical predictions through interventions and controlled changes to the model.",
         "comparisons": [
           {
             "series": "icml",
-            "difference": "ICLR and ICML study learning methods and model behavior. Recent ICLR work uses interventions to explain representations and control generation; recent ICML work tests learning objectives, generalization bounds and data or compute scaling."
+            "difference": "ICLR and ICML study learning methods and model behavior. ICLR work uses interventions to explain representations and control generation; ICML work tests learning objectives, generalization bounds and data or compute scaling."
           },
           {
             "series": "neurips",
-            "difference": "Recent ICLR work explains internal model behavior and tests changes to learning or generation. Recent NeurIPS work also measures attribution fidelity, fairness, memory use and speed, alongside prediction or generation quality."
+            "difference": "ICLR work explains internal model behavior and tests changes to learning or generation. NeurIPS work also measures attribution fidelity, fairness, memory use and speed, alongside prediction or generation quality."
           }
         ]
       },
@@ -188,11 +188,11 @@
         "comparisons": [
           {
             "series": "iclr",
-            "difference": "NeurIPS and ICLR use ablations and controlled experiments to explain model behavior. Recent NeurIPS work tests attribution, fairness and multimodal systems; recent ICLR work examines representations, generation control and inference-time learning."
+            "difference": "NeurIPS and ICLR use ablations and controlled experiments to explain model behavior. NeurIPS work tests attribution, fairness and multimodal systems; ICLR work examines representations, generation control and inference-time learning."
           },
           {
             "series": "aaai",
-            "difference": "Recent NeurIPS work measures model reliability, attribution, fairness and system efficiency. Recent AAAI work also tests explicit planning and reasoning procedures, counting solved problems and measuring search cost or answer accuracy."
+            "difference": "NeurIPS work measures model reliability, attribution, fairness and system efficiency. AAAI work also tests explicit planning and reasoning procedures, counting solved problems and measuring search cost or answer accuracy."
           }
         ]
       },
@@ -290,16 +290,16 @@
       "scope": "Planning, reasoning & learning",
       "emphasis": "Task performance + computational efficiency",
       "guide": {
-        "contribution": "Algorithms and systems that improve planning, reasoning, or learning under concrete constraints. Examples combine symbolic search, learned components, retrieval, or annotation strategies to solve tasks more reliably or with less computation and supervision.",
+        "contribution": "Algorithms and systems that improve planning, reasoning, or learning under concrete constraints. Combine symbolic search, learned components, retrieval, or annotation strategies to solve tasks more reliably or with less computation and supervision.",
         "evidence": "Comparisons across problem domains or benchmark datasets, with ablations of the proposed mechanisms. Measures follow the task: solved planning instances and resource limits, reasoning accuracy or answer overlap, and predictive performance under different annotation budgets and model configurations.",
         "comparisons": [
           {
             "series": "icml",
-            "difference": "Recent AAAI work combines planning, reasoning and learning, evaluated through solved tasks, answer accuracy and annotation cost. Recent ICML work focuses on learning objectives and generalization, tested through formal analysis and controlled data or compute changes."
+            "difference": "AAAI work combines planning, reasoning and learning, evaluated through solved tasks, answer accuracy and annotation cost. ICML work focuses on learning objectives and generalization, tested through formal analysis and controlled data or compute changes."
           },
           {
             "series": "neurips",
-            "difference": "Recent AAAI work tests search, retrieval and annotation strategies on concrete tasks. Recent NeurIPS work also analyzes models through attribution fidelity, fairness and efficiency across datasets or modalities."
+            "difference": "AAAI work tests search, retrieval and annotation strategies on concrete tasks. NeurIPS work also analyzes models through attribution fidelity, fairness and efficiency across datasets or modalities."
           }
         ]
       },
@@ -403,11 +403,11 @@
         "comparisons": [
           {
             "series": "iclr",
-            "difference": "ICML and ICLR study learning algorithms and representations. Recent ICML work tests formal objectives, generalization and scaling; recent ICLR work uses model interventions and ablations to explain behavior and improve generation or inference."
+            "difference": "ICML and ICLR study learning algorithms and representations. ICML work tests formal objectives, generalization and scaling; ICLR work uses model interventions and ablations to explain behavior and improve generation or inference."
           },
           {
             "series": "aaai",
-            "difference": "Recent ICML work evaluates how learning objectives and training conditions affect generalization and efficiency. AAAI also develops explicit search and planning systems, measured through solved instances, resource limits and reasoning accuracy."
+            "difference": "ICML work evaluates how learning objectives and training conditions affect generalization and efficiency. AAAI also develops explicit search and planning systems, measured through solved instances, resource limits and reasoning accuracy."
           }
         ]
       },

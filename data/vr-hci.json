@@ -95,8 +95,8 @@
       "scope": "Interaction, accessibility and design",
       "emphasis": "User needs, task outcomes and experience",
       "guide": {
-        "contribution": "New interaction techniques, tools or design findings tied to a concrete human activity. Recent work connects interface decisions to communication, creative practice or input performance, explaining how the design changes what people can do and how they experience it.",
-        "evidence": "Evaluation often combines formative research with controlled tasks or deployment in everyday settings. Papers examine task performance, participation, workload or creative outcomes alongside observations and interviews, using the population and usage context that motivated the design.",
+        "contribution": "Interaction techniques, tools and design findings that address a concrete human activity. Explain how interface decisions improve communication, creative work, accessibility or task performance for the intended users.",
+        "evidence": "Evaluation often combines formative research with controlled tasks or deployment in everyday settings. Measure task performance, participation, workload or creative outcomes alongside observations and interviews, using the population and usage context that motivated the design.",
         "comparisons": [
           {
             "series": "ieee-vr",
@@ -205,8 +205,8 @@
       "scope": "Immersive interaction and embodiment",
       "emphasis": "Task performance, presence and comfort",
       "guide": {
-        "contribution": "Interaction methods and immersive systems that change embodiment, communication or movement in virtual environments. Recent papers connect technical changes in visual, audio or tactile feedback to measurable differences in what users perceive and accomplish, including accessibility applications.",
-        "evidence": "Controlled comparisons measure task performance together with presence, embodiment, workload or discomfort. Social interaction papers also examine communication and social presence. Studies isolate the feedback or representation being changed and report which outcomes improve and which remain unchanged.",
+        "contribution": "Interaction methods and immersive systems that improve embodiment, communication or movement in virtual environments. Connect visual, audio or tactile feedback to what users perceive and accomplish, including accessibility and comfort.",
+        "evidence": "Controlled comparisons measure task performance together with presence, embodiment, workload or discomfort. Social interaction studies also measure communication and social presence. Studies isolate the feedback or representation being changed and report which outcomes improve and which remain unchanged.",
         "comparisons": [
           {
             "series": "sap",
@@ -214,7 +214,7 @@
           },
           {
             "series": "ismar",
-            "difference": "Recent IEEE VR work tests embodiment, immersive communication and accessibility. Recent ISMAR work also develops scene capture and sensing methods, measuring reconstruction quality, prediction accuracy and task completion."
+            "difference": "IEEE VR work tests embodiment, immersive communication and accessibility. ISMAR work also develops scene capture and sensing methods, measuring reconstruction quality, prediction accuracy and task completion."
           }
         ]
       },
@@ -323,8 +323,8 @@
       "scope": "Spatial interaction, sensing and capture",
       "emphasis": "Accuracy and performance in XR tasks",
       "guide": {
-        "contribution": "Methods for spatial interaction, scene acquisition and sensing in AR, MR or VR. Recent work integrates graphics or machine learning with an interaction problem, showing how representations, environmental information or sensor signals improve a specific XR task.",
-        "evidence": "Papers compare task accuracy and completion time, reconstruction results or sensor-based prediction against relevant alternatives. Evaluations vary input conditions, environments or movement, while interaction studies also collect preference and perceived success to explain performance differences.",
+        "contribution": "Methods for spatial interaction, scene acquisition and sensing in AR, MR or VR. Show how a representation, sensor signal or environmental model improves an XR task or enables a new interaction.",
+        "evidence": "Compare task accuracy and completion time, reconstruction results or sensor-based prediction against relevant alternatives. Evaluations vary input conditions, environments or movement, while interaction studies also collect preference and perceived success to explain performance differences.",
         "comparisons": [
           {
             "series": "aixvr",
@@ -332,7 +332,7 @@
           },
           {
             "series": "ieee-vr",
-            "difference": "Recent ISMAR work tests scene acquisition, mobile sensing and spatial interaction. Recent IEEE VR work tests immersive feedback and representation, measuring embodiment, presence, communication and comfort."
+            "difference": "ISMAR work tests scene acquisition, mobile sensing and spatial interaction. IEEE VR work tests immersive feedback and representation, measuring embodiment, presence, communication and comfort."
           }
         ]
       },
@@ -431,12 +431,12 @@
       "scope": "VR input, interaction and systems",
       "emphasis": "Usability and computational efficiency",
       "guide": {
-        "contribution": "Practical VR hardware, interaction techniques and computational components that improve a defined task. Recent papers range from combined desktop and spatial input devices to efficient gesture recognition and grasping methods, making the connection between implementation choices and interaction performance explicit.",
-        "evidence": "Interaction studies compare completion time, accuracy, workload and user experience across techniques. Computational papers use datasets, model comparisons and ablations, reporting recognition quality alongside parameter count or computation. Evaluation measures the claimed improvement at the relevant system or interaction level.",
+        "contribution": "VR hardware, input techniques and computational components that improve interaction. Contributions include spatial input, gesture recognition and grasping, with a clear connection between implementation choices and task performance.",
+        "evidence": "Interaction studies compare completion time, accuracy, workload and user experience across techniques. Computational methods use datasets, model comparisons and ablations, reporting recognition quality alongside parameter count or computation. Evaluation measures the claimed improvement at the relevant system or interaction level.",
         "comparisons": [
           {
             "series": "ieee-vr",
-            "difference": "Recent VRST work evaluates input devices, gesture recognition and grasping methods through accuracy, completion time and computation. Recent IEEE VR work also evaluates the immersive experience, including embodiment, presence and discomfort."
+            "difference": "VRST work evaluates input devices, gesture recognition and grasping methods through accuracy, completion time and computation. IEEE VR work also evaluates the immersive experience, including embodiment, presence and discomfort."
           },
           {
             "series": "chi",
@@ -525,7 +525,7 @@
       "scope": "Perception of graphics and virtual humans",
       "emphasis": "Controlled stimuli and perceptual measures",
       "guide": {
-        "contribution": "Findings or models that explain how people perceive visual, motion or multisensory content. Recent papers isolate expression intensity, rendering conditions or conflicting sensory cues, connecting perceptual differences to choices in avatar presentation and interaction design.",
+        "contribution": "Findings and models that explain perception of visual, motion or multisensory content. Isolate factors such as expression intensity, rendering conditions or conflicting sensory cues, and connect their effects to graphics and interaction design.",
         "evidence": "Controlled stimulus manipulations are paired with judgments, eye tracking, detection thresholds or model fits. Analyses distinguish perceptual dimensions and individual differences, showing which stimulus changes affect perception and where a proposed explanation fits observed behavior.",
         "comparisons": [
           {
@@ -609,7 +609,7 @@
       "scope": "AI methods and adaptive XR",
       "emphasis": "Model robustness and application outcomes",
       "guide": {
-        "contribution": "AI methods or adaptive systems that address a concrete XR limitation, such as motion prediction or personalized training. Recent papers connect the learning approach to deployment conditions, including calibration errors, real-time workload estimates and changes to the user's task.",
+        "contribution": "AI methods and adaptive systems for XR problems such as motion prediction or personalized training. Connect the learning approach to practical conditions, including calibration errors, real-time sensing and changes in user workload.",
         "evidence": "Model evaluations use public and captured data, reference methods and realistic perturbations. Adaptive applications compare against a fixed or conventional system using objective task performance, subjective workload and interviews, reporting whether adaptation changes outcomes as well as user preference.",
         "comparisons": [
           {
@@ -719,7 +719,7 @@
       "scope": "Conversational and social agents",
       "emphasis": "Behavior consistency and interaction outcomes",
       "guide": {
-        "contribution": "Agent architectures and behavior models that produce coherent, adaptive social interaction. Recent papers combine language models with explicit beliefs or intentions, maintain consistent agent values, or adapt negotiation behavior to human emotion and preferences in a concrete interaction scenario.",
+        "contribution": "Agent architectures and behavior models for coherent, adaptive social interaction. Contributions improve reasoning, dialogue consistency, expression or responses to human emotion and preferences in a defined interaction scenario.",
         "evidence": "Studies compare agent architectures or behavior policies through conversations, training scenarios or negotiation. Evaluations combine consistency and task outcomes with believability, perceived alignment and satisfaction; extended dialogues test whether behavior remains coherent beyond an isolated response.",
         "comparisons": [
           {
@@ -804,8 +804,8 @@
       "scope": "Human–robot collaboration and interfaces",
       "emphasis": "Human outcomes and physical interaction",
       "guide": {
-        "contribution": "Robot interfaces, collaborative behaviors or design findings that address how people understand and work with robots. Recent papers connect autonomy and hardware capabilities to human control, assistance needs or communication in the physical environment, including accessible assistive systems.",
-        "evidence": "Evidence ranges from interviews with intended users to controlled robot tasks and integrated system case studies. Papers examine performance, cognitive load, trust or practical communication capability, selecting measures that expose the interaction consequences of the robot's design and behavior.",
+        "contribution": "Robot interfaces, collaborative behaviors and design findings that improve how people understand and work with robots. Connect autonomy and physical capabilities to human control, assistance needs and communication in a shared environment.",
+        "evidence": "Evidence ranges from interviews with intended users to controlled robot tasks and integrated system case studies. Measure performance, cognitive load, trust or practical communication capability, selecting measures that expose the interaction consequences of the robot's design and behavior.",
         "comparisons": [
           {
             "series": "chi",
@@ -813,7 +813,7 @@
           },
           {
             "series": "iva",
-            "difference": "Recent HRI work studies assistive manipulation and robot communication in physical settings. ACM IVA focuses on how agents reason and converse, testing behavioral consistency, believability and negotiation outcomes."
+            "difference": "HRI work studies assistive manipulation and robot communication in physical settings. ACM IVA focuses on how agents reason and converse, testing behavioral consistency, believability and negotiation outcomes."
           }
         ]
       },
