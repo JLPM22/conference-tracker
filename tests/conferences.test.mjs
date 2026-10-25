@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  countdown, formatTime, isPast, makeCalendar, nextGate,
+  countdown, formatTime, isPast, makeCalendar, needsScheduleUpdate, nextGate,
   paperOf, planningEdition, prerequisites, shiftDate, timestamp,
 } from '../lib/conferences.mjs';
 import { validDate, validateEntries } from '../scripts/validate-data.mjs';
@@ -19,6 +19,34 @@ const fixture = (overrides = {}) => ({
 });
 const utc = value => Date.parse(value);
 const unfold = calendar => calendar.replace(/\r\n[ \t]/g, '');
+
+test('estimated schedules request an update from 60 calendar days before the first required step', () => {
+  const estimated = { ...fixture(), estimated: true, milestones: [milestone('abstract', '2027-01-15'), milestone('paper', '2027-01-22')] };
+  assert.equal(needsScheduleUpdate(estimated, utc('2026-11-15T23:59:59Z')), false);
+  assert.equal(needsScheduleUpdate(estimated, utc('2026-11-16T00:00:00Z')), true);
+  assert.equal(needsScheduleUpdate(estimated, utc('2027-01-15T23:59:59Z')), true);
+  assert.equal(needsScheduleUpdate(estimated, utc('2027-01-22T23:59:59Z')), true);
+  assert.equal(needsScheduleUpdate(estimated, utc('2027-01-23T00:00:00Z')), false);
+  assert.equal(needsScheduleUpdate({ ...estimated, estimated: false }, utc('2027-01-15T12:00:00Z')), false);
+});
+
+test('update reminders survive an estimated prerequisite passing and ignore unrelated missing metadata', () => {
+  const entry = { ...fixture(), estimated: true, event: { start: '2027-07-01', end: '2027-07-03', location: 'Confirmed host' }, milestones: [milestone('abstract', '2027-01-01'), milestone('paper', '2027-04-15')] };
+  assert.equal(needsScheduleUpdate(entry, utc('2027-01-02T00:00:00Z')), true);
+  assert.equal(needsScheduleUpdate({ ...entry, estimated: false, event: { start: null, end: null, location: null } }, utc('2027-04-01T00:00:00Z')), false);
+});
+
+test('recommended abstracts are shown in the schedule but do not control countdowns or update reminders', () => {
+  const entry = { ...fixture(), estimated: true, milestones: [
+    { ...milestone('abstract', '2027-04-13'), required: false },
+    milestone('paper', '2027-04-15'),
+  ] };
+  const now = utc('2027-02-13T12:00:00Z');
+  assert.equal(prerequisites(entry).length, 0);
+  assert.equal(nextGate(entry, now).date, '2027-04-15');
+  assert.equal(needsScheduleUpdate(entry, now), false);
+  assert.equal(needsScheduleUpdate(entry, utc('2027-02-14T00:00:00Z')), true);
+});
 
 test('AoE remains open through the following UTC morning and closes at the exact deadline', () => {
   const date = '2026-05-12T23:59:00-12:00';

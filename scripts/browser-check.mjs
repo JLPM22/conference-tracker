@@ -72,6 +72,24 @@ try {
   assert.ok(response?.ok(), `Preview failed to load: ${response?.status()} ${previewUrl}`);
   await expect(cards).toHaveCount(totalConferences);
   log(`${totalConferences} conferences load in the GitHub Pages preview`);
+  const updatedAt = await page.locator('.site-updated time').getAttribute('datetime');
+  assert.ok(Number.isFinite(Date.parse(updatedAt)), 'Last updated must contain a build timestamp');
+  await expect(page.locator('.site-updated')).toContainText('Last updated');
+  await page.reload({ waitUntil: 'networkidle' });
+  assert.equal(await page.locator('.site-updated time').getAttribute('datetime'), updatedAt);
+  await search().fill('SGP');
+  await expect(cards).toHaveCount(1);
+  await button('Show SGP details').click();
+  await expect(cards.first()).toContainText('Computer Graphics Forum');
+  await expect(cards.first()).toContainText('ICORE2026: B');
+  await expect(cards.first()).toContainText('Singapore');
+  await expect(cards.first()).toContainText('Paper · final round');
+  await expect(cards.first()).toContainText('15 Apr 2027');
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await screenshot('sgp-and-last-updated');
+  await search().fill('');
+  await button('Hide SGP details').click();
+  log('SGP details and persistent build timestamp are correct');
 
   await search().fill('CVPR');
   await expect(cards).toHaveCount(1);
@@ -154,7 +172,16 @@ try {
   await expect(button('Closed submissions')).toHaveAttribute('aria-pressed', 'true');
   await expect.poll(() => cards.count()).toBeGreaterThan(0);
   await expect(cards.first()).toContainText('Closed');
+  const closedNames = await cards.evaluateAll(elements => elements.map(element => element.querySelector('.venue-name').textContent.trim()));
+  const closedDates = closedNames.map(name => records.find(entry => `${entry.name} ${entry.year}` === name).milestones.find(m => m.kind === 'paper').date);
+  const closedTimes = closedDates.map(date => Date.parse(date.length === 10 ? `${date}T12:00:00Z` : date));
+  assert.deepEqual(closedTimes, [...closedTimes].sort((a, b) => b - a), 'Closed conferences must default to newest deadline first');
+  await filtersOpen();
+  await expect(page.getByRole('combobox', { name: 'Sort conferences' })).toHaveValue('deadline');
+  await page.getByRole('combobox', { name: 'Sort conferences' }).selectOption('oldest');
   await button('Upcoming submissions').click();
+  await expect(page.getByRole('combobox', { name: 'Sort conferences' })).toHaveValue('deadline');
+  await filtersClosed();
   await expect(cards).toHaveCount(totalConferences);
   log('Closed and upcoming submission cycles are accessible');
 
@@ -197,6 +224,32 @@ try {
   }
   assert.deepEqual(errors, [], `Browser errors:\n${errors.join('\n')}`);
   log('No page exceptions or console errors');
+  // Exercise the reminder with a future clock, without changing the catalog.
+  const reminderPage = await context.newPage();
+  try {
+    await reminderPage.clock.install({ time: new Date('2027-02-13T12:00:00Z') });
+    await reminderPage.goto(previewUrl, { waitUntil: 'networkidle' });
+    await reminderPage.getByLabel('Search conferences', { exact: true }).fill('SGP');
+    await expect(reminderPage.locator('.update-warning')).toHaveCount(0);
+    await reminderPage.clock.setFixedTime(new Date('2027-02-14T12:00:00Z'));
+    await reminderPage.clock.runFor(31_000);
+    await expect(reminderPage.locator('.update-warning')).toContainText('Update needed.');
+    assert.equal(await reminderPage.locator('.site-updated time').getAttribute('datetime'), updatedAt);
+    for (const width of [1440, 390, 320]) {
+      await reminderPage.setViewportSize({ width, height: 1000 });
+      assert.ok(await reminderPage.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth), `Reminder overflows at ${width}px`);
+      await expect(reminderPage.locator('.update-warning')).toBeVisible();
+      if (width !== 320) await reminderPage.screenshot({ path: `${artifactDirectory}/update-warning-${width}.png`, fullPage: false });
+    }
+    await reminderPage.getByLabel('Search conferences', { exact: true }).fill('');
+    const official = reminderPage.locator('article.conference-card').filter({ has: reminderPage.locator('.status-badge.official') });
+    await expect(official.locator('.update-warning')).toHaveCount(0);
+    await reminderPage.getByRole('button', { name: 'Closed submissions', exact: true }).click();
+    await expect(reminderPage.locator('.update-warning')).toHaveCount(0);
+    log('60-day reminder appears automatically, fits mobile, and excludes official and closed schedules');
+  } finally {
+    await reminderPage.close();
+  }
   console.log(`Review screenshots saved to ${artifactDirectory}`);
 } finally {
   await context.close();

@@ -47,3 +47,10 @@ test('sorting by earliest prerequisite prioritizes RSS before its invited final 
   assert.deepEqual(filterEntries(official, { sort: 'deadline' }, now).map(entry => entry.series), ['cvpr', 'rss', 'siggraph', 'iros']);
   assert.deepEqual(filterEntries(official, { sort: 'paper' }, now).map(entry => entry.series), ['cvpr', 'siggraph', 'iros', 'rss']);
 });
+
+test('closed conferences default to newest paper deadline first, with optional oldest and name sorting', () => {
+  const closed = records.filter(entry => ['corl', 'chi', 'eccv'].includes(entry.series));
+  assert.deepEqual(filterEntries(closed, { archived: true }, now).map(entry => entry.series), ['chi', 'corl', 'eccv']);
+  assert.deepEqual(filterEntries(closed, { archived: true, sort: 'oldest' }, now).map(entry => entry.series), ['eccv', 'corl', 'chi']);
+  assert.deepEqual(filterEntries(closed, { archived: true, sort: 'name' }, now).map(entry => entry.series), ['chi', 'corl', 'eccv']);
+});

@@ -597,5 +597,118 @@
       "sampleSize": 3,
       "checkedAt": "2026-10-25"
     }
+  },
+  {
+    "id": "sgp-2026",
+    "series": "sgp",
+    "name": "SGP",
+    "year": 2026,
+    "category": "graphics",
+    "fullName": "Eurographics Symposium on Geometry Processing",
+    "topics": [
+      "geometry processing",
+      "meshing",
+      "shape analysis",
+      "deformation",
+      "geometric optimization",
+      "3D representations"
+    ],
+    "cycleYears": 1,
+    "website": "https://sgp26.org/",
+    "editionSource": "https://sgp26.org/submit/",
+    "checkedAt": "2026-10-25",
+    "event": {
+      "start": "2026-07-01",
+      "end": "2026-07-03",
+      "location": "Bern, Switzerland",
+      "source": "https://sgp26.org/"
+    },
+    "announcedEvents": {
+      "2027": {
+        "start": null,
+        "end": null,
+        "location": "Singapore · International Geometry Summit",
+        "source": "https://igs2027singapore.github.io/"
+      }
+    },
+    "milestones": [
+      {
+        "kind": "abstract",
+        "label": "Abstract · final round (recommended)",
+        "date": "2026-04-13",
+        "timezone": "Not specified",
+        "required": false,
+        "source": "https://sgp26.org/submit/"
+      },
+      {
+        "kind": "paper",
+        "label": "Technical paper · final round",
+        "date": "2026-04-15",
+        "timezone": "Not specified",
+        "source": "https://sgp26.org/submit/"
+      },
+      {
+        "kind": "notification",
+        "label": "Conditional acceptance · final round",
+        "date": "2026-05-25",
+        "timezone": "Not specified",
+        "source": "https://sgp26.org/submit/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Revised paper · final round",
+        "date": "2026-06-04",
+        "timezone": "Not specified",
+        "source": "https://sgp26.org/submit/"
+      },
+      {
+        "kind": "camera-ready",
+        "label": "Camera-ready · final round",
+        "date": "2026-06-11",
+        "timezone": "Not specified",
+        "source": "https://sgp26.org/submit/"
+      }
+    ],
+    "notes": "Final submission round. The first 2026 round closed February 4 (recommended abstract February 2). The recommended early abstract date is not mandatory. SGP 2027 is announced within IGS in Singapore, June 21–25; SGP-specific event dates and submission deadlines are not yet published. The 2026 submission page does not specify cutoff times.",
+    "core": {
+      "rank": "B",
+      "edition": "ICORE2026",
+      "source": "https://portal.core.edu.au/conf-ranks/1784/",
+      "checkedAt": "2026-10-25",
+      "note": ""
+    },
+    "publication": {
+      "kind": "journal-track",
+      "journals": [
+        "Computer Graphics Forum (CGF)"
+      ],
+      "note": "Technical papers appear in a Computer Graphics Forum issue following a two-stage review.",
+      "source": "https://sgp26.org/submit/",
+      "basisYear": 2026,
+      "checkedAt": "2026-10-25"
+    },
+    "paperFit": {
+      "scope": "Geometry processing and shape representations",
+      "emphasis": "Geometric accuracy, robustness and efficiency",
+      "source": "https://sgp26.org/program/",
+      "basis": "published-papers",
+      "basisYear": 2026,
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25",
+      "guide": {
+        "contribution": "Algorithms, mathematical formulations, representations and datasets for processing geometric shapes. Contributions improve meshing, deformation, registration, distance fields or shape analysis, with a clear advance in geometric properties, numerical behavior or computational efficiency.",
+        "evidence": "Measure geometric error, robustness and computational cost across shapes and input conditions. Support mathematical guarantees with analysis, and compare numerical behavior with established methods. Dataset contributions need coverage analysis, documented annotations and baseline results on tasks such as shape matching or retrieval.",
+        "comparisons": [
+          {
+            "series": "eurographics",
+            "difference": "SGP specializes in geometry processing, including shape representations, meshing and geometric algorithms. Eurographics includes these topics within a broader graphics program covering rendering, animation and visual computing. Geometry-focused methods can fit both."
+          },
+          {
+            "series": "siggraph",
+            "difference": "SGP centers on the geometric method: accuracy, robustness, mathematical properties and efficiency. SIGGRAPH also publishes geometry processing, alongside rendering, animation and visual systems. A geometric algorithm with strong analysis and practical results can suit either venue."
+          }
+        ]
+      }
+    }
   }
 ]

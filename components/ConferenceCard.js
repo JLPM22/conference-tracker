@@ -1,6 +1,6 @@
 import Icon from './Icon';
 import SubmissionGuide from './SubmissionGuide';
-import { categories, DAY, countdown, formatDate, formatTime, isDateOnly, isPast, nextGate, paperOf, prerequisites, timestamp } from '../lib/conferences.mjs';
+import { categories, DAY, countdown, formatDate, formatTime, isDateOnly, isPast, needsScheduleUpdate, nextGate, paperOf, prerequisites, timestamp } from '../lib/conferences.mjs';
 
 const publicationLabels = {
   'journal-track': 'Journal publication track',
@@ -13,6 +13,7 @@ const publicationLabels = {
 };
 
 export function submissionLabel(entry, milestone) {
+  if (milestone.kind === 'paper' && milestone.label.toLowerCase().includes('final round')) return 'Paper · final round';
   if (milestone.kind === 'paper') return entry.series === 'rss' ? 'Invited final paper' : 'Paper submission';
   if (milestone.date === paperOf(entry).date) return 'Abstract + paper';
   if (milestone.kind === 'registration') return 'Submission form';
@@ -101,6 +102,7 @@ export default function ConferenceCard({ entry, venues = [], now, zone, saved, o
   const gate = archived ? paper : nextGate(entry, now);
   const missedPrerequisites = !entry.estimated && !archived ? prerequisites(entry).filter(milestone => isPast(milestone.date, now)) : [];
   const dueSoon = !archived && !entry.estimated && !isPast(gate.date, now) && (timestamp(gate.date) - now) / DAY <= 30;
+  const updateNeeded = !archived && needsScheduleUpdate(entry, now);
   const separatePaper = gate.kind !== 'paper' && timestamp(gate.date) !== timestamp(paper.date);
   const summaryId = `summary-${entry.id}`;
   const accessibleSummary = [
@@ -152,6 +154,10 @@ export default function ConferenceCard({ entry, venues = [], now, zone, saved, o
           <Icon name="bookmark" />
         </button>
       </div>
+      {updateNeeded && <p className="update-warning">
+        <Icon name="alert" size={17} />
+        <span><strong>Update needed.</strong> Official dates are likely available. Update this tracker.</span>
+      </p>}
       <div id={`details-${entry.id}`} hidden={!expanded}>
         {expanded && <Details entry={entry} venues={venues} now={now} zone={zone} onExport={onExport} missedPrerequisites={missedPrerequisites} />}
       </div>

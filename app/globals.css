@@ -47,6 +47,8 @@ svg { flex-shrink: 0; }
 .page-heading { padding: 43px 0 31px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .page-heading h1 { font-size: clamp(36px, 4.1vw, 56px); font-weight: 650; line-height: 1.1; letter-spacing: -.045em; }
 .page-heading h1 > span { color: #d03983; }
+.site-updated { margin-top: 9px; font-size: 12px; line-height: 1.6; color: var(--muted); }
+.site-updated time { color: var(--ink); }
 .period-switch { display: flex; align-items: center; padding: 4px; border: 1px solid var(--ink); border-radius: 999px; flex-shrink: 0; }
 .period-switch button { min-height: 34px; padding: 5px 17px; border: 0; border-radius: 999px; background: transparent; font-size: 12px; font-weight: 550; }
 .period-switch button[aria-pressed="true"] { color: white; background: var(--ink); }
@@ -108,6 +110,8 @@ svg { flex-shrink: 0; }
 .deadline-time, .paper-follows { color: #626262; font-size: 10px; line-height: 1.8; }
 .paper-follows { margin-top: 3px; color: #454545; }
 .prerequisite-warning { display: flex; gap: 5px; align-items: center; color: #983c17; font-size: 11px; margin-top: 5px; }
+.update-warning { display: flex; align-items: flex-start; gap: 8px; margin: 0; padding: 10px 22px; border-top: 1px solid #e0be62; background: #fff3cc; color: #65460b; font-size: 12px; line-height: 1.6; }
+.update-warning svg { flex-shrink: 0; margin-top: 1px; }
 .paper-fit { display: flex; flex-direction: column; gap: 4px; min-width: 0; font-size: 12px; line-height: 1.55; }
 .paper-fit strong { font-weight: 550; }
 .paper-fit-emphasis { color: var(--muted); font-size: 11px; }

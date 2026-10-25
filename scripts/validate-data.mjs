@@ -114,6 +114,7 @@ export function validateEntries(entries, file = 'data', seenIds = new Set(), see
         if (milestone.timezone === 'AoE') check(milestone.date.endsWith('-12:00'), `${field}.date`, 'must use UTC-12:00 for AoE');
       }
       check(httpsURL(milestone.source), `${field}.source`, 'must be an absolute HTTPS URL');
+      if (milestone.required !== undefined) check(typeof milestone.required === 'boolean', `${field}.required`, 'must be a boolean');
     }
   }
   return errors;

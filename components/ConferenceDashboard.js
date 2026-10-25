@@ -19,6 +19,11 @@ function downloadCalendar(entries, now, includePast) {
 
 export default function ConferenceDashboard({ conferences }) {
   const checkedDate = conferences.map(entry => entry.checkedAt).sort()[0];
+  const updatedAt = process.env.NEXT_PUBLIC_SITE_UPDATED_AT;
+  const updatedLabel = new Intl.DateTimeFormat('en-GB', {
+    day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit',
+    timeZone: 'Europe/Berlin', timeZoneName: 'short',
+  }).format(new Date(updatedAt));
   const [now, setNow] = useState(null);
   const [category, setCategory] = useState('all');
   const [query, setQuery] = useState('');
@@ -74,12 +79,12 @@ export default function ConferenceDashboard({ conferences }) {
   const planning = useMemo(() => now ? conferences.map(entry => planningEdition(entry, now)) : [], [conferences, now]);
   const archived = period === 'past';
   const entries = archived ? conferences.filter(entry => isPast(paperOf(entry).date, now)).map(entry => ({ ...entry, estimated: false })) : planning;
-  const filtered = filterEntries(entries, { category, query, status, savedOnly, saved, sort }, now || 0);
+  const filtered = filterEntries(entries, { category, query, status, savedOnly, saved, sort, archived }, now || 0);
   const selected = filtered.find(entry => entry.id === expanded);
   const advancedCount = Number(status !== 'all') + Number(sort !== 'deadline');
   const hasFilters = category !== 'all' || query.trim() || savedOnly || advancedCount > 0;
   const clearFilters = () => { setCategory('all'); setQuery(''); setStatus('all'); setSavedOnly(false); setSort('deadline'); };
-  const changePeriod = value => { setPeriod(value); setStatus('all'); setExpanded(null); };
+  const changePeriod = value => { setPeriod(value); setStatus('all'); setSort('deadline'); setExpanded(null); };
   const onExport = exported => downloadCalendar(exported, now, archived);
   const scrollBehavior = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth';
   const selectTimeline = (id, trigger) => {
@@ -117,7 +122,10 @@ export default function ConferenceDashboard({ conferences }) {
 
       <main id="main-content" className="site-container">
         <div className="page-heading">
-          <h1>Conference tracker<span aria-hidden="true">.</span></h1>
+          <div>
+            <h1>Conference tracker<span aria-hidden="true">.</span></h1>
+            <p className="site-updated">Last updated <time dateTime={updatedAt}>{updatedLabel}</time></p>
+          </div>
           <div className="period-switch" aria-label="Submission cycle">
             <button aria-label="Upcoming submissions" aria-pressed={!archived} onClick={() => changePeriod('upcoming')}>Upcoming</button>
             <button aria-label="Closed submissions" aria-pressed={archived} onClick={() => changePeriod('past')}>Closed</button>
@@ -148,7 +156,9 @@ export default function ConferenceDashboard({ conferences }) {
               <option value="all">Official + estimated</option><option value="official">Official only</option><option value="estimated" disabled={archived}>Estimates only</option>
             </select></label>
             <label>Sort by<select aria-label="Sort conferences" value={sort} onChange={event => setSort(event.target.value)}>
-              <option value="deadline">Next submission step</option><option value="paper">Paper deadline</option><option value="name">Conference name</option>
+              <option value="deadline">{archived ? 'Most recently closed' : 'Next submission step'}</option>
+              {archived ? <option value="oldest">Oldest closed first</option> : <option value="paper">Paper deadline</option>}
+              <option value="name">Conference name</option>
             </select></label>
           </div>
 

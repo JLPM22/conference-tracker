@@ -60,7 +60,11 @@ The implementation follows the official [Next.js static export guide](https://ne
 
 The JSON arrays in `data/` contain manually checked official conference schedules. The files group venues by research area; each record describes a particular edition and submission track. All displayed source links point back to the conference's official call or schedule. `checkedAt` records the date that a person verified that record, not the time of the latest build or page view.
 
-The catalog includes CEIG, WACV and HRI. WACV uses its final submission round; earlier rounds and alternative tracks are described in the venue notes. HRI is grouped under VR/HCI.
+The catalog includes CEIG, WACV, HRI and SGP. WACV and SGP use their final submission round; earlier rounds and alternative tracks are described in the catalog notes. HRI is grouped under VR/HCI. SGP is grouped under Graphics, with its Computer Graphics Forum publication route.
+
+The header shows the static export's build timestamp as “Last updated,” in Europe/Berlin time. It changes when the site is rebuilt, not when a visitor refreshes. Per-conference source-check dates remain separate.
+
+Estimated schedules show an “Update needed” reminder starting 60 calendar days before the first required submission step. The reminder remains until that paper deadline closes or official dates replace the estimate. It does not depend on whether the location or event dates are known. Set `required: false` on a recommended abstract milestone so it stays visible without controlling the countdown or reminder.
 
 Each record has `core` metadata (rank, edition, source and verification date) and a `publication` policy (route, journal names, source edition, explanation and verification date). ICORE2026 is preferred. Older CORE entries are explicitly dated; a missing entry is distinct from the portal's Unranked classification. Publication policies distinguish direct journal tracks, selected journal papers, invited extensions, review transfers and presentation of already accepted journal articles. Policies remain tied to their verified edition when submission dates are estimated.
 
