@@ -75,25 +75,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Vision methods, data & systems",
-      "emphasis": "Novel insights + convincing experiments",
-      "source": "https://cvpr.thecvf.com/Conferences/2025/ReviewerGuidelines",
+      "source": "https://openaccess.thecvf.com/CVPR2025",
       "basisYear": 2025,
-      "checkedAt": "2026-10-25",
+      "scope": "Visual learning and generation",
+      "emphasis": "Control, realism, generalization",
       "guide": {
-        "contribution": "Contribute new knowledge to computer vision: a method, analysis, dataset, or system addressing a meaningful visual problem. Clearly separate the scientific idea from implementation choices.",
-        "evidence": "Use experiments that test the actual claims, relevant baselines, and analysis of failure cases. Ablations help isolate what causes an improvement. The linked reviewer guidance values originality and potential impact; a leaderboard gain alone is not the only form of contribution.",
+        "contribution": "Recent papers develop reusable visual models and inference methods, including controllable video generation and motion synthesis. Contributions isolate a concrete capability, such as separating camera and subject motion, then demonstrate how the method supports several visual tasks or input conditions.",
+        "evidence": "Evaluation combines quantitative comparisons with visual results and, for perceptual claims, human judgments. Motion work measures control and realism together, tests different inputs and applications, and compares against existing generation methods. Diverse outputs matter when a method claims to model multiple plausible futures.",
         "comparisons": [
           {
             "series": "iccv",
-            "difference": "Very broad overlap in scope and review principles. Topic fit, the specific call, and submission timing are usually more useful distinctions."
+            "difference": "CVPR and ICCV publish visual learning, video and 3D reconstruction. Recent CVPR generation papers measure motion control, realism and diversity; recent ICCV reconstruction papers measure image quality, view consistency and robustness to capture errors."
           },
           {
             "series": "wacv",
-            "difference": "Its explicit application, algorithm, and evaluation/dataset tracks let you frame practical value or evaluation methodology as the primary contribution."
+            "difference": "Recent CVPR work develops visual generation methods and tests control, realism and variation across inputs. Recent WACV work addresses operating constraints such as low light or unseen objects, testing pose accuracy and performance in the final application."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -173,25 +175,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Vision methods & understanding",
-      "emphasis": "Novelty + impact beyond benchmarks",
-      "source": "https://iccv.thecvf.com/Conferences/2025/ReviewerGuidelines",
+      "source": "https://openaccess.thecvf.com/ICCV2025",
       "basisYear": 2025,
-      "checkedAt": "2026-10-25",
+      "scope": "Visual understanding and reconstruction",
+      "emphasis": "Robustness and visual accuracy",
       "guide": {
-        "contribution": "Address an important computer-vision problem with a sound new method, insight, resource, or system. Explain the knowledge advance and its likely impact on vision research.",
-        "evidence": "Provide convincing support for the central claim, with appropriate comparisons and reproducible detail. The reviewer guidance explicitly allows promising new concepts without exhaustive datasets or state-of-the-art accuracy; explain why the idea matters.",
+        "contribution": "Recent reconstruction papers combine learned visual priors with explicit scene or sensor structure. They address concrete failures such as inconsistent views, fast motion or changing objects, and introduce methods that improve image recovery, camera estimation or persistent 3D scene representations.",
+        "evidence": "Experiments connect image quality or reconstruction accuracy to difficult capture conditions. Recent papers use synthetic and real scenes, compare competing reconstruction or interpolation methods, and test corruptions, motion and object changes. Visual sequences show whether the resulting representations remain coherent over time.",
         "comparisons": [
           {
             "series": "cvpr",
-            "difference": "A closely overlapping audience and standard of evidence. Both welcome technically sound vision advances with demonstrated novelty or impact."
+            "difference": "ICCV and CVPR publish visual learning, video and 3D reconstruction. Recent ICCV reconstruction work tests changing scenes and difficult capture conditions; recent CVPR generation work tests controllable motion, realistic appearance and output diversity."
           },
           {
             "series": "3dv",
-            "difference": "A more concentrated audience for reconstruction, geometry, 3D representations, and related sensing problems."
+            "difference": "Recent ICCV work evaluates recovered images and reconstructed scenes, including restoration under capture errors. 3DV puts the 3D output at the center: camera poses, point-cloud labels, preserved geometry and scene consistency."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -277,25 +281,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Vision methods, theory & data",
-      "emphasis": "Evidence matched to contribution",
-      "source": "https://eccv.ecva.net/Conferences/2026/ReviewerContributionTypes",
+      "source": "https://eccv.ecva.net/virtual/2026/papers.html",
       "basisYear": 2026,
-      "checkedAt": "2026-10-25",
+      "scope": "Visual models and scene reasoning",
+      "emphasis": "Consistency, accuracy, efficiency",
       "guide": {
-        "contribution": "Frame a clear contribution to vision and select the contribution type that describes it honestly. Methods, theory, systems, datasets, and other forms of work need different arguments for their value.",
-        "evidence": "The 2026 guidance asks reviewers to judge evidence through the chosen contribution type. Explain the assumptions, comparisons, or evaluation design that support your particular claim, rather than adding experiments unrelated to it.",
+        "contribution": "Recent papers improve visual models by introducing explicit structure into reconstruction or reasoning. Examples include consistent scenes from generated views, contact-aware human reconstruction and region-grounded image assessment. Each method identifies a failure of existing models and adds a mechanism that addresses it.",
+        "evidence": "Evaluation follows the claimed capability: geometric and contact metrics for reconstruction, robustness and generalization for assessment, and runtime for efficient inference. Comparisons include existing methods and varied scenes or inputs. Human judgments supplement metrics when visible plausibility is part of the contribution.",
         "comparisons": [
           {
-            "series": "cvpr",
-            "difference": "Broadly similar vision scope. ECCV 2026 makes the contribution-type framing especially explicit in its reviewer instructions."
+            "series": "iccv",
+            "difference": "ECCV and ICCV publish learned reconstruction methods. Recent ECCV work tests human contact geometry and consistency of generated views; recent ICCV work tests fast motion, corrupted inputs and scene changes."
           },
           {
-            "series": "wacv",
-            "difference": "Offers separate application, algorithm, and evaluation/dataset tracks, useful when practical deployment or evaluation itself is central."
+            "series": "3dv",
+            "difference": "ECCV includes image assessment and visual reasoning as well as reconstruction. 3DV concentrates on 3D representations, with evaluations of camera poses, geometric preservation, reconstruction and point-cloud segmentation."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -374,25 +380,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "3D reconstruction & geometry",
-      "emphasis": "3D insight + convincing evidence",
-      "source": "https://3dvconf.github.io/2027/reviewer-guidelines/",
-      "basisYear": 2027,
-      "checkedAt": "2026-10-25",
+      "source": "https://3dvconf.github.io/2026/accepted-papers/",
+      "basisYear": 2026,
+      "scope": "Geometry and 3D representations",
+      "emphasis": "Geometric accuracy and consistency",
       "guide": {
-        "contribution": "Make the 3D question central: reconstruction, geometry, representations, sensing, analysis, or related graphics methods. Explain the geometric or visual insight and what it enables.",
-        "evidence": "Support claims with suitable comparisons, metrics, visualizations, and difficult cases. Describe assumptions and reproducible details. Its reviewer guidance weighs novelty and impact alongside performance, so a new idea need not win every benchmark.",
+        "contribution": "Recent papers introduce 3D representations and algorithms for reconstruction, editing and scene understanding. Contributions directly address geometry: scaling scene recovery, preserving untouched shape during editing, or transferring image semantics into consistent point-cloud predictions. New benchmarks accompany tasks that lack suitable measurements.",
+        "evidence": "Evaluation measures the specific 3D output, including camera poses, novel views, preservation of geometry or point-cloud segmentation. Experiments span established datasets, compare relevant baselines and test efficiency or scale. Editing studies assess both the modified region and the consistency of the preserved structure.",
         "comparisons": [
           {
-            "series": "iccv",
-            "difference": "A broader vision audience when the main insight extends beyond a specifically 3D problem."
+            "series": "cvpr",
+            "difference": "3DV evaluates geometric outputs such as camera poses, edited shapes and point-cloud labels. CVPR also publishes video generation, where motion control, visual realism and diversity can be the main results."
           },
           {
-            "series": "eccv",
-            "difference": "Also covers 3D vision, alongside many other vision areas; consider how broadly the contribution should be positioned."
+            "series": "wacv",
+            "difference": "3DV tests the quality and consistency of a 3D representation. Recent WACV reconstruction and pose papers also ask whether that representation improves an application under constraints such as low light or unfamiliar objects."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -480,25 +488,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Robotics & automation",
-      "emphasis": "Technical advances + validation",
-      "source": "https://2027.ieee-icra.org/contribute/call-for-icra-2027-papers-now-accepting-submissions/",
-      "basisYear": 2027,
-      "checkedAt": "2026-10-25",
+      "source": "https://ras.papercept.net/conferences/conferences/ICRA26/program/",
+      "basisYear": 2026,
+      "scope": "Robot perception and control",
+      "emphasis": "Task performance and robustness",
       "guide": {
-        "contribution": "Make a clear robotics or automation contribution, whether in perception, planning, control, mechanisms, learning, or a complete system. Explain the capability or scientific understanding that the work adds.",
-        "evidence": "A useful submission strategy is to evaluate the claimed capability under relevant conditions, with baselines, assumptions, and limitations made explicit. Hardware demonstrations, simulation, or analysis should support the kind of claim being made; a compelling demo benefits from a measurable argument.",
+        "contribution": "Recent papers connect perception, learning or control methods to specific robot capabilities. They address partial observations, difficult sensing conditions and deployment errors through algorithmic changes or integrated systems. Contributions explain how those changes improve a robot's estimation, manipulation or motion.",
+        "evidence": "Experiments combine relevant benchmarks with robot or sensor data and measure outcomes such as success, tracking error, accuracy and runtime. Recent work varies obstacles, sensing conditions or trajectories, compares baselines, and tests whether the proposed mechanism remains effective under those changes.",
         "comparisons": [
           {
             "series": "iros",
-            "difference": "Similarly broad robotics scope. The current call, likely audience, and submission schedule are useful practical distinctions."
+            "difference": "ICRA and IROS publish perception, control and robot systems tested in simulation and physical experiments. Recent ICRA work measures tracking and sensor-fusion accuracy; recent IROS work also tests actuator limits, navigation transfer and gripper behavior."
           },
           {
             "series": "corl",
-            "difference": "More specialized: learning must be central and its relevance to physical robots must be demonstrated."
+            "difference": "ICRA includes sensor fusion, state estimation and control, evaluated through tracking error, runtime and robot task success. CoRL centers on learning: evaluate training data, policy success and transfer to new tasks or objects."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -551,25 +561,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Intelligent robots & systems",
-      "emphasis": "Originality + technical soundness",
-      "source": "https://www.ieee-ras.org/conferences-workshops/financially-co-sponsored/iros/information-for-iros-associate-editors/",
-      "basisYear": null,
-      "checkedAt": "2026-10-25",
+      "source": "https://ras.papercept.net/conferences/conferences/IROS25/program/",
+      "basisYear": 2025,
+      "scope": "Robot systems and applications",
+      "emphasis": "Operational performance and reliability",
       "guide": {
-        "contribution": "Offer an original contribution to intelligent robots or systems: methods, components, architectures, or integrated capabilities. Explain how the advance changes what a robot can do or what is understood about it.",
-        "evidence": "Support the contribution with technically sound analysis or experiments suited to its claims. Real-world evidence can strengthen an application claim, but the standing review guidance says lack of real-world experiments alone is not grounds for summary rejection.",
+        "contribution": "Recent papers improve robot operation through planning algorithms, adaptive navigation and mechanism design. They formulate practical constraints explicitly, such as actuator limits, unfamiliar environments or variable object surfaces, and develop methods or hardware that address the resulting performance bottleneck.",
+        "evidence": "Evaluation uses simulation and physical experiments matched to the contribution. Planning studies test feasibility and task efficiency, navigation studies compare robustness and training cost, and hardware studies verify analytical models and handling performance. Baselines and varied operating conditions make the benefit measurable.",
         "comparisons": [
           {
             "series": "icra",
-            "difference": "Strong overlap across robotics and automation. Topic, contribution, audience, and submission timing are useful selection criteria."
+            "difference": "IROS and ICRA publish integrated robot systems. Recent IROS work tests navigation in new environments, actuator constraints and gripping surfaces; recent ICRA work tests partial observations, tracking trajectories and sensor-fusion accuracy."
           },
           {
-            "series": "rss",
-            "difference": "The 2027 call specifically foregrounds hypotheses, methodology, and a staged development process for scientific or systems insights."
+            "series": "corl",
+            "difference": "IROS includes hardware mechanisms and constrained planning, tested through physical behavior and task efficiency. CoRL focuses on learned policies and representations, tested through data efficiency, task success and generalization."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -669,25 +681,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Robot science & systems",
-      "emphasis": "Clear hypotheses + reproducible insight",
-      "source": "https://roboticsconference.org/information/cfp/",
-      "basisYear": 2027,
-      "checkedAt": "2026-10-25",
+      "source": "https://www.roboticsproceedings.org/rss22/",
+      "basisYear": 2026,
+      "scope": "Robotics algorithms and systems",
+      "emphasis": "Mechanism, robustness, generalization",
       "guide": {
-        "contribution": "Develop a significant scientific or systems insight in robotics. Under the 2027 process, the initial extended abstract needs a well-developed problem, hypotheses, and methodology, even if experimental results are preliminary.",
-        "evidence": "Explain what will be learned and design a reproducible evaluation around that question. Invited final papers complete the agreed evaluation plan. The call explicitly values informative negative results and rigorous falsification of a hypothesis.",
+        "contribution": "Recent papers develop focused robotics methods with a clear connection between the underlying mechanism and observed performance. Contributions range from demonstration synthesis and geometric optimization to odometry. They address specific limitations such as data collection cost, delayed communication or poorly constrained geometry.",
+        "evidence": "Evidence depends on the claim: robot trials test generalization across tasks, objects or platforms; optimization work combines analysis with benchmark comparisons; estimation work tests varied sensors and degenerate environments. Experiments connect improvements to the proposed mechanism and measure robustness or computational cost.",
         "comparisons": [
           {
             "series": "corl",
-            "difference": "Requires a robot-learning connection; RSS also accommodates robotics science and systems without a learning component."
+            "difference": "RSS and CoRL publish robot learning evaluated across tasks and platforms. RSS also includes geometric optimization and odometry, where convergence, communication delays and sensor accuracy can be the main results."
           },
           {
             "series": "icra",
-            "difference": "A broad robotics venue whose standard paper submission differs from RSS 2027’s explicitly staged research-development process."
+            "difference": "Recent RSS work tests specific mechanisms such as demonstration synthesis or distributed optimization across tasks and operating conditions. ICRA also publishes integrated perception and control systems, evaluated through tracking accuracy, runtime and robot task success."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -759,25 +773,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Learning for physical robots",
-      "emphasis": "Robot relevance + transferable results",
-      "source": "https://www.corl.org/contributions/call-for-papers",
-      "basisYear": 2026,
-      "checkedAt": "2026-10-25",
+      "source": "https://proceedings.mlr.press/v305/",
+      "basisYear": 2025,
+      "scope": "Learning for robot behavior",
+      "emphasis": "Generalization and physical evaluation",
       "guide": {
-        "contribution": "Address a core robot-learning problem. The method, theory, dataset, or benchmark should make clear why the result matters for physical robots, beyond being a generic machine-learning advance.",
-        "evidence": "Report real-robot experiments or convincing evidence that simulation results transfer to robots. Explain assumptions, failure modes, and limitations. Choose comparisons that test the learning contribution as well as the resulting robotic capability.",
+        "contribution": "Recent papers improve how robot policies learn from data, use sensory representations or are evaluated. Contributions include data-selection methods, multimodal tactile pretraining and distributed benchmarking. The central result connects a learning or evaluation design to improved behavior on robotic tasks.",
+        "evidence": "Experiments measure policy success, data efficiency and generalization in simulation or on real robots. Representation studies test downstream manipulation and state inference; evaluation studies compare policies across tasks and sites. Multiple conditions and direct policy comparisons establish whether improvements extend beyond a single setup.",
         "comparisons": [
           {
-            "series": "rss",
-            "difference": "Broader robotics science and systems; learning can be part of the story but is not the organizing requirement."
+            "series": "icra",
+            "difference": "CoRL focuses on how policies learn and transfer: measure training-data needs, task success and performance on new objects or tasks. ICRA also accepts contributions in hardware, sensor fusion and control, where the main improvement need not come from learning."
           },
           {
-            "series": "iros",
-            "difference": "Also accepts robotics contributions in control, planning, mechanisms, and systems where learning is not central."
+            "series": "rss",
+            "difference": "CoRL and RSS publish robot learning with task-success and generalization experiments. RSS also covers analytical optimization and state estimation, evaluated through convergence, sensor accuracy and computational cost."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -854,25 +870,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Applied vision, algorithms & data",
-      "emphasis": "Practical value + fair comparisons",
-      "source": "https://wacv.thecvf.com/Conferences/2027/CallForPapers",
-      "basisYear": 2027,
-      "checkedAt": "2026-10-25",
+      "source": "https://openaccess.thecvf.com/WACV2025",
+      "basisYear": 2025,
+      "scope": "Vision methods and applications",
+      "emphasis": "Realistic constraints and utility",
       "guide": {
-        "contribution": "Choose the appropriate track: a valuable vision application, an algorithmic advance, or a contribution to evaluation and datasets. State which part is original and why the intended community needs it.",
-        "evidence": "Applications emphasize system innovation, domain novelty, and comparative assessment. Algorithms need technical novelty and quantitative comparison. Evaluation/dataset work should justify its design, assumptions, limitations, and the conclusions it enables.",
+        "contribution": "Recent papers address concrete limitations of vision systems, including unseen-object pose estimation, extremely low illumination and reconstruction quality for downstream use. Contributions include new methods, targeted datasets and comparative studies that explain how a design choice affects an application.",
+        "evidence": "Experiments reproduce the stated operating constraint and measure task-level performance. Recent papers use synthetic and real data, compare established pipelines, and examine robustness to viewpoint or illumination. Comparative studies also measure runtime and test whether intermediate quality metrics predict the final task result.",
         "comparisons": [
           {
-            "series": "cvpr",
-            "difference": "Broad vision research with substantial overlap; WACV explicitly differentiates the review criteria for these three contribution types."
+            "series": "3dv",
+            "difference": "Recent WACV pose and reconstruction papers test performance under practical sensing constraints and in the final application. 3DV more directly evaluates the representation itself: geometric accuracy, camera poses and consistency of 3D structure."
           },
           {
-            "series": "3dv",
-            "difference": "More specialized for a 3D research question. WACV can suit a broader application whose 3D component serves a practical task."
+            "series": "cvpr",
+            "difference": "Recent WACV work measures vision performance under low light, unseen objects or limited capture data. Recent CVPR generation work measures how accurately users can control motion and how realistic and varied the generated videos are."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   }
 ]

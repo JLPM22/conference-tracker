@@ -191,10 +191,10 @@ export default function ConferenceDashboard({ conferences }) {
           <details className="about-dates">
             <summary><Icon name="info" size={17} /> About this tracker <Icon name="chevron" size={14} /></summary>
             <div>
-              <p><strong>Official or estimated.</strong> The check icon means an official source. Estimates shift the previous verified schedule to the next annual or biennial cycle; they are planning guides, not confirmed deadlines.</p>
+              <p><strong>Official or estimated.</strong> The check icon means an official source. Estimates shift the previous verified schedule to the next annual or biennial cycle.</p>
               <p><strong>The first step matters.</strong> Abstracts and submission forms may close before the full paper. The countdown follows the next required step; expand a conference for its full schedule and sources.</p>
               <p><strong>Times stay explicit.</strong> AoE is UTC−12. Unknown times and estimates show approximate day counts. Official announcements are updated manually; countdowns update automatically.</p>
-              <p><strong>Paper fit.</strong> Short editorial summaries of official scope and review guidance: typical work first, then what to emphasize. They highlight useful distinctions, not exhaustive criteria or guarantees of acceptance. Expectations vary by contribution and track; expand a conference for the source and its edition.</p>
+              <p><strong>Paper fit.</strong> Contribution and evaluation patterns from recent published papers. Expand a conference for more detail, comparisons with related venues, and links to the proceedings.</p>
               <p><strong>Your planning stays yours.</strong> Bookmarks live in this browser. Calendar downloads are snapshots, with estimates marked tentative; later changes do not sync.</p>
             </div>
           </details>

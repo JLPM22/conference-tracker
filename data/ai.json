@@ -77,25 +77,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Deep learning & representations",
-      "emphasis": "New understanding + rigorous evidence",
-      "source": "https://iclr.cc/Conferences/2027/ReviewerGuidelines",
-      "basisYear": 2027,
-      "checkedAt": "2026-10-25",
+      "source": "https://proceedings.iclr.cc/paper_files/paper/2026",
+      "basisYear": 2026,
+      "scope": "Learning methods & model behavior",
+      "emphasis": "Mechanism analysis + controlled experiments",
       "guide": {
-        "contribution": "Offer new knowledge about learning, representations, or related ML questions. Motivate the problem and explain why the method, analysis, or finding matters to the research community.",
-        "evidence": "Support the claims with rigorous theory or experiments, reproducible detail, and a clear account of limitations. The reviewer guide explicitly values relevant new understanding without requiring state-of-the-art benchmark results.",
+        "contribution": "Learning objectives, generative methods, and explanations of neural representations. The research often connects a specific model behavior to an underlying mechanism, then uses that understanding to improve training, inference, or control of generated outputs.",
+        "evidence": "Comparisons across tasks and model sizes, targeted ablations, and measurements of internal representations. Generative work evaluates output quality and controllability; analysis work tests theoretical predictions through interventions and controlled changes to the model.",
         "comparisons": [
           {
             "series": "icml",
-            "difference": "Large overlap in ML methods and theory. Use the specific call, research audience, and maturity of the result to choose."
+            "difference": "ICLR and ICML study learning methods and model behavior. Recent ICLR work uses interventions to explain representations and control generation; recent ICML work tests learning objectives, generalization bounds and data or compute scaling."
           },
           {
             "series": "neurips",
-            "difference": "Also broad ML research; its 2026 guidance explicitly distinguishes contribution types, including theory, negative results, and concept/feasibility work."
+            "difference": "Recent ICLR work explains internal model behavior and tests changes to learning or generation. Recent NeurIPS work also measures attribution fidelity, fairness, memory use and speed, alongside prediction or generation quality."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -176,25 +178,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "ML methods, theory & analysis",
-      "emphasis": "Significant insight + sound evidence",
-      "source": "https://neurips.cc/Conferences/2026/ReviewerGuidelines",
-      "basisYear": 2026,
-      "checkedAt": "2026-10-25",
+      "source": "https://proceedings.neurips.cc/paper_files/paper/2025",
+      "basisYear": 2025,
+      "scope": "ML methods, analysis & systems",
+      "emphasis": "Multiple datasets + mechanism validation",
       "guide": {
-        "contribution": "Make an original, significant contribution to ML or an adjacent field. The 2026 main-track guidance accommodates general work, theory, use-inspired research, concept/feasibility ideas, and informative negative results.",
-        "evidence": "Match the evidence to the declared contribution type. State supported claims, limitations, and what others can build on. Correctness, clarity, significance, and originality matter; novelty can come from understanding existing methods, not only inventing another model.",
+        "contribution": "New learning systems, formal analyses, and diagnostic frameworks for understanding existing models. Contributions can explain an observed behavior, make predictions or representations more reliable, or combine components into a more capable and efficient system.",
+        "evidence": "Tests across datasets or modalities, comparisons with established methods, and experiments that isolate the proposed explanation or component. Evaluations combine task performance with the relevant secondary measures, such as attribution fidelity, group fairness, memory use, or inference speed.",
         "comparisons": [
           {
             "series": "iclr",
-            "difference": "Substantial overlap in learning research and a shared emphasis on new knowledge, with both theoretical and empirical contributions."
+            "difference": "NeurIPS and ICLR use ablations and controlled experiments to explain model behavior. Recent NeurIPS work tests attribution, fairness and multimodal systems; recent ICLR work examines representations, generation control and inference-time learning."
           },
           {
             "series": "aaai",
-            "difference": "Spans the wider AI field, including reasoning, planning, and integrative work whose main contribution may not be a learning method."
+            "difference": "Recent NeurIPS work measures model reliability, attribution, fairness and system efficiency. Recent AAAI work also tests explicit planning and reasoning procedures, counting solved problems and measuring search cost or answer accuracy."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -281,25 +285,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "AI methods, reasoning & systems",
-      "emphasis": "Broad AI relevance + sound claims",
-      "source": "https://aaai.org/conference/aaai/aaai-27/main-technical-track-call/",
-      "basisYear": 2027,
-      "checkedAt": "2026-10-25",
+      "source": "https://ojs.aaai.org/index.php/AAAI/issue/archive",
+      "basisYear": 2026,
+      "scope": "Planning, reasoning & learning",
+      "emphasis": "Task performance + computational efficiency",
       "guide": {
-        "contribution": "Make a substantive AI contribution: theoretical, algorithmic, empirical, integrative, or critical. Explain the significance of the research question and its relevance to the broader AI community.",
-        "evidence": "Support claims with sound theory or empirical evidence, appropriate related work, and reproducible detail. The main-track rubric values novelty, significance, soundness, and clarity; special tracks may apply different priorities.",
+        "contribution": "Algorithms and systems that improve planning, reasoning, or learning under concrete constraints. Examples combine symbolic search, learned components, retrieval, or annotation strategies to solve tasks more reliably or with less computation and supervision.",
+        "evidence": "Comparisons across problem domains or benchmark datasets, with ablations of the proposed mechanisms. Measures follow the task: solved planning instances and resource limits, reasoning accuracy or answer overlap, and predictive performance under different annotation budgets and model configurations.",
         "comparisons": [
           {
             "series": "icml",
-            "difference": "A more directly ML-centered audience when the main contribution advances learning algorithms or understanding of learning."
+            "difference": "Recent AAAI work combines planning, reasoning and learning, evaluated through solved tasks, answer accuracy and annotation cost. Recent ICML work focuses on learning objectives and generalization, tested through formal analysis and controlled data or compute changes."
           },
           {
             "series": "neurips",
-            "difference": "Broad overlap for ML and interdisciplinary AI; inspect its contribution types when framing theory, use-inspired work, or negative results."
+            "difference": "Recent AAAI work tests search, retrieval and annotation strategies on concrete tasks. Recent NeurIPS work also analyzes models through attribution fidelity, fairness and efficiency across datasets or modalities."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -387,25 +393,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "ML algorithms & theory",
-      "emphasis": "Learning advances + rigorous validation",
-      "source": "https://icml.cc/Conferences/2026/ReviewerInstructions",
+      "source": "https://proceedings.mlr.press/v306/",
       "basisYear": 2026,
-      "checkedAt": "2026-10-25",
+      "scope": "Learning objectives & generalization",
+      "emphasis": "Formal analysis + data/compute experiments",
       "guide": {
-        "contribution": "Advance machine learning through a method, theory, analysis, or well-motivated application with a meaningful learning contribution. Place the work against relevant prior approaches and explain its significance.",
-        "evidence": "Ensure proofs follow from stated assumptions and experiments test the hypotheses. Explain weaknesses and limitations as well as gains. The reviewer instructions distinguish technical soundness from impact and assess originality broadly, including new uses or combinations of existing ideas.",
+        "contribution": "Learning objectives, generalization analyses, and controlled investigations of model capabilities. A contribution often identifies a specific limitation, explains it mathematically or experimentally, and develops an algorithm or diagnostic that applies across learning problems.",
+        "evidence": "Formal derivations or bounds where relevant, comparisons across models and tasks, and controlled changes to training data or computation. Common evaluation questions concern generalization to held-out cases, scaling behavior, efficiency, and whether observations support the proposed explanation.",
         "comparisons": [
           {
             "series": "iclr",
-            "difference": "Very similar ML territory; a representations or deep-learning contribution can fit either, depending on the specific call and framing."
+            "difference": "ICML and ICLR study learning algorithms and representations. Recent ICML work tests formal objectives, generalization and scaling; recent ICLR work uses model interventions and ablations to explain behavior and improve generation or inference."
           },
           {
             "series": "aaai",
-            "difference": "A broader AI forum for contributions such as reasoning, planning, and integration across AI areas, alongside machine learning."
+            "difference": "Recent ICML work evaluates how learning objectives and training conditions affect generalization and efficiency. AAAI also develops explicit search and planning systems, measured through solved instances, resource limits and reasoning accuracy."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   }
 ]

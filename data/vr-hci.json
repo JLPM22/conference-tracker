@@ -90,25 +90,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "HCI systems, studies & design",
-      "emphasis": "Human insight + rigorous methods",
-      "source": "https://chi2027.acm.org/guide-to-a-successful-submission/",
-      "basisYear": 2027,
-      "checkedAt": "2026-10-25",
+      "source": "https://doi.org/10.1145/3706598",
+      "basisYear": 2025,
+      "scope": "Interaction, accessibility and design",
+      "emphasis": "User needs, task outcomes and experience",
       "guide": {
-        "contribution": "Make a significant contribution to understanding or improving human interaction with technology. Systems, studies, design, theory, and other contribution types can fit when the HCI knowledge gained is clear.",
-        "evidence": "Use a method that supports the contribution and describe it transparently. For studies, explain sampling and analysis; for systems, establish the interaction benefit; for design or conceptual work, substantiate the argument. A user study is not a universal requirement for every contribution type.",
+        "contribution": "New interaction techniques, tools or design findings tied to a concrete human activity. Recent work connects interface decisions to communication, creative practice or input performance, explaining how the design changes what people can do and how they experience it.",
+        "evidence": "Evaluation often combines formative research with controlled tasks or deployment in everyday settings. Papers examine task performance, participation, workload or creative outcomes alongside observations and interviews, using the population and usage context that motivated the design.",
         "comparisons": [
           {
             "series": "ieee-vr",
-            "difference": "A more focused XR audience when immersive interaction, 3D interfaces, or VR/AR systems are central."
+            "difference": "CHI connects an interface to user needs and activities, using interviews, task studies or deployment. IEEE VR more directly tests immersive effects such as embodiment, presence, comfort and performance inside a virtual environment."
           },
           {
-            "series": "sap",
-            "difference": "More specialized when the key finding concerns human perception and its application to computing."
+            "series": "hri",
+            "difference": "CHI studies interfaces across activities such as communication, input and creative work. HRI focuses on people working with robots, testing how autonomy, physical assistance and robot communication affect performance and trust."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -198,25 +200,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "VR/AR interaction & systems",
-      "emphasis": "User or system evaluation",
-      "source": "https://ieeevr.org/2027/contribute/papers/",
-      "basisYear": 2027,
-      "checkedAt": "2026-10-25",
+      "source": "https://ieeevr.org/2025/program/papers/",
+      "basisYear": 2025,
+      "scope": "Immersive interaction and embodiment",
+      "emphasis": "Task performance, presence and comfort",
       "guide": {
-        "contribution": "Advance VR, AR, MR, or 3D interaction through a method, technique, application, or system. Explain the contribution to immersive technology or experience, beyond placing an existing task in a headset.",
-        "evidence": "The call asks for evaluation suited to the contribution: user studies, benchmarks, or comparisons with existing methods or systems. Measure the claimed benefit and describe experimental conditions, limitations, and participant procedures where applicable.",
+        "contribution": "Interaction methods and immersive systems that change embodiment, communication or movement in virtual environments. Recent papers connect technical changes in visual, audio or tactile feedback to measurable differences in what users perceive and accomplish, including accessibility applications.",
+        "evidence": "Controlled comparisons measure task performance together with presence, embodiment, workload or discomfort. Social interaction papers also examine communication and social presence. Studies isolate the feedback or representation being changed and report which outcomes improve and which remain unchanged.",
         "comparisons": [
           {
-            "series": "ismar",
-            "difference": "Strong scope overlap across AR, MR, and VR; ISMAR also explicitly requires a significant connection to XR concepts, systems, or experiences."
+            "series": "sap",
+            "difference": "IEEE VR tests how visual, audio or tactile feedback affects immersive tasks, presence and comfort. ACM SAP isolates perceptual effects, measuring judgments, detection thresholds or eye movements as the stimulus changes."
           },
           {
-            "series": "chi",
-            "difference": "A broader interaction audience; emphasize the transferable HCI insight when the contribution extends beyond immersive technology."
+            "series": "ismar",
+            "difference": "Recent IEEE VR work tests embodiment, immersive communication and accessibility. Recent ISMAR work also develops scene capture and sensing methods, measuring reconstruction quality, prediction accuracy and task completion."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -314,25 +318,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "AR/MR/VR methods & experiences",
-      "emphasis": "Clear contribution to XR",
-      "source": "https://www.ieeeismar.net/2026/call-for-papers/",
-      "basisYear": 2026,
-      "checkedAt": "2026-10-25",
+      "source": "https://www.ieeeismar.net/2025/program/papers/",
+      "basisYear": 2025,
+      "scope": "Spatial interaction, sensing and capture",
+      "emphasis": "Accuracy and performance in XR tasks",
       "guide": {
-        "contribution": "Make an explicit, significant connection to AR, MR, or VR. Contributions may concern underlying technologies, interaction, perception, systems, or applied experiences; the scope includes fully virtual environments.",
-        "evidence": "A useful framing is to show how the work improves an XR capability or experience. Use technical measurements for system claims and suitable studies for human-experience claims, making the XR-specific insight and limitations clear.",
+        "contribution": "Methods for spatial interaction, scene acquisition and sensing in AR, MR or VR. Recent work integrates graphics or machine learning with an interaction problem, showing how representations, environmental information or sensor signals improve a specific XR task.",
+        "evidence": "Papers compare task accuracy and completion time, reconstruction results or sensor-based prediction against relevant alternatives. Evaluations vary input conditions, environments or movement, while interaction studies also collect preference and perceived success to explain performance differences.",
         "comparisons": [
           {
-            "series": "ieee-vr",
-            "difference": "Both cover AR, MR, and VR. Their scopes overlap strongly, so compare the current call and the best audience for the contribution."
+            "series": "aixvr",
+            "difference": "ISMAR includes spatial interfaces and scene capture, measured through task performance and reconstruction quality. IEEE AIxVR focuses on AI in XR, testing prediction robustness or whether an adaptive system improves training and workload."
           },
           {
-            "series": "vrst",
-            "difference": "A closely related venue for XR software, systems, interaction techniques, and their evaluation."
+            "series": "ieee-vr",
+            "difference": "Recent ISMAR work tests scene acquisition, mobile sensing and spatial interaction. Recent IEEE VR work tests immersive feedback and representation, measuring embodiment, presence, communication and comfort."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -420,25 +426,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "XR systems & interaction",
-      "emphasis": "Technical utility + user experience",
-      "source": "https://vrst.acm.org/vrst2026/cfp/",
-      "basisYear": 2026,
-      "checkedAt": "2026-10-25",
+      "source": "https://vrst.acm.org/vrst2025/index.php/proceedings/",
+      "basisYear": 2025,
+      "scope": "VR input, interaction and systems",
+      "emphasis": "Usability and computational efficiency",
       "guide": {
-        "contribution": "Present an XR software, system, interaction, or related research contribution. Make clear what the technique or system adds and how that advances the use or understanding of immersive environments.",
-        "evidence": "For technical claims, useful evidence includes performance tests and comparisons; for interaction claims, consider user experience or empirical studies. Explain the contribution rather than relying on a prototype description. The call asks that paper length match the contribution.",
+        "contribution": "Practical VR hardware, interaction techniques and computational components that improve a defined task. Recent papers range from combined desktop and spatial input devices to efficient gesture recognition and grasping methods, making the connection between implementation choices and interaction performance explicit.",
+        "evidence": "Interaction studies compare completion time, accuracy, workload and user experience across techniques. Computational papers use datasets, model comparisons and ablations, reporting recognition quality alongside parameter count or computation. Evaluation measures the claimed improvement at the relevant system or interaction level.",
         "comparisons": [
           {
             "series": "ieee-vr",
-            "difference": "Substantial overlap in XR systems and interaction; examine the specific paper categories and evaluation expectations."
+            "difference": "Recent VRST work evaluates input devices, gesture recognition and grasping methods through accuracy, completion time and computation. Recent IEEE VR work also evaluates the immersive experience, including embodiment, presence and discomfort."
           },
           {
-            "series": "aixvr",
-            "difference": "A more targeted fit when the key advance is the integration of AI with XR, rather than an XR technique on its own."
+            "series": "chi",
+            "difference": "VRST often evaluates a VR device or component through recognition accuracy, task performance and runtime. CHI also investigates the activity around the interface, using user research and deployment to explain needs and outcomes."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -512,25 +520,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Perception for visual computing",
-      "emphasis": "Perceptual insight + careful studies",
-      "source": "https://sap.acm.org/2026/call-for-papers/",
-      "basisYear": 2026,
-      "checkedAt": "2026-10-25",
+      "source": "https://www.siggraph.org/wp-content/uploads/2025/08/SAP.html",
+      "basisYear": 2025,
+      "scope": "Perception of graphics and virtual humans",
+      "emphasis": "Controlled stimuli and perceptual measures",
       "guide": {
-        "contribution": "Connect a question about perception with a computing problem, such as animation, visualization, vision, or immersive interfaces. Make the perceptual insight and its computational relevance explicit.",
-        "evidence": "For empirical work, justify the stimuli, tasks, measures, and analysis so the perceptual conclusion is supported. Explain how the result informs a computing technique or application. Perceptually informed algorithms can also fit; the contribution need not be only a user study.",
+        "contribution": "Findings or models that explain how people perceive visual, motion or multisensory content. Recent papers isolate expression intensity, rendering conditions or conflicting sensory cues, connecting perceptual differences to choices in avatar presentation and interaction design.",
+        "evidence": "Controlled stimulus manipulations are paired with judgments, eye tracking, detection thresholds or model fits. Analyses distinguish perceptual dimensions and individual differences, showing which stimulus changes affect perception and where a proposed explanation fits observed behavior.",
         "comparisons": [
           {
-            "series": "chi",
-            "difference": "Broader interaction and human-centered research; SAP is more focused on perception as the scientific link to computing."
+            "series": "ieee-vr",
+            "difference": "ACM SAP isolates how a stimulus changes perception, using controlled judgments, eye tracking or detection thresholds. IEEE VR tests how such changes affect an immersive task, including performance, presence and comfort."
           },
           {
             "series": "iva",
-            "difference": "More focused on socially interactive agents when agent behavior or human-agent interaction is the main question."
+            "difference": "ACM SAP studies how people perceive expressions, motion and sensory cues. ACM IVA develops the agent behavior behind an interaction, testing dialogue consistency, believability and negotiation or training outcomes."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -594,25 +604,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "AI for XR · XR for AI",
-      "emphasis": "Meaningful AI–XR integration",
-      "source": "https://aivr.science.uu.nl/2027/aixvr2027_cfp.html",
-      "basisYear": 2027,
-      "checkedAt": "2026-10-25",
+      "source": "https://aivr.science.uu.nl/2026/aixvr2026_program",
+      "basisYear": 2026,
+      "scope": "AI methods and adaptive XR",
+      "emphasis": "Model robustness and application outcomes",
       "guide": {
-        "contribution": "Make the relationship between AI and XR central: AI that enables an immersive capability, or XR that advances the use or understanding of AI. State what the integration contributes.",
-        "evidence": "A useful evaluation isolates the benefit of that integration, using technical or user measures suited to the claim. Compare against a relevant alternative and explain limitations. Merely including an off-the-shelf AI component needs a clear research argument.",
+        "contribution": "AI methods or adaptive systems that address a concrete XR limitation, such as motion prediction or personalized training. Recent papers connect the learning approach to deployment conditions, including calibration errors, real-time workload estimates and changes to the user's task.",
+        "evidence": "Model evaluations use public and captured data, reference methods and realistic perturbations. Adaptive applications compare against a fixed or conventional system using objective task performance, subjective workload and interviews, reporting whether adaptation changes outcomes as well as user preference.",
         "comparisons": [
           {
-            "series": "vrst",
-            "difference": "A broader home for XR software and interaction work whose contribution does not depend on AI."
+            "series": "ismar",
+            "difference": "IEEE AIxVR tests AI-based prediction and adaptation in XR, including robustness to calibration errors and effects on training. ISMAR also includes scene capture and spatial interfaces evaluated through reconstruction quality and task performance."
           },
           {
             "series": "iva",
-            "difference": "More specialized for socially interactive agents and human-agent behavior, including applications outside XR."
+            "difference": "IEEE AIxVR applies learning to XR sensing and adaptation, measuring prediction accuracy, workload or training performance. ACM IVA focuses on social agents, measuring consistency across conversations, believability and interaction outcomes."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 2,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -702,25 +714,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Virtual agents & social behavior",
-      "emphasis": "Agent interaction + grounded evaluation",
-      "source": "https://iva.acm.org/2026/call-for-papers/",
-      "basisYear": 2026,
-      "checkedAt": "2026-10-25",
+      "source": "https://iva.acm.org/2025/accepted-papers/",
+      "basisYear": 2025,
+      "scope": "Conversational and social agents",
+      "emphasis": "Behavior consistency and interaction outcomes",
       "guide": {
-        "contribution": "Advance socially interactive agents or human-agent interaction: behavior generation, dialogue, social perception, agent design, or an underlying theory. Explain how the work changes agent capability or understanding of interaction.",
-        "evidence": "Ground the claims in appropriate technical evaluation, human studies, theory, or application evidence. For social-behavior claims, explain the behavioral model and measures; realistic appearance alone does not establish an interaction contribution.",
+        "contribution": "Agent architectures and behavior models that produce coherent, adaptive social interaction. Recent papers combine language models with explicit beliefs or intentions, maintain consistent agent values, or adapt negotiation behavior to human emotion and preferences in a concrete interaction scenario.",
+        "evidence": "Studies compare agent architectures or behavior policies through conversations, training scenarios or negotiation. Evaluations combine consistency and task outcomes with believability, perceived alignment and satisfaction; extended dialogues test whether behavior remains coherent beyond an isolated response.",
         "comparisons": [
           {
-            "series": "hri",
-            "difference": "Centers human-robot interaction, including physical embodiment and its consequences; HRI also accepts studies without a physical robot when the HRI contribution is clear."
+            "series": "sap",
+            "difference": "ACM IVA develops agent reasoning and responses, evaluating dialogue consistency, negotiation and believability. ACM SAP studies perception of the resulting presentation, using controlled changes to expressions, motion or sensory cues."
           },
           {
-            "series": "sap",
-            "difference": "A better-focused audience when the primary result is a perceptual mechanism or effect rather than socially interactive agent behavior."
+            "series": "hri",
+            "difference": "ACM IVA studies conversational architectures and adaptive social behavior. HRI also studies physical robot assistance and shared autonomy, where task completion, cognitive load and trust in the robot become central outcomes."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -785,25 +799,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Human–robot interaction",
-      "emphasis": "Interaction insight + suitable evaluation",
-      "source": "https://humanrobotinteraction.org/2027/full-papers/",
-      "basisYear": 2027,
-      "checkedAt": "2026-10-25",
+      "source": "https://humanrobotinteraction.org/2025/schedule/index.html",
+      "basisYear": 2025,
+      "scope": "Human–robot collaboration and interfaces",
+      "emphasis": "Human outcomes and physical interaction",
       "guide": {
-        "contribution": "Contribute knowledge about human-robot interaction and choose the track that matches it: design, technical work, systems, studies, or theory and methods. Make the human-robot interaction question central.",
-        "evidence": "Use evaluation appropriate to the track. A technical paper needs robust methods and suitable validation, while a studies paper centers knowledge gained from people. The technical track does not require a user study unless it is appropriate to the contribution.",
+        "contribution": "Robot interfaces, collaborative behaviors or design findings that address how people understand and work with robots. Recent papers connect autonomy and hardware capabilities to human control, assistance needs or communication in the physical environment, including accessible assistive systems.",
+        "evidence": "Evidence ranges from interviews with intended users to controlled robot tasks and integrated system case studies. Papers examine performance, cognitive load, trust or practical communication capability, selecting measures that expose the interaction consequences of the robot's design and behavior.",
         "comparisons": [
           {
-            "series": "iva",
-            "difference": "More centered on socially interactive agents, including virtual agents; useful when the contribution concerns agent behavior beyond a robotics setting."
+            "series": "chi",
+            "difference": "HRI tests how robot autonomy and physical assistance affect people, measuring task performance, workload and trust. CHI covers a wider range of interfaces and activities, often combining user research with task studies or deployment."
           },
           {
-            "series": "chi",
-            "difference": "A broader HCI audience when the interaction or design insight extends substantially beyond human-robot interaction."
+            "series": "iva",
+            "difference": "Recent HRI work studies assistive manipulation and robot communication in physical settings. ACM IVA focuses on how agents reason and converse, testing behavioral consistency, believability and negotiation outcomes."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   }
 ]

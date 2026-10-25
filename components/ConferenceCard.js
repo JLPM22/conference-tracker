@@ -28,7 +28,7 @@ function Details({ entry, venues, now, zone, onExport, missedPrerequisites }) {
       {entry.estimated && (
         <p className="estimate-explanation">
           <Icon name="info" size={18} />
-          <span>Based on the {entry.basisYear} schedule, shifted {entry.yearsShifted} {entry.yearsShifted === 1 ? 'year' : 'years'}. Dates and extensions may change; check the new call before submitting.</span>
+          <span>Estimated from the {entry.basisYear} schedule, shifted {entry.yearsShifted} {entry.yearsShifted === 1 ? 'year' : 'years'}.</span>
         </p>
       )}
       {missedPrerequisites.length > 0 && (
@@ -72,7 +72,7 @@ function Details({ entry, venues, now, zone, onExport, missedPrerequisites }) {
               {entry.publication.journals.length > 0 && <ul>{entry.publication.journals.map(journal => <li key={journal}>{journal}</li>)}</ul>}
               <p>{entry.publication.note}</p>
               <a className="text-link" href={entry.publication.source} target="_blank" rel="noreferrer">Publication policy ({entry.publication.basisYear}) <Icon name="arrow" size={13} /></a>
-              <p className="facts-checked">Checked {formatDate(entry.publication.checkedAt)}. Routes may change between editions.</p>
+              <p className="facts-checked">Checked {formatDate(entry.publication.checkedAt)}.</p>
             </>}
           </section>}
           <div className="event-info">
@@ -88,7 +88,7 @@ function Details({ entry, venues, now, zone, onExport, missedPrerequisites }) {
         <div>
           <div className="source-links">
             <a className="source-link" href={entry.editionSource} target="_blank" rel="noreferrer">{entry.estimated ? `${entry.basisYear} call for papers` : 'Official call for papers'} <Icon name="arrow" size={14} /></a>
-            {entry.paperFit && !entry.paperFit.guide && <a className="source-link" href={entry.paperFit.source} target="_blank" rel="noreferrer" title={`Official scope or review guidance; checked ${formatDate(entry.paperFit.checkedAt)}`}>Paper fit source{entry.paperFit.basisYear ? ` (${entry.paperFit.basisYear})` : ''} <Icon name="arrow" size={14} /></a>}
+            {entry.paperFit && !entry.paperFit.guide && <a className="source-link" href={entry.paperFit.source} target="_blank" rel="noreferrer" title={`Published papers; checked ${formatDate(entry.paperFit.checkedAt)}`}>Recent papers ({entry.paperFit.basisYear}) <Icon name="arrow" size={14} /></a>}
           </div>
           <span>Checked {formatDate(entry.checkedAt)}</span>
         </div>

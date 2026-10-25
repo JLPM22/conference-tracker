@@ -71,9 +71,10 @@ export function validateEntries(entries, file = 'data', seenIds = new Set(), see
     }
     if (entry.paperFit !== undefined) {
       const fit = entry.paperFit;
-      check(isObject(fit) && nonempty(fit.scope) && nonempty(fit.emphasis), `${at}.paperFit`, 'must describe typical work and review emphasis');
-      check(httpsURL(fit?.source) && validDate(fit?.checkedAt, true), `${at}.paperFit`, 'must record an official HTTPS source and check date');
-      check(fit?.basisYear === null || (Number.isInteger(fit?.basisYear) && fit.basisYear >= 1900 && fit.basisYear <= 2200), `${at}.paperFit.basisYear`, 'must identify the source edition, or be null for standing guidance');
+      check(isObject(fit) && nonempty(fit.scope) && nonempty(fit.emphasis), `${at}.paperFit`, 'must describe typical contributions and evaluation emphasis');
+      check(httpsURL(fit?.source) && validDate(fit?.checkedAt, true), `${at}.paperFit`, 'must record a proceedings HTTPS source and check date');
+      check(fit?.basis === 'published-papers' && Number.isInteger(fit?.sampleSize) && fit.sampleSize >= 2, `${at}.paperFit`, 'must be based on a sample of at least two published papers');
+      check(Number.isInteger(fit?.basisYear) && fit.basisYear >= 1900 && fit.basisYear <= 2200, `${at}.paperFit.basisYear`, 'must identify the sampled publication year');
       if (fit?.guide !== undefined) {
         const guide = fit.guide;
         check(isObject(guide) && nonempty(guide.contribution) && nonempty(guide.evidence), `${at}.paperFit.guide`, 'must describe the contribution and supporting evidence');
@@ -140,7 +141,7 @@ export async function validateData(directory = resolve(root, 'data')) {
     const compared = new Set();
     for (const comparison of comparisons) {
       const peer = bySeries.get(comparison?.series);
-      if (!peer?.paperFit || peer.category !== entry.category) errors.push(`${entry.id}: comparison ${comparison?.series} must reference a venue with guidance in the same research area`);
+      if (!peer?.paperFit || peer.category !== entry.category) errors.push(`${entry.id}: comparison ${comparison?.series} must reference a venue with publication findings in the same research area`);
       if (compared.has(comparison?.series)) errors.push(`${entry.id}: comparison ${comparison?.series} is duplicated`);
       compared.add(comparison?.series);
     }

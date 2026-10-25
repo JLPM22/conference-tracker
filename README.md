@@ -76,9 +76,11 @@ Each conference record contains:
 | `milestones` | Submission and review dates, each with `kind`, `label`, `date`, `timezone`, and its official `source`. A `paper` milestone is required. |
 | `announcedEvents` | Optional future event announcements keyed by edition year, independent of submission estimates. |
 | `notes` | Track scope, prerequisite requirements, extensions, and source caveats. |
-| `paperFit` | Brief `scope` and `emphasis` shown in the Paper fit column, with an official `source`, `basisYear` (null for standing guidance), and independent `checkedAt`. Its `guide` expands on the expected `contribution`, useful `evidence`, and `comparisons` (`series` and `difference`) with venues in the same area. Peer names and source links resolve from the catalog. These are editorial syntheses, not exhaustive criteria or promises of acceptance. Keep the source edition unchanged when projecting deadlines. |
+| `paperFit` | Brief `scope` and `emphasis` based on recent published papers (`basis: "published-papers"`), with the proceedings `source`, sampled publication year `basisYear`, `sampleSize`, and independent `checkedAt`. Its `guide` describes observed `contribution` and evaluation (`evidence`) patterns, plus `comparisons` (`series` and `difference`) with venues in the same area. Peer names and proceedings links resolve from the catalog. Keep the publication year unchanged when projecting deadlines. |
 
 Milestone kinds are `abstract`, `paper`, `supplementary`, `notification`, `camera-ready`, `rebuttal`, and `registration`. Preserve the official deadline's timezone: use an ISO timestamp with an explicit offset only when the time is published, for example `2027-03-01T23:59:59-12:00` for an explicitly stated AoE deadline. When only the date is known, use `2027-03-01`; never infer AoE or invent a time. Use `Not specified` when the source gives no timezone. Abstract submission and paper-registration prerequisites should be included so that the paper deadline does not hide an earlier gate.
+
+To refresh Paper fit, read recent accepted papers and their evaluation sections across several relevant topics. Write general findings without naming individual papers in the interface; link the proceedings collection. Update the source year, sample count, and check date. Local research notes and paper URLs belong in the ignored `qa/` folder.
 
 To update a venue:
 

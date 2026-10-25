@@ -63,25 +63,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Graphics & interactive methods",
-      "emphasis": "Visual results + technical novelty",
-      "source": "https://s2026.siggraph.org/technical-papers-reviewer-instructions-ethics/",
+      "source": "https://s2026.conference-schedule.org/",
       "basisYear": 2026,
-      "checkedAt": "2026-10-25",
+      "scope": "Graphics algorithms, rendering and visual content",
+      "emphasis": "Visual quality, control and measured performance",
       "guide": {
-        "contribution": "Make a substantive contribution to graphics or interactive techniques: a method, system, study, dataset, or new problem. Explain what becomes possible and why it matters beyond the showcased examples.",
-        "evidence": "For visual claims, show representative results and meaningful comparisons, including difficult cases. Support technical claims with suitable measurements or analysis. The 2026 guidance allows less comprehensive validation in the conference track; striking images alone do not establish a contribution.",
+        "contribution": "Methods that change how visual content is represented, generated or rendered. Recent work combines geometric or physical models with efficient computation and learned components, demonstrating capabilities such as more precise control, richer appearance or scalable processing across varied inputs.",
+        "evidence": "Visual comparisons are paired with task-specific measurements: reconstruction or rendering error, control accuracy, runtime and scaling. Experiments vary scenes, inputs and operating conditions; generative work also measures human preference, while display work validates results on physical prototypes.",
         "comparisons": [
           {
             "series": "siggraph-asia",
-            "difference": "The closest match in scope and journal/conference structure. Submission timing and readiness of the work are usually the practical differences."
+            "difference": "SIGGRAPH and SIGGRAPH Asia publish rendering, geometry and simulation methods. For either venue, show the visual change and measure its cost: image error, geometric accuracy, runtime or memory."
           },
           {
             "series": "sca",
-            "difference": "A more focused audience when the central contribution concerns motion, animation, or simulation over time."
+            "difference": "SIGGRAPH includes rendering, displays and static geometry as well as animation. SCA focuses on moving characters and simulated materials: evaluate motion timing, contacts, controllability and physical behavior."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -177,25 +179,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Visual computing & graphics",
-      "emphasis": "Original methods + thorough validation",
-      "source": "https://asia.siggraph.org/2026/submissions/technical-papers/",
-      "basisYear": 2026,
-      "checkedAt": "2026-10-25",
+      "source": "https://sa2025.conference-schedule.org/",
+      "basisYear": 2025,
+      "scope": "Rendering, simulation and learned geometry",
+      "emphasis": "Quality, robustness and computational efficiency",
       "guide": {
-        "contribution": "Present original research that advances graphics or interactive techniques. Methods, systems, perception, and learning for visual computing all fit when the graphics contribution is clear.",
-        "evidence": "Connect the claimed advance to visual, quantitative, or study-based evidence as appropriate. The journal track expects comprehensive validation; the conference track can accommodate a less complete investigation of a valuable new idea.",
+        "contribution": "New algorithms and representations for rendering, simulation and shape processing. Recent papers connect mathematical formulations to practical implementations, improving noise, stability, geometric detail or scalability, and show how the method enables useful visual results under challenging computational conditions.",
+        "evidence": "Compare visual output and numerical quality against relevant methods while accounting for runtime. Recent evaluations examine dynamic-scene response, simulation compression and stability, mesh discretization and learned deformation quality, with experiments that expose the effects of individual algorithmic choices.",
         "comparisons": [
           {
             "series": "siggraph",
-            "difference": "A closely overlapping research audience and publication model. Compare the current calls, deadlines, and readiness of the work."
+            "difference": "SIGGRAPH Asia and SIGGRAPH publish graphics algorithms supported by visual results and numerical comparisons. Rendering quality, simulation stability and geometry processing are relevant to either venue."
           },
           {
             "series": "eurographics",
-            "difference": "Also broad graphics research. Its full-paper call explicitly welcomes datasets, benchmarks, and perceptual studies with a clear connection to graphics literature."
+            "difference": "SIGGRAPH Asia and Eurographics publish rendering and geometry methods. Recent SIGGRAPH Asia work measures rendering noise, simulation stability and deformation quality; recent Eurographics work also tests memory use, sparse motion inputs and capture conditions."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -283,25 +287,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Graphics methods & studies",
-      "emphasis": "Graphics relevance + original insight",
-      "source": "https://eg2027.isti.cnr.it/call-for-papers/",
-      "basisYear": 2027,
-      "checkedAt": "2026-10-25",
+      "source": "https://diglib.eg.org/handle/10.2312/3607309",
+      "basisYear": 2026,
+      "scope": "Geometry, rendering and motion methods",
+      "emphasis": "Accuracy, robustness and practical performance",
       "guide": {
-        "contribution": "Position the work within computer graphics and explain its original contribution. Algorithms, datasets, benchmarks, and perceptual or experimental studies are all welcome; the call explicitly asks for meaningful engagement with graphics literature.",
-        "evidence": "Match the evaluation to the claim: comparisons and limitations for methods, coverage and usefulness for datasets, or a sound design and analysis for studies. A graphics application should make its research advance clear.",
+        "contribution": "Graphics methods with a concrete improvement in representation, computation or capture. Recent examples combine efficient geometry and rendering algorithms with learned motion reconstruction, addressing practical constraints such as limited memory, sparse controls, mobile hardware or unobtrusive sensing.",
+        "evidence": "Measure accuracy and visual quality alongside the resource or input constraints being addressed. Recent papers compare memory and runtime, examine difficult geometries and levels of detail, and test reconstruction across motion styles, datasets and real-world capture conditions.",
         "comparisons": [
           {
             "series": "siggraph",
-            "difference": "Substantial scope overlap. Frame the contribution for a broad graphics audience and compare the track-specific expectations in the current calls."
+            "difference": "Eurographics and SIGGRAPH publish geometry, rendering and motion methods. Recent Eurographics work tests resource limits and sparse input data; recent SIGGRAPH work also evaluates camera control and physical display prototypes."
           },
           {
             "series": "sca",
-            "difference": "More specialized when the main scientific question is about time-varying phenomena, motion, or animation."
+            "difference": "Eurographics includes static geometry and rendering algorithms, evaluated through accuracy, memory and runtime. SCA focuses on animation and simulation, where motion sequences, contacts and temporal coherence become central measurements."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -389,25 +395,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Animation & simulation",
-      "emphasis": "Animation advances + sound evaluation",
-      "source": "https://computeranimation.org/instructions.html",
+      "source": "https://diglib.eg.org/handle/10.2312/3607315",
       "basisYear": 2026,
-      "checkedAt": "2026-10-25",
+      "scope": "Animation, motion control and simulation",
+      "emphasis": "Temporal behavior, controllability and physical plausibility",
       "guide": {
-        "contribution": "Advance animation or simulation, broadly including time-varying phenomena. Motion synthesis, character control, physics, authoring tools, and perceptual questions can all fit.",
-        "evidence": "Show temporal behavior, relevant comparisons, and the limits of the method. Choose measures suited to the claim, such as control, realism, stability, or efficiency. The 2026 call also welcomes benchmark studies judged on experimental design and insight, without requiring a new algorithm.",
+        "contribution": "Methods for generating, controlling or simulating animated content. Recent work introduces editable motion representations, collision-aware human interactions and coupled cloth models, with a concrete advance in control, temporal coherence, contact handling or the cost of producing detailed animation.",
+        "evidence": "Show animated sequences that reveal timing, contacts and changes in control. Recent learned methods use held-out sequences, comparisons and ablations, including collision and reconstruction measurements; other experiments demonstrate style, timing and trajectory edits or detailed dynamics at interactive rates.",
         "comparisons": [
           {
-            "series": "mig",
-            "difference": "Shares motion and character research; MIG also explicitly spans interactive systems, game applications, and interaction techniques."
+            "series": "siggraph",
+            "difference": "SCA focuses on how characters and materials move: show motion control, contact handling or simulation behavior over time. SIGGRAPH includes those topics plus rendering, displays and static geometry."
           },
           {
-            "series": "eurographics",
-            "difference": "A broader graphics audience when the contribution extends beyond animation or time-dependent behavior."
+            "series": "mig",
+            "difference": "Recent SCA work tests motion representations, collisions and cloth dynamics. MIG also studies how people use animation and interaction systems, measuring task performance, control and user feedback."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -474,25 +482,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Motion, characters & games",
-      "emphasis": "Interactive relevance + technical quality",
-      "source": "https://sgmig.hosting.acm.org/2026/papers.htm",
-      "basisYear": 2026,
-      "checkedAt": "2026-10-25",
+      "source": "https://mig.siggraph.org/2025/program/",
+      "basisYear": 2025,
+      "scope": "Interactive animation, simulation and games",
+      "emphasis": "Control, integration and user experience",
       "guide": {
-        "contribution": "Connect the contribution to motion, interaction, or games: character behavior, animation, interactive systems, datasets, or applications. Make the research result clear even when the work is demonstrated inside a game.",
-        "evidence": "Demonstrate technical quality and significance with comparisons or studies suited to the claim. For interactive methods, useful evidence can include responsiveness, control, and user outcomes. The call supports mature long papers and focused or emerging short contributions.",
+        "contribution": "Animation, simulation and interaction methods tied to how content is authored or experienced. Recent papers develop flexible motion controls, practical deformable simulation and haptic assistance, explaining the technical mechanism and its effect on an animation workflow or interactive task.",
+        "evidence": "Evaluate the behavior that the system changes: constraint accuracy and motion examples for authoring, material response and comparisons for simulation, or task performance and participant feedback for interaction. Working application examples connect technical improvements to actual use.",
         "comparisons": [
           {
             "series": "sca",
-            "difference": "A natural alternative when animation or simulation itself is the main advance, with less dependence on an interactive or game setting."
+            "difference": "MIG and SCA publish motion synthesis and simulation. MIG also evaluates interactive uses, such as authoring controls or haptic assistance; recent SCA work concentrates on motion coherence, collision handling and physical dynamics."
           },
           {
-            "series": "ceig",
-            "difference": "Broader graphics scope and a Spanish-community forum, including educational, industrial, and practical contributions."
+            "series": "eurographics",
+            "difference": "MIG connects animation and simulation methods to authoring or interactive tasks, measuring control and usability. Eurographics also includes static geometry and rendering systems, measured through accuracy, memory and runtime."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   },
   {
@@ -565,25 +575,27 @@
       "checkedAt": "2026-10-22"
     },
     "paperFit": {
-      "scope": "Graphics research & applications",
-      "emphasis": "Original ideas + practical value",
-      "source": "https://eurographics.es/CEIG26/#full-papers",
+      "source": "https://diglib.eg.org/handle/10.2312/3607346",
       "basisYear": 2026,
-      "checkedAt": "2026-10-22",
+      "scope": "Graphics methods and applied visual computing",
+      "emphasis": "Working systems, measured accuracy and efficiency",
       "guide": {
-        "contribution": "Present graphics research, a practical contribution, an innovative application, or an experience report. The Spanish graphics community is the main audience, but international submissions are welcome.",
-        "evidence": "Explain what is new or useful and document it with appropriate results, examples, or an evaluation. Make the lessons transferable to other researchers or practitioners. The call also accommodates educational and industrial work; choose the matching submission category.",
+        "contribution": "Focused graphics methods and applied visual-computing pipelines. Recent full papers improve high-resolution reconstruction, compact appearance modeling and geometry processing for real data, making the technical change clear and connecting it to an identifiable application or computational bottleneck.",
+        "evidence": "Demonstrate the complete pipeline on representative data and quantify the relevant trade-offs. Recent evaluations measure reconstruction or alignment error, success rate, runtime, memory and image similarity, with visual results that show whether the method preserves useful geometric or appearance detail.",
         "comparisons": [
           {
             "series": "eurographics",
-            "difference": "Shares broad graphics topics, with a full-paper program centered on original research connected to the international graphics literature."
+            "difference": "Recent CEIG work evaluates complete reconstruction and appearance pipelines using alignment error, success rate and processing cost. Eurographics also develops reusable rendering, geometry and motion methods, tested across input data and resource constraints."
           },
           {
             "series": "mig",
-            "difference": "More focused on motion, interactive systems, and games when those are the core contribution."
+            "difference": "Recent CEIG work includes static reconstruction, appearance modeling and geometry processing. MIG focuses on animation tools and interactive experiences, where motion behavior, task performance and user control are part of the evaluation."
           }
         ]
-      }
+      },
+      "basis": "published-papers",
+      "sampleSize": 3,
+      "checkedAt": "2026-10-25"
     }
   }
 ]
