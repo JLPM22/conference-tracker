@@ -1,6 +1,6 @@
 # Conference tracker
 
-A personal submission tracker for graphics, vision, robotics, VR/HCI and AI/ML conferences, styled to match [Jose Luis Ponton's portfolio](https://joseluisponton.com/). It uses Next.js, React and Tailwind CSS, with a static export for GitHub Pages.
+A personal submission tracker for graphics, vision, robotics, VR/HCI and AI/ML conferences. It uses Next.js, React and Tailwind CSS, with a static export for GitHub Pages.
 
 The dashboard combines official submission schedules with clearly labelled estimates for the next cycle. It includes paper and prerequisite deadlines, live countdowns, submission timelines, category and text filters, a saved shortlist, and calendar downloads.
 
