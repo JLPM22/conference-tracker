@@ -77,19 +77,19 @@
     "paperFit": {
       "source": "https://openaccess.thecvf.com/CVPR2025",
       "basisYear": 2025,
-      "scope": "Visual learning and generation",
-      "emphasis": "Control, realism, generalization",
+      "scope": "Computer vision methods, architectures and datasets",
+      "emphasis": "Benchmarks, ablations and generalization",
       "guide": {
-        "contribution": "Visual models and methods for recognition, reconstruction and generation. Define the capability being improved, such as controlling camera and subject motion independently, and demonstrate that it works across varied inputs and tasks.",
-        "evidence": "Evaluation combines quantitative comparisons with visual results and, for perceptual claims, human judgments. Motion work measures control and realism together, tests different inputs and applications, and compares against existing generation methods. Diverse outputs matter when a method claims to model multiple plausible futures.",
+        "contribution": "Computer vision methods, model architectures, training strategies, datasets and benchmarks. Contributions improve recognition, detection, segmentation, tracking, reconstruction or generation, or introduce data and evaluation tasks that reveal limitations in existing approaches.",
+        "evidence": "Quantitative comparisons against strong baselines on established benchmarks, with ablations that isolate architectural and training changes. Evaluate accuracy, robustness, generalization and computational cost. Dataset contributions need clear protocols, coverage analysis and baseline results. Visual examples support task-specific evaluation.",
         "comparisons": [
           {
             "series": "iccv",
-            "difference": "CVPR and ICCV publish visual learning, video and 3D reconstruction. CVPR generation papers measure motion control, realism and diversity; ICCV reconstruction papers measure image quality, view consistency and robustness to capture errors."
+            "difference": "CVPR and ICCV cover the same broad vision problems and contribution types: algorithms, architectures, training methods, datasets and benchmarks. Both emphasize quantitative comparisons, ablations and generalization across data and tasks."
           },
           {
-            "series": "wacv",
-            "difference": "CVPR work develops visual generation methods and tests control, realism and variation across inputs. WACV work addresses operating constraints such as low light or unseen objects, testing pose accuracy and performance in the final application."
+            "series": "3dv",
+            "difference": "CVPR covers computer vision across images, video and 3D. 3DV specializes in 3D geometry and spatial representations, with evaluation centered on depth, camera pose, reconstruction and 3D scene understanding."
           }
         ]
       },
@@ -177,19 +177,19 @@
     "paperFit": {
       "source": "https://openaccess.thecvf.com/ICCV2025",
       "basisYear": 2025,
-      "scope": "Visual understanding and reconstruction",
-      "emphasis": "Robustness and visual accuracy",
+      "scope": "Computer vision methods, architectures and datasets",
+      "emphasis": "Benchmarks, ablations and generalization",
       "guide": {
-        "contribution": "Methods for visual understanding, image recovery and 3D reconstruction. Combine learned models with scene or sensor structure to handle problems such as inconsistent views, fast motion and changing objects.",
-        "evidence": "Experiments connect image quality or reconstruction accuracy to difficult capture conditions. Experiments use synthetic and real scenes, compare competing reconstruction or interpolation methods, and test corruptions, motion and object changes. Visual sequences show whether the resulting representations remain coherent over time.",
+        "contribution": "Computer vision methods, model architectures, training strategies, datasets and benchmarks. Contributions improve recognition, detection, segmentation, tracking, reconstruction or generation, or introduce data and evaluation tasks that reveal limitations in existing approaches.",
+        "evidence": "Quantitative comparisons against strong baselines on established benchmarks, with ablations that isolate architectural and training changes. Evaluate accuracy, robustness, generalization and computational cost. Dataset contributions need clear protocols, coverage analysis and baseline results. Visual examples support task-specific evaluation.",
         "comparisons": [
           {
             "series": "cvpr",
-            "difference": "ICCV and CVPR publish visual learning, video and 3D reconstruction. ICCV reconstruction work tests changing scenes and difficult capture conditions; CVPR generation work tests controllable motion, realistic appearance and output diversity."
+            "difference": "ICCV and CVPR cover the same broad vision problems and contribution types: algorithms, architectures, training methods, datasets and benchmarks. Both emphasize quantitative comparisons, ablations and generalization across data and tasks."
           },
           {
             "series": "3dv",
-            "difference": "ICCV work evaluates recovered images and reconstructed scenes, including restoration under capture errors. 3DV puts the 3D output at the center: camera poses, point-cloud labels, preserved geometry and scene consistency."
+            "difference": "ICCV covers computer vision across images, video and 3D. 3DV specializes in 3D geometry and spatial representations, with evaluation centered on depth, camera pose, reconstruction and 3D scene understanding."
           }
         ]
       },
@@ -283,19 +283,19 @@
     "paperFit": {
       "source": "https://eccv.ecva.net/virtual/2026/papers.html",
       "basisYear": 2026,
-      "scope": "Visual models and scene reasoning",
-      "emphasis": "Consistency, accuracy, efficiency",
+      "scope": "Computer vision methods, architectures and datasets",
+      "emphasis": "Benchmarks, ablations and generalization",
       "guide": {
-        "contribution": "Methods for visual understanding, reconstruction and reasoning. Improve capabilities such as scene consistency, human contact reconstruction or image assessment through a clear change to the representation or algorithm.",
-        "evidence": "Evaluation follows the claimed capability: geometric and contact metrics for reconstruction, robustness and generalization for assessment, and runtime for efficient inference. Comparisons include existing methods and varied scenes or inputs. Human judgments supplement metrics when visible plausibility is part of the contribution.",
+        "contribution": "Computer vision methods, model architectures, training strategies, datasets and benchmarks. Contributions improve recognition, detection, segmentation, tracking, reconstruction or generation, or introduce data and evaluation tasks that reveal limitations in existing approaches.",
+        "evidence": "Quantitative comparisons against strong baselines on established benchmarks, with ablations that isolate architectural and training changes. Evaluate accuracy, robustness, generalization and computational cost. Dataset contributions need clear protocols, coverage analysis and baseline results. Visual examples support task-specific evaluation.",
         "comparisons": [
           {
             "series": "iccv",
-            "difference": "ECCV and ICCV publish learned reconstruction methods. ECCV work tests human contact geometry and consistency of generated views; ICCV work tests fast motion, corrupted inputs and scene changes."
+            "difference": "ECCV and ICCV cover the same broad vision problems and contribution types: algorithms, architectures, training methods, datasets and benchmarks. Both emphasize quantitative comparisons, ablations and generalization across data and tasks."
           },
           {
             "series": "3dv",
-            "difference": "ECCV includes image assessment and visual reasoning as well as reconstruction. 3DV concentrates on 3D representations, with evaluations of camera poses, geometric preservation, reconstruction and point-cloud segmentation."
+            "difference": "ECCV covers computer vision across images, video and 3D. 3DV specializes in 3D geometry and spatial representations, with evaluation centered on depth, camera pose, reconstruction and 3D scene understanding."
           }
         ]
       },
@@ -382,19 +382,19 @@
     "paperFit": {
       "source": "https://3dvconf.github.io/2026/accepted-papers/",
       "basisYear": 2026,
-      "scope": "Geometry and 3D representations",
-      "emphasis": "Geometric accuracy and consistency",
+      "scope": "3D geometry, reconstruction and understanding",
+      "emphasis": "Geometric accuracy and 3D benchmarks",
       "guide": {
-        "contribution": "3D representations and algorithms for reconstruction, editing and scene understanding. Contributions improve geometric accuracy, preserve shape during editing, scale scene recovery or transfer image information into consistent 3D predictions.",
-        "evidence": "Evaluation measures the specific 3D output, including camera poses, novel views, preservation of geometry or point-cloud segmentation. Experiments span established datasets, compare relevant baselines and test efficiency or scale. Editing studies assess both the modified region and the consistency of the preserved structure.",
+        "contribution": "Methods, representations and datasets for 3D vision: depth estimation, camera pose, multi-view reconstruction, point clouds, shapes and spatial scene understanding. The main technical contribution concerns recovering, representing or reasoning about three-dimensional structure.",
+        "evidence": "Quantitative comparisons on 3D benchmarks, using geometric error, depth accuracy, pose accuracy, reconstruction completeness or 3D segmentation metrics. Use ablations and test across scenes, viewpoints and sensor conditions. Measure runtime and memory where efficiency or scale is part of the contribution.",
         "comparisons": [
           {
             "series": "cvpr",
-            "difference": "3DV evaluates geometric outputs such as camera poses, edited shapes and point-cloud labels. CVPR also publishes video generation, where motion control, visual realism and diversity can be the main results."
+            "difference": "3DV specializes in 3D geometry, reconstruction and spatial understanding. CVPR includes these topics within a broader program covering image and video recognition, generation, architectures and datasets. Both use benchmarks and controlled comparisons; 3DV narrows the subject to 3D."
           },
           {
             "series": "wacv",
-            "difference": "3DV tests the quality and consistency of a 3D representation. WACV reconstruction and pose papers also ask whether that representation improves an application under constraints such as low light or unfamiliar objects."
+            "difference": "3DV specializes in 3D geometry, reconstruction and spatial understanding. WACV includes these topics within a broader program covering image and video recognition, generation, architectures and datasets. Both use benchmarks and controlled comparisons; 3DV narrows the subject to 3D."
           }
         ]
       },
@@ -872,19 +872,19 @@
     "paperFit": {
       "source": "https://openaccess.thecvf.com/WACV2025",
       "basisYear": 2025,
-      "scope": "Vision methods and applications",
-      "emphasis": "Realistic constraints and utility",
+      "scope": "Computer vision methods, architectures and datasets",
+      "emphasis": "Benchmarks, ablations and generalization",
       "guide": {
-        "contribution": "Vision methods, datasets and evaluations that address practical operating constraints. Show how the contribution improves a task under conditions such as low illumination, unfamiliar objects or limited capture data.",
-        "evidence": "Experiments reproduce the stated operating constraint and measure task-level performance. Experiments use synthetic and real data, compare established pipelines, and examine robustness to viewpoint or illumination. Comparative studies also measure runtime and test whether intermediate quality metrics predict the final task result.",
+        "contribution": "Computer vision methods, model architectures, training strategies, datasets and benchmarks. Contributions improve recognition, detection, segmentation, tracking, reconstruction or generation, or introduce data and evaluation tasks that reveal limitations in existing approaches.",
+        "evidence": "Quantitative comparisons against strong baselines on established benchmarks, with ablations that isolate architectural and training changes. Evaluate accuracy, robustness, generalization and computational cost. Dataset contributions need clear protocols, coverage analysis and baseline results. Visual examples support task-specific evaluation.",
         "comparisons": [
           {
-            "series": "3dv",
-            "difference": "WACV pose and reconstruction papers test performance under practical sensing constraints and in the final application. 3DV more directly evaluates the representation itself: geometric accuracy, camera poses and consistency of 3D structure."
+            "series": "cvpr",
+            "difference": "WACV and CVPR cover the same broad vision problems and contribution types: algorithms, architectures, training methods, datasets and benchmarks. Both emphasize quantitative comparisons, ablations and generalization across data and tasks."
           },
           {
-            "series": "cvpr",
-            "difference": "WACV work measures vision performance under low light, unseen objects or limited capture data. CVPR generation work measures how accurately users can control motion and how realistic and varied the generated videos are."
+            "series": "3dv",
+            "difference": "WACV covers computer vision across images, video and 3D. 3DV specializes in 3D geometry and spatial representations, with evaluation centered on depth, camera pose, reconstruction and 3D scene understanding."
           }
         ]
       },
