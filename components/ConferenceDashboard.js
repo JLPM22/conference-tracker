@@ -80,6 +80,7 @@ export default function ConferenceDashboard({ conferences }) {
   const archived = period === 'past';
   const entries = archived ? conferences.filter(entry => isPast(paperOf(entry).date, now)).map(entry => ({ ...entry, estimated: false })) : planning;
   const filtered = filterEntries(entries, { category, query, status, savedOnly, saved, sort, archived }, now || 0);
+  const bookmarkedEntries = entries.filter(entry => saved.includes(entry.series));
   const selected = filtered.find(entry => entry.id === expanded);
   const advancedCount = Number(status !== 'all') + Number(sort !== 'deadline');
   const hasFilters = category !== 'all' || query.trim() || savedOnly || advancedCount > 0;
@@ -114,7 +115,7 @@ export default function ConferenceDashboard({ conferences }) {
       <header className="site-header">
         <div className="site-container header-content">
           <a className="identity" href="https://joseluisponton.com/">Jose Luis Ponton <Icon name="arrow" size={16} /></a>
-          <button className="export-button" disabled={!filtered.length} onClick={() => onExport(filtered)} title="Export the displayed schedules, including labeled estimates">
+          <button className="export-button" disabled={!bookmarkedEntries.length} onClick={() => onExport(bookmarkedEntries)} title={bookmarkedEntries.length ? 'Export bookmarked conferences in this submission period' : 'Bookmark a conference in this submission period to export its calendar'}>
             <Icon name="download" size={18} /><span>Export calendar</span>
           </button>
         </div>

@@ -185,12 +185,29 @@ try {
   await expect(cards).toHaveCount(totalConferences);
   log('Closed and upcoming submission cycles are accessible');
 
+  const exportCalendar = page.getByRole('button', { name: /Export calendar/i });
+  await expect(exportCalendar).toBeDisabled();
+  await button('Save CVPR').click();
+  await button('Save SIGGRAPH').click();
+  await button('Graphics').click();
+  await search().fill('a conference that does not exist');
+  await expect(cards).toHaveCount(0);
+  await expect(exportCalendar).toBeEnabled();
   const downloadPromise = page.waitForEvent('download');
-  await page.getByRole('button', { name: /Export calendar/i }).click();
+  await exportCalendar.click();
   const download = await downloadPromise;
   assert.match(download.suggestedFilename(), /\.ics$/i, 'Calendar export must produce an .ics file');
   assert.equal(await download.failure(), null, 'Calendar download should complete');
-  log(`Calendar export downloads ${download.suggestedFilename()}`);
+  const calendar = (await readFile(await download.path(), 'utf8')).replace(/\r?\n /g, '');
+  const summaries = calendar.split(/\r?\n/).filter(line => line.startsWith('SUMMARY:'));
+  assert.ok(summaries.some(line => /CVPR \d{4}/.test(line)), 'Export must include bookmarked CVPR hidden by filters');
+  assert.ok(summaries.some(line => /SIGGRAPH \d{4}/.test(line)), 'Export must include bookmarked SIGGRAPH hidden by search');
+  assert.ok(summaries.every(line => /(?:CVPR|SIGGRAPH) \d{4}/.test(line)), 'Export must exclude all unbookmarked conferences');
+  await button('Clear filters').click();
+  await button('Unsave CVPR').click();
+  await button('Unsave SIGGRAPH').click();
+  await expect(exportCalendar).toBeDisabled();
+  log('Calendar export includes only bookmarks, ignores filters, and is disabled without bookmarks');
 
   await button('Timeline view').click();
   await expect(page.getByRole('region', { name: 'Scrollable conference timeline', exact: true })).toBeVisible();

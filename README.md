@@ -105,6 +105,8 @@ Countdowns use the browser's current clock. Published timestamps can be viewed i
 
 Saved conferences stay in `localStorage` in the current browser and origin. They are not uploaded or synchronized between devices. Clearing site data removes them; switching between a localhost preview, a GitHub domain and a custom domain uses separate storage.
 
+The main **Export calendar** button exports only bookmarked conferences for the selected Upcoming or Closed submission period, regardless of search and area filters. It is disabled when that period has no bookmarked conferences. Each conference's calendar button still exports that conference individually.
+
 Downloaded `.ics` files are snapshots, not subscribed calendar feeds. Later website changes do not update imported events. Estimated events are labelled and marked tentative; date-only milestones become all-day events. Recheck the official call before submitting and replace old calendar entries when dates change.
 
 ## Fonts and attribution
