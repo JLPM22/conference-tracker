@@ -93,7 +93,12 @@ svg { flex-shrink: 0; }
 .conference-card:hover { box-shadow: 3px 3px 0 #e6e6e6; }
 .conference-card.is-expanded { box-shadow: 4px 4px 0 var(--area-bg); }
 .conference-summary { display: flex; align-items: center; position: relative; }
-.row-open { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, 1.15fr) 125px 18px; gap: 22px; align-items: center; flex: 1; min-width: 0; min-height: 128px; padding: 21px 17px 21px 22px; border: 0; background: transparent; text-align: left; border-radius: 10px; }
+.row-content { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, 1.15fr) 125px 18px; gap: 22px; align-items: center; flex: 1; min-width: 0; min-height: 128px; padding: 21px 17px 21px 22px; border: 0; background: transparent; text-align: left; border-radius: 10px; }
+.row-open { position: absolute; inset: 0; border: 0; border-radius: 10px; background: transparent; z-index: 1; }
+.row-content { position: relative; }
+.row-content > :not(.row-open) { pointer-events: none; }
+.row-content .deadline-source { pointer-events: auto; position: relative; z-index: 2; }
+.row-content .status-badge { pointer-events: auto; position: relative; z-index: 2; }
 .row-open:focus-visible { outline-offset: -6px; }
 .venue-summary { min-width: 0; }
 .venue-name { display: block; font: 600 25px/1.25 var(--font-outfit), sans-serif; letter-spacing: -.025em; }
@@ -108,7 +113,7 @@ svg { flex-shrink: 0; }
 .deadline-date { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 8px; }
 .deadline-date > time { font-size: 15px; font-weight: 550; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .deadline-time, .paper-follows { color: #626262; font-size: 10px; line-height: 1.8; }
-.paper-follows { margin-top: 3px; color: #454545; }
+.paper-follows { display: flex; align-items: center; gap: 4px; margin-top: 3px; color: #454545; }
 .prerequisite-warning { display: flex; gap: 5px; align-items: center; color: #983c17; font-size: 11px; margin-top: 5px; }
 .update-warning { display: flex; align-items: flex-start; gap: 8px; margin: 0; padding: 10px 22px; border-top: 1px solid #e0be62; background: #fff3cc; color: #65460b; font-size: 12px; line-height: 1.6; }
 .update-warning svg { flex-shrink: 0; margin-top: 1px; }
@@ -122,10 +127,10 @@ svg { flex-shrink: 0; }
 .due-soon .countdown > strong { background: var(--yellow); border: 1px solid var(--ink); border-radius: 6px; box-shadow: 2px 2px 0 var(--ink); padding: 4px 10px; white-space: nowrap; }
 .mobile-countdown-label { display: none; }
 .expand-icon { transition: transform .2s; color: #555; }
-.row-open[aria-expanded="true"] .expand-icon { transform: rotate(180deg); }
+.is-expanded .expand-icon { transform: rotate(180deg); }
 .icon-button { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; flex-shrink: 0; padding: 0; border: 0; border-radius: 7px; background: transparent; }
 .icon-button:hover { background: #f1f1f1; }
-.save-button { margin-right: 13px; color: #595959; }
+.save-button { position: relative; z-index: 3; margin-right: 13px; color: #595959; }
 .save-button.saved { color: var(--ink); }
 
 .conference-details { padding: 24px; border-top: 1px solid var(--ink); background: #fff; }
@@ -153,13 +158,12 @@ svg { flex-shrink: 0; }
 .milestones { list-style: none; padding: 0; margin: 0; }
 .milestones li { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; gap: 20px; padding: 14px 0 14px 19px; border-bottom: 1px solid #e5e5e5; font-size: 12px; }
 .milestone-dot { position: absolute; left: 0; top: 22px; width: 6px; height: 6px; border-radius: 50%; background: #888; }
-.milestones a { display: inline; line-height: 1.8; }
-.milestones a svg { display: inline; margin-left: 4px; vertical-align: -2px; }
-.milestones a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.milestone-label { line-height: 1.8; }
+.milestone-date-source { display: flex; align-items: center; justify-content: flex-end; gap: 5px; }
 .milestone-date { text-align: right; }
 .milestone-date time { display: block; font-weight: 550; }
 .milestone-date small { display: block; color: #656565; font-size: 10px; line-height: 1.8; }
-.milestones .paper-milestone a, .milestones .paper-milestone time { font-weight: 650; }
+.milestones .paper-milestone .milestone-label, .milestones .paper-milestone time { font-weight: 650; }
 .milestones .paper-milestone .milestone-dot { background: var(--ink); width: 8px; height: 8px; left: -1px; }
 .milestones .past { color: #6c6c6c; }
 .milestone-date .paper-remaining { color: #803716; }
@@ -225,7 +229,7 @@ svg { flex-shrink: 0; }
 
 @media (max-width: 1000px) {
   .page-heading h1 { font-size: 44px; }
-  .row-open { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) minmax(0, 1.1fr) 100px 16px; gap: 15px; padding-inline: 18px 10px; }
+  .row-content { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) minmax(0, 1.1fr) 100px 16px; gap: 15px; padding-inline: 18px 10px; }
   .list-heading { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) minmax(0, 1.1fr) 100px 16px; gap: 15px; padding-inline: 19px 61px; }
   .venue-name { font-size: 23px; }
   .countdown > strong { font-size: 23px; }
@@ -246,7 +250,7 @@ svg { flex-shrink: 0; }
   .view-switch button { min-height: 44px; width: 44px; }
   .advanced-filters { gap: 15px; }
   .advanced-filters label { flex: 1 1 220px; justify-content: space-between; }
-  .row-open { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 20px 12px; padding: 19px 18px; position: relative; }
+  .row-content { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 20px 12px; padding: 19px 18px; position: relative; }
   .list-heading { display: none; }
   .venue-summary { grid-column: 1 / -1; padding-right: 65px; }
   .save-button { position: absolute; right: 9px; top: 13px; width: 38px; height: 38px; margin: 0; }
@@ -344,7 +348,7 @@ svg { flex-shrink: 0; }
   .view-switch button { width: 38px; }
   .category-tabs button { padding-inline: 9px; }
   .venue-name { font-size: 22px; }
-  .row-open { padding-inline: 15px; gap: 18px 10px; }
+  .row-content { padding-inline: 15px; gap: 18px 10px; }
   .countdown > strong, .due-soon .countdown > strong { font-size: 21px; }
   .advanced-filters label { flex-direction: column; align-items: stretch; gap: 7px; }
   .advanced-filters select { max-width: none; }
@@ -362,3 +366,6 @@ svg { flex-shrink: 0; }
 .venue-facts ul { margin: 6px 0 10px; padding-left: 17px; }
 .venue-facts .facts-checked { font-size: 10px; margin-top: 12px; }
 @media (max-width: 780px) { .detail-aside { display: block; } }
+
+.deadline-source { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 24px; height: 24px; border-radius: 4px; color: #595959; vertical-align: middle; }
+.deadline-source:hover, .deadline-source:focus-visible { color: #171717; background: var(--pink); }

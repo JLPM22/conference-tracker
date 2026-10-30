@@ -64,7 +64,7 @@ The catalog includes CEIG, WACV, HRI and SGP. WACV and SGP use their final submi
 
 The header shows the static export's build timestamp as “Last updated,” in Europe/Berlin time. It changes when the site is rebuilt, not when a visitor refreshes. Per-conference source-check dates remain separate.
 
-Estimated schedules show an “Update needed” reminder starting 60 calendar days before the first required submission step. The reminder remains until that paper deadline closes or official dates replace the estimate. It does not depend on whether the location or event dates are known. Set `required: false` on a recommended abstract milestone so it stays visible without controlling the countdown or reminder.
+Estimated schedules show an “Update needed” reminder starting 60 calendar days before the first required submission step. The reminder remains until that paper deadline closes or official dates replace the estimate. It does not depend on whether the location or event dates are known. Set `required: false` on a recommended abstract milestone so it stays visible without controlling the next required step or reminder.
 
 Each record has `core` metadata (rank, edition, source and verification date) and a `publication` policy (route, journal names, source edition, explanation and verification date). ICORE2026 is preferred. Older CORE entries are explicitly dated; a missing entry is distinct from the portal's Unranked classification. Publication policies distinguish direct journal tracks, selected journal papers, invited extensions, review transfers and presentation of already accepted journal articles. Policies remain tied to their verified edition when submission dates are estimated.
 
@@ -77,7 +77,7 @@ Each conference record contains:
 | `cycleYears` | Years between editions, normally `1`; use `2` for a biennial venue. |
 | `website`, `editionSource`, `checkedAt` | Official website, official schedule URL, and verification date (`YYYY-MM-DD`). |
 | `event` | Official conference `start`, `end`, and `location`; unknown values are `null`. An optional `source` gives the announcement URL. |
-| `milestones` | Submission and review dates, each with `kind`, `label`, `date`, `timezone`, and its official `source`. A `paper` milestone is required. |
+| `milestones` | Submission and review dates, each with `kind`, `label`, `date`, `timezone`, and its exact `source`. A `paper` milestone is required. Optional `sourceSection` records a verified heading; include a verified anchor or text fragment in `source` to link to that section. |
 | `announcedEvents` | Optional future event announcements keyed by edition year, independent of submission estimates. |
 | `notes` | Track scope, prerequisite requirements, extensions, and source caveats. |
 | `paperFit` | Brief `scope` and `emphasis` based on recent published papers (`basis: "published-papers"`), with the proceedings `source`, sampled publication year `basisYear`, `sampleSize`, and independent `checkedAt`. Its `guide` describes observed `contribution` and evaluation (`evidence`) patterns, plus `comparisons` (`series` and `difference`) with venues in the same area. Peer names and proceedings links resolve from the catalog. Keep the publication year unchanged when projecting deadlines. |
@@ -88,7 +88,7 @@ To refresh Paper fit, read recent accepted papers and their evaluation sections 
 
 To update a venue:
 
-1. Read its official paper call and important-dates page. Check the track, abstract prerequisite, timezone, revisions, extensions, notification and final-version dates.
+1. Read its official paper call and important-dates page. Verify the full paper submission deadline separately from abstracts, enrollment and registration. Check the track, timezone, revisions, extensions, notification and final-version dates. The main row date, countdown, urgency styling and default upcoming sort always use the full paper deadline; earlier prerequisites remain secondary. Preserve this preference in future research and data updates (see AGENTS.md).
 2. Update the record for the latest confirmed edition, including its `id`, `year`, milestone sources and `checkedAt`. Keep the stable `series` key so saved preferences continue to work.
 3. Add known future conference dates or locations under `announcedEvents` if the new submission schedule is still unpublished.
 4. Run `npm run validate:data`, `npm test`, and `npm run build`; then commit and push the update.
@@ -101,11 +101,13 @@ The site does not scrape conference pages, automatically verify changes, or auto
 
 ## Browser data and calendar behavior
 
-Countdowns use the browser's current clock. Published timestamps can be viewed in their source timezone, local time or UTC. Date-only values and estimates show approximate calendar-day countdowns, without claiming an exact submission cutoff.
+Countdowns use the browser's current clock and always target the full paper submission deadline, including for estimated schedules. Default upcoming sorting also uses paper deadlines; the optional “Next submission step” sort includes earlier prerequisites. Closed conferences sort by most recently closed paper deadline. Published timestamps can be viewed in their source timezone, local time or UTC. Date-only values and estimates show approximate calendar-day countdowns, without claiming an exact submission cutoff.
+
+The link icon beside each deadline opens its recorded source in a new tab. Hover or focus exposes the milestone, source edition, and verified section heading when available. Estimated dates link to the historical edition used as their basis, not to a confirmed future deadline. Timeline markers open the same details and source links.
 
 Saved conferences stay in `localStorage` in the current browser and origin. They are not uploaded or synchronized between devices. Clearing site data removes them; switching between a localhost preview, a GitHub domain and a custom domain uses separate storage.
 
-The main **Export calendar** button exports only bookmarked conferences for the selected Upcoming or Closed submission period, regardless of search and area filters. It is disabled when that period has no bookmarked conferences. Each conference's calendar button still exports that conference individually.
+The main **Export calendar** button exports only the full paper deadline for each bookmarked conference in the selected Upcoming or Closed submission period, regardless of search and area filters. It is disabled when that period has no bookmarked conferences. Each conference's calendar button exports its paper deadline individually. Abstracts, registration, supplementary material, rebuttal, notification and camera-ready dates remain in the website schedule but are excluded from calendar exports.
 
 Downloaded `.ics` files are snapshots, not subscribed calendar feeds. Later website changes do not update imported events. Estimated events are labelled and marked tentative; date-only milestones become all-day events. Recheck the official call before submitting and replace old calendar entries when dates change.
 

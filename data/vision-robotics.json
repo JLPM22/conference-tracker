@@ -27,35 +27,40 @@
         "label": "Paper enrollment",
         "date": "2026-11-10T23:59:00-12:00",
         "timezone": "AoE",
-        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"
+        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers#:~:text=Important%20Dates",
+        "sourceSection": "Important Dates"
       },
       {
         "kind": "paper",
         "label": "Paper submission",
         "date": "2026-11-16T23:59:00-12:00",
         "timezone": "AoE",
-        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"
+        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers#:~:text=Important%20Dates",
+        "sourceSection": "Important Dates"
       },
       {
         "kind": "supplementary",
         "label": "Supplementary material",
         "date": "2026-11-23",
         "timezone": "AoE",
-        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"
+        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers#:~:text=Important%20Dates",
+        "sourceSection": "Important Dates"
       },
       {
         "kind": "rebuttal",
         "label": "Rebuttal deadline",
         "date": "2027-02-01",
         "timezone": "AoE",
-        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"
+        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers#:~:text=Important%20Dates",
+        "sourceSection": "Important Dates"
       },
       {
         "kind": "notification",
         "label": "Final decisions",
         "date": "2027-02-25",
         "timezone": "AoE",
-        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers"
+        "source": "https://cvpr.thecvf.com/Conferences/2027/CallForPapers#:~:text=Important%20Dates",
+        "sourceSection": "Important Dates"
       }
     ],
     "notes": "Paper enrollment is mandatory. All authors need an OpenReview profile; profiles without an institutional email may take up to two weeks to activate. Main sessions June 22–25.",

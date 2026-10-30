@@ -27,21 +27,24 @@
         "label": "Submission form & conflicts",
         "date": "2027-01-21T22:00:00+00:00",
         "timezone": "UTC",
-        "source": "https://s2027.siggraph.org/program/technical-papers/"
+        "source": "https://s2027.siggraph.org/program/technical-papers/#:~:text=Submissions%20Form%20%26%20Conflicts",
+        "sourceSection": "Submissions Form & Conflicts"
       },
       {
         "kind": "paper",
         "label": "Technical paper submission",
         "date": "2027-01-28T22:00:00+00:00",
         "timezone": "UTC",
-        "source": "https://s2027.siggraph.org/program/technical-papers/"
+        "source": "https://s2027.siggraph.org/program/technical-papers/#:~:text=Paper%20Deadline",
+        "sourceSection": "Paper Deadline"
       },
       {
         "kind": "supplementary",
         "label": "Upload deadline",
         "date": "2027-01-29T22:00:00+00:00",
         "timezone": "UTC",
-        "source": "https://s2027.siggraph.org/program/technical-papers/"
+        "source": "https://s2027.siggraph.org/program/technical-papers/#:~:text=Upload%20Deadline",
+        "sourceSection": "Upload Deadline"
       }
     ],
     "notes": "The submission form and conflicts are due one week before the paper. The Technical Papers page publishes these dates; detailed 2027 submission instructions and the review timeline are still pending.",
@@ -638,35 +641,40 @@
         "date": "2026-04-13",
         "timezone": "Not specified",
         "required": false,
-        "source": "https://sgp26.org/submit/"
+        "source": "https://sgp26.org/submit/#:~:text=Second%20Round%20of%20Submission",
+        "sourceSection": "Second Round of Submission"
       },
       {
         "kind": "paper",
         "label": "Technical paper · final round",
         "date": "2026-04-15",
         "timezone": "Not specified",
-        "source": "https://sgp26.org/submit/"
+        "source": "https://sgp26.org/submit/#:~:text=Second%20Round%20of%20Submission",
+        "sourceSection": "Second Round of Submission"
       },
       {
         "kind": "notification",
         "label": "Conditional acceptance · final round",
         "date": "2026-05-25",
         "timezone": "Not specified",
-        "source": "https://sgp26.org/submit/"
+        "source": "https://sgp26.org/submit/#:~:text=Second%20Round%20of%20Submission",
+        "sourceSection": "Second Round of Submission"
       },
       {
         "kind": "camera-ready",
         "label": "Revised paper · final round",
         "date": "2026-06-04",
         "timezone": "Not specified",
-        "source": "https://sgp26.org/submit/"
+        "source": "https://sgp26.org/submit/#:~:text=Second%20Round%20of%20Submission",
+        "sourceSection": "Second Round of Submission"
       },
       {
         "kind": "camera-ready",
         "label": "Camera-ready · final round",
         "date": "2026-06-11",
         "timezone": "Not specified",
-        "source": "https://sgp26.org/submit/"
+        "source": "https://sgp26.org/submit/#:~:text=Second%20Round%20of%20Submission",
+        "sourceSection": "Second Round of Submission"
       }
     ],
     "notes": "Final submission round. The first 2026 round closed February 4 (recommended abstract February 2). The recommended early abstract date is not mandatory. SGP 2027 is announced within IGS in Singapore, June 21–25; SGP-specific event dates and submission deadlines are not yet published. The 2026 submission page does not specify cutoff times.",

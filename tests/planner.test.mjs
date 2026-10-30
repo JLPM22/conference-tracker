@@ -42,9 +42,10 @@ test('research area, certainty, search and bookmark filters combine without losi
   assert.equal(filterEntries(editions, { query: 'not-a-conference' }, now).length, 0);
 });
 
-test('sorting by earliest prerequisite prioritizes RSS before its invited final paper', () => {
+test('default sorting uses paper deadlines; next-step sorting explicitly uses prerequisites', () => {
   const official = editions.filter(entry => !entry.estimated);
-  assert.deepEqual(filterEntries(official, { sort: 'deadline' }, now).map(entry => entry.series), ['cvpr', 'rss', 'siggraph', 'iros']);
+  assert.deepEqual(filterEntries(official, {}, now).map(entry => entry.series), ['cvpr', 'siggraph', 'iros', 'rss']);
+  assert.deepEqual(filterEntries(official, { sort: 'next-step' }, now).map(entry => entry.series), ['cvpr', 'rss', 'siggraph', 'iros']);
   assert.deepEqual(filterEntries(official, { sort: 'paper' }, now).map(entry => entry.series), ['cvpr', 'siggraph', 'iros', 'rss']);
 });
 

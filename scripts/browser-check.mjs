@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { mkdir, readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { chromium, expect as playwrightExpect } from '@playwright/test';
-import { planningEdition } from '../lib/conferences.mjs';
+import { countdown, paperOf, planningEdition, timestamp } from '../lib/conferences.mjs';
 
 const expect = playwrightExpect.configure({ timeout: 10_000 });
 
@@ -28,6 +28,8 @@ const context = await browser.newContext({
   acceptDownloads: true,
 });
 const page = await context.newPage();
+const browserNow = Date.now();
+await page.clock.setFixedTime(new Date(browserNow));
 page.setDefaultTimeout(10_000);
 const errors = [];
 page.on('pageerror', error => errors.push(`Page: ${error.message}`));
@@ -72,6 +74,20 @@ try {
   assert.ok(response?.ok(), `Preview failed to load: ${response?.status()} ${previewUrl}`);
   await expect(cards).toHaveCount(totalConferences);
   log(`${totalConferences} conferences load in the GitHub Pages preview`);
+  const rows = await cards.evaluateAll(elements => elements.map(element => ({
+    name: element.getAttribute('aria-label'),
+    date: element.querySelector('.deadline-date time').getAttribute('datetime'),
+    remaining: element.querySelector('.countdown strong').textContent,
+  })));
+  for (const record of records) {
+    const entry = planningEdition(record, browserNow);
+    const row = rows.find(item => item.name === `${entry.name} ${entry.year}`);
+    assert.equal(row.date, paperOf(entry).date, `${entry.name} must show its paper deadline`);
+    assert.equal(row.remaining, countdown(paperOf(entry).date, browserNow, entry.estimated), `${entry.name} must count down to its paper`);
+  }
+  const paperTimes = rows.map(row => timestamp(row.date));
+  assert.deepEqual(paperTimes, [...paperTimes].sort((a, b) => a - b), 'Upcoming rows must default to paper deadline order');
+  log('All 28 rows show paper dates, count down to papers, and default to paper deadline order');
   const updatedAt = await page.locator('.site-updated time').getAttribute('datetime');
   assert.ok(Number.isFinite(Date.parse(updatedAt)), 'Last updated must contain a build timestamp');
   await expect(page.locator('.site-updated')).toContainText('Last updated');
@@ -84,6 +100,8 @@ try {
   await expect(cards.first()).toContainText('ICORE2026: B');
   await expect(cards.first()).toContainText('Singapore');
   await expect(cards.first()).toContainText('Paper · final round');
+  await expect(cards.first().locator('.deadline-date .deadline-source')).toHaveAttribute('aria-label', /2026 estimate basis/);
+  await expect(cards.first().locator('.deadline-date .deadline-source')).toHaveAttribute('href', /sgp26\.org\/submit\/#:~:text=Second%20Round%20of%20Submission/);
   await expect(cards.first()).toContainText('15 Apr 2027');
   await page.evaluate(() => window.scrollTo(0, 0));
   await screenshot('sgp-and-last-updated');
@@ -94,7 +112,23 @@ try {
   await search().fill('CVPR');
   await expect(cards).toHaveCount(1);
   await expect(cards.first()).toContainText('CVPR');
-  await expect(button('Show CVPR details')).toHaveAccessibleDescription(/Official deadline.*Paper enrollment.*10 Nov 2026.*remaining/);
+  await expect(button('Show CVPR details')).toHaveAccessibleDescription(/Official deadline.*Paper submission: 16 Nov 2026.*Paper enrollment: 10 Nov 2026.*remaining to paper submission/);
+  const paperSource = cards.first().locator('.deadline-date .deadline-source');
+  await expect(paperSource).toHaveAttribute('href', /CallForPapers#:~:text=Important%20Dates$/);
+  await expect(paperSource).toHaveAttribute('target', '_blank');
+  await expect(paperSource).toHaveAttribute('title', /Important Dates/);
+  await expect(cards.first().locator('.paper-follows .deadline-source')).toHaveCount(1);
+  assert.equal(await paperSource.evaluate(link => Boolean(link.closest('button'))), false, 'Source links must not be nested in buttons');
+  await paperSource.click({ trial: true });
+  await paperSource.focus();
+  await expect(paperSource).toBeFocused();
+  await button('Show CVPR details').click();
+  const cvpr = records.find(entry => entry.series === 'cvpr');
+  const scheduleSources = cards.first().locator('.milestones .deadline-source');
+  await expect(scheduleSources).toHaveCount(cvpr.milestones.length);
+  assert.deepEqual((await scheduleSources.evaluateAll(links => links.map(link => link.getAttribute('href')))).sort(), cvpr.milestones.map(m => m.source).sort());
+  await button('Hide CVPR details').click();
+  log('Deadline sources are accessible, independently clickable, and preserve exact source links and estimate basis');
   await search().fill('a conference that does not exist');
   await expect(cards).toHaveCount(0);
   await button('Clear filters').click();
@@ -200,6 +234,8 @@ try {
   assert.equal(await download.failure(), null, 'Calendar download should complete');
   const calendar = (await readFile(await download.path(), 'utf8')).replace(/\r?\n /g, '');
   const summaries = calendar.split(/\r?\n/).filter(line => line.startsWith('SUMMARY:'));
+  assert.equal(summaries.length, 2, 'Export must contain one paper deadline per bookmarked conference');
+  assert.ok(calendar.split(/\r?\n/).filter(line => line.startsWith('UID:')).every(line => /-paper-\d+@conference-planner$/.test(line)), 'Export must contain only paper milestones');
   assert.ok(summaries.some(line => /CVPR \d{4}/.test(line)), 'Export must include bookmarked CVPR hidden by filters');
   assert.ok(summaries.some(line => /SIGGRAPH \d{4}/.test(line)), 'Export must include bookmarked SIGGRAPH hidden by search');
   assert.ok(summaries.every(line => /(?:CVPR|SIGGRAPH) \d{4}/.test(line)), 'Export must exclude all unbookmarked conferences');

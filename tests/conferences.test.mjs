@@ -130,11 +130,31 @@ test('calendar export keeps exact deadlines in UTC and unknown times as all-day 
     milestone('paper', '2026-05-12T23:59:00-12:00'),
     milestone('notification', '2026-12-31'),
   ] });
-  const calendar = unfold(makeCalendar([entry], utc('2026-01-01T00:00:00Z')));
+  const dateOnlyEntry = fixture({ id: 'date-only-2026', milestones: [milestone('paper', '2026-12-31')] });
+  const calendar = unfold(makeCalendar([entry, dateOnlyEntry], utc('2026-01-01T00:00:00Z')));
   assert.match(calendar, /DTSTART:20260513T115900Z\r\nDTEND:20260513T120000Z/);
   assert.match(calendar, /DTSTART;VALUE=DATE:20261231\r\nDTEND;VALUE=DATE:20270101/);
   assert.equal((calendar.match(/STATUS:CONFIRMED/g) || []).length, 2);
   assert.match(calendar, /DTSTAMP:20260101T000000Z/);
+});
+
+test('calendar exports only paper deadlines while preserving their existing event IDs', () => {
+  const entry = fixture({ milestones: [
+    milestone('abstract', '2026-01-01'),
+    milestone('registration', '2026-01-02'),
+    milestone('paper', '2026-01-03'),
+    milestone('supplementary', '2026-01-04'),
+    milestone('rebuttal', '2026-01-05'),
+    milestone('notification', '2026-01-06'),
+    milestone('camera-ready', '2026-01-07'),
+  ] });
+  for (const includePast of [false, true]) {
+    const calendar = unfold(makeCalendar([entry], utc('2025-12-01T00:00:00Z'), includePast));
+    assert.equal((calendar.match(/BEGIN:VEVENT/g) || []).length, 1);
+    assert.ok(calendar.includes(`UID:${entry.id}-paper-2@conference-planner`));
+    assert.match(calendar, /DTSTART;VALUE=DATE:20260103/);
+    assert.doesNotMatch(calendar, /SUMMARY:.*(?:abstract|registration|supplementary|rebuttal|notification|camera-ready)/);
+  }
 });
 
 test('calendar estimates are tentative, explicitly labeled, and contain their historical basis', () => {
@@ -166,7 +186,7 @@ test('past deadlines are omitted from normal export but retained in archive expo
   const entry = fixture();
   const now = utc('2026-10-22T12:00:00Z');
   assert.doesNotMatch(makeCalendar([entry], now), /BEGIN:VEVENT/);
-  assert.equal((makeCalendar([entry], now, true).match(/BEGIN:VEVENT/g) || []).length, 2);
+  assert.equal((makeCalendar([entry], now, true).match(/BEGIN:VEVENT/g) || []).length, 1);
 });
 
 test('validation rejects impossible dates and timestamps without an explicit timezone', () => {

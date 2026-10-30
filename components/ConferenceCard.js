@@ -1,5 +1,6 @@
 import Icon from './Icon';
 import SubmissionGuide from './SubmissionGuide';
+import DeadlineSource from './DeadlineSource';
 import { categories, DAY, countdown, formatDate, formatTime, isDateOnly, isPast, needsScheduleUpdate, nextGate, paperOf, prerequisites, timestamp } from '../lib/conferences.mjs';
 
 const publicationLabels = {
@@ -43,7 +44,7 @@ function Details({ entry, venues, now, zone, onExport, missedPrerequisites }) {
         <section className="schedule" aria-label={`${entry.name} submission schedule`}>
           <div className="detail-heading">
             <h3>{entry.estimated ? 'Projected schedule' : 'Submission schedule'}</h3>
-            <button className="icon-button" onClick={() => onExport([entry])} aria-label={`Export ${entry.name} calendar`} title="Export this schedule">
+            <button className="icon-button" onClick={() => onExport([entry])} aria-label={`Export ${entry.name} calendar`} title="Export paper deadline">
               <Icon name="download" size={18} />
             </button>
           </div>
@@ -51,11 +52,9 @@ function Details({ entry, venues, now, zone, onExport, missedPrerequisites }) {
             {milestones.map((milestone, index) => (
               <li key={`${milestone.kind}-${index}`} className={`${isPast(milestone.date, now) ? 'past' : ''} ${milestone.kind === 'paper' ? 'paper-milestone' : ''}`}>
                 <span className="milestone-dot" aria-hidden="true" />
-                <a href={milestone.source} target="_blank" rel="noreferrer" title="Read the official source">
-                  {milestone.label}<Icon name="arrow" size={13} />
-                </a>
+                <span className="milestone-label">{milestone.label}</span>
                 <div className="milestone-date">
-                  <time dateTime={milestone.date}>{formatDate(milestone.date, zone)}</time>
+                  <span className="milestone-date-source"><time dateTime={milestone.date}>{formatDate(milestone.date, zone)}</time><DeadlineSource entry={entry} milestone={milestone} /></span>
                   {!entry.estimated && <small>{formatTime(milestone, zone)}</small>}
                   {milestone.kind === 'paper' && !isPast(milestone.date, now) && <small className="paper-remaining">{countdown(milestone.date, now, entry.estimated)} to paper</small>}
                 </div>
@@ -99,20 +98,20 @@ function Details({ entry, venues, now, zone, onExport, missedPrerequisites }) {
 
 export default function ConferenceCard({ entry, venues = [], now, zone, saved, onSave, expanded, onExpand, archived, onExport }) {
   const paper = paperOf(entry);
-  const gate = archived ? paper : nextGate(entry, now);
+  const earlierStep = archived ? paper : nextGate(entry, now);
   const missedPrerequisites = !entry.estimated && !archived ? prerequisites(entry).filter(milestone => isPast(milestone.date, now)) : [];
-  const dueSoon = !archived && !entry.estimated && !isPast(gate.date, now) && (timestamp(gate.date) - now) / DAY <= 30;
+  const dueSoon = !archived && !entry.estimated && !isPast(paper.date, now) && (timestamp(paper.date) - now) / DAY <= 30;
   const updateNeeded = !archived && needsScheduleUpdate(entry, now);
-  const separatePaper = gate.kind !== 'paper' && timestamp(gate.date) !== timestamp(paper.date);
+  const separatePrerequisite = earlierStep.kind !== 'paper' && timestamp(earlierStep.date) !== timestamp(paper.date);
   const summaryId = `summary-${entry.id}`;
   const accessibleSummary = [
     `${entry.name} ${entry.year}, ${categories[entry.category].label}.`,
     entry.estimated ? `Estimated from the ${entry.basisYear} schedule.` : 'Official deadline.',
     entry.core ? `${entry.core.edition}: ${entry.core.rank || 'no entry found'}.` : '',
-    `${submissionLabel(entry, gate)}: ${formatDate(gate.date, zone)}${entry.estimated ? '.' : `, ${formatTime(gate, zone)}.`}`,
-    separatePaper ? `Paper deadline: ${formatDate(paper.date, zone)}.` : '',
+    `${submissionLabel(entry, paper)}: ${formatDate(paper.date, zone)}${entry.estimated ? '.' : `, ${formatTime(paper, zone)}.`}`,
+    separatePrerequisite ? `${submissionLabel(entry, earlierStep)}: ${formatDate(earlierStep.date, zone)}.` : '',
     entry.paperFit ? `Paper fit: ${entry.paperFit.scope}. Emphasis: ${entry.paperFit.emphasis}.` : '',
-    archived ? 'Submission closed.' : `${countdown(gate.date, now, entry.estimated)} remaining.`,
+    archived ? 'Submission closed.' : `${countdown(paper.date, now, entry.estimated)} remaining to paper submission.`,
     missedPrerequisites.length > 0 ? 'An earlier required step has closed. The remaining deadline applies only if you completed it on time.' : '',
   ].filter(Boolean).join(' ');
 
@@ -121,7 +120,8 @@ export default function ConferenceCard({ entry, venues = [], now, zone, saved, o
       {/* Referenced hidden text supplies a description without a second browse-mode copy. */}
       <span id={summaryId} hidden>{accessibleSummary}</span>
       <div className="conference-summary">
-        <button className="row-open" onClick={() => onExpand(entry.id)} aria-expanded={expanded} aria-controls={`details-${entry.id}`} aria-describedby={summaryId} aria-label={`${expanded ? 'Hide' : 'Show'} ${entry.name} details`}>
+        <div className="row-content">
+          <button className="row-open" onClick={() => onExpand(entry.id)} aria-expanded={expanded} aria-controls={`details-${entry.id}`} aria-describedby={summaryId} aria-label={`${expanded ? 'Hide' : 'Show'} ${entry.name} details`} />
           <span className="venue-summary">
             <span className="venue-name">{entry.name} <span>{entry.year}</span></span>
             <span className="venue-meta">
@@ -130,13 +130,14 @@ export default function ConferenceCard({ entry, venues = [], now, zone, saved, o
             </span>
           </span>
           <span className="action-summary">
-            <span className="action-label">{submissionLabel(entry, gate)}</span>
+            <span className="action-label">{submissionLabel(entry, paper)}</span>
             <span className="deadline-date">
-              <time dateTime={gate.date}>{formatDate(gate.date, zone)}</time>
+              <time dateTime={paper.date}>{formatDate(paper.date, zone)}</time>
               {entry.estimated ? <span className="status-badge estimate" title={`Deadline estimated from the ${entry.basisYear} schedule`}>Estimated</span> : <span className="status-badge official" title="Official deadline" aria-label="Official deadline"><Icon name="check" size={17} /></span>}
+              <DeadlineSource entry={entry} milestone={paper} />
             </span>
-            {!entry.estimated && <span className="deadline-time">{formatTime(gate, zone)}</span>}
-            {separatePaper && <span className="paper-follows">Paper: {formatDate(paper.date, zone)}</span>}
+            {!entry.estimated && <span className="deadline-time">{formatTime(paper, zone)}</span>}
+            {separatePrerequisite && <span className="paper-follows"><span>{submissionLabel(entry, earlierStep)}: {formatDate(earlierStep.date, zone)}</span><DeadlineSource entry={entry} milestone={earlierStep} /></span>}
             {missedPrerequisites.length > 0 && <span className="prerequisite-warning"><Icon name="alert" size={13} /> Earlier step closed</span>}
           </span>
           {entry.paperFit && <span className="paper-fit">
@@ -145,11 +146,11 @@ export default function ConferenceCard({ entry, venues = [], now, zone, saved, o
             <span className="paper-fit-emphasis">{entry.paperFit.emphasis}</span>
           </span>}
           <span className="countdown">
-            <strong>{countdown(gate.date, now, entry.estimated)}</strong>
-            <span className="mobile-countdown-label">{archived ? 'Submission closed' : isDateOnly(gate.date) ? 'approximately left' : 'left to submit'}</span>
+            <strong>{countdown(paper.date, now, entry.estimated)}</strong>
+            <span className="mobile-countdown-label">{archived ? 'Submission closed' : isDateOnly(paper.date) ? 'approximately left' : 'left to submit'}</span>
           </span>
           <Icon name="chevron" size={19} className="expand-icon" />
-        </button>
+        </div>
         <button className={`icon-button save-button ${saved ? 'saved' : ''}`} aria-label={`${saved ? 'Unsave' : 'Save'} ${entry.name}`} title={saved ? 'Remove bookmark' : 'Save conference'} aria-pressed={saved} onClick={() => onSave(entry.series)}>
           <Icon name="bookmark" />
         </button>

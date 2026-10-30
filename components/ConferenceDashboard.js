@@ -115,7 +115,7 @@ export default function ConferenceDashboard({ conferences }) {
       <header className="site-header">
         <div className="site-container header-content">
           <a className="identity" href="https://joseluisponton.com/">Jose Luis Ponton <Icon name="arrow" size={16} /></a>
-          <button className="export-button" disabled={!bookmarkedEntries.length} onClick={() => onExport(bookmarkedEntries)} title={bookmarkedEntries.length ? 'Export bookmarked conferences in this submission period' : 'Bookmark a conference in this submission period to export its calendar'}>
+          <button className="export-button" disabled={!bookmarkedEntries.length} onClick={() => onExport(bookmarkedEntries)} title={bookmarkedEntries.length ? 'Export paper deadlines for bookmarked conferences in this submission period' : 'Bookmark a conference in this submission period to export its paper deadline'}>
             <Icon name="download" size={18} /><span>Export calendar</span>
           </button>
         </div>
@@ -157,8 +157,8 @@ export default function ConferenceDashboard({ conferences }) {
               <option value="all">Official + estimated</option><option value="official">Official only</option><option value="estimated" disabled={archived}>Estimates only</option>
             </select></label>
             <label>Sort by<select aria-label="Sort conferences" value={sort} onChange={event => setSort(event.target.value)}>
-              <option value="deadline">{archived ? 'Most recently closed' : 'Next submission step'}</option>
-              {archived ? <option value="oldest">Oldest closed first</option> : <option value="paper">Paper deadline</option>}
+              <option value="deadline">{archived ? 'Most recently closed' : 'Paper deadline'}</option>
+              {archived ? <option value="oldest">Oldest closed first</option> : <option value="next-step">Next submission step</option>}
               <option value="name">Conference name</option>
             </select></label>
           </div>
@@ -188,7 +188,7 @@ export default function ConferenceDashboard({ conferences }) {
           ) : (
             <>
               {view === 'timeline' && <Timeline entries={filtered} now={now} zone={zone} selectedId={selected?.id} onSelect={selectTimeline} offset={timelineOffset} setOffset={setTimelineOffset} archived={archived} />}
-              {view === 'list' && <div className="list-heading" aria-hidden="true"><span>Conference</span><span>Next submission step</span><span title="Typical work and what to emphasize">Paper fit</span><span>Time left</span><span /></div>}
+              {view === 'list' && <div className="list-heading" aria-hidden="true"><span>Conference</span><span>Paper deadline</span><span title="Typical work and what to emphasize">Paper fit</span><span>Time left</span><span /></div>}
               <div className="conference-list" ref={timelineDetails} id={view === 'timeline' ? 'timeline-details' : undefined} role={view === 'timeline' ? 'region' : undefined} tabIndex={view === 'timeline' ? -1 : undefined} aria-label={view === 'timeline' ? selected ? `${selected.name} ${selected.year} submission details` : 'Selected conference details' : undefined} hidden={view === 'timeline' && !selected}>
                 {(view === 'timeline' ? selected ? [selected] : [] : filtered).map(entry => (
                   <ConferenceCard key={entry.id} entry={entry} venues={conferences} now={now} zone={zone} saved={saved.includes(entry.series)} onSave={toggleSave} expanded={expanded === entry.id} onExpand={expand} archived={archived} onExport={onExport} />
@@ -203,7 +203,7 @@ export default function ConferenceDashboard({ conferences }) {
             <summary><Icon name="info" size={17} /> About this tracker <Icon name="chevron" size={14} /></summary>
             <div>
               <p><strong>Official or estimated.</strong> The check icon means an official source. Estimates shift the previous verified schedule to the next annual or biennial cycle.</p>
-              <p><strong>The first step matters.</strong> Abstracts and submission forms may close before the full paper. The countdown follows the next required step; expand a conference for its full schedule and sources.</p>
+              <p><strong>Paper deadlines.</strong> Time left counts down to the full paper submission. Earlier abstract and registration deadlines appear below the paper date and in the full schedule.</p>
               <p><strong>Times stay explicit.</strong> AoE is UTC−12. Unknown times and estimates show approximate day counts. Official announcements are updated manually; countdowns update automatically.</p>
               <p><strong>Paper fit.</strong> Expected contributions, evaluation methods and comparisons with related conferences.</p>
               <p><strong>Your planning stays yours.</strong> Bookmarks live in this browser. Calendar downloads are snapshots, with estimates marked tentative; later changes do not sync.</p>
